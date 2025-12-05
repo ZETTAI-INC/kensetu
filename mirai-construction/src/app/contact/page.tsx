@@ -11,7 +11,11 @@ export default function ContactPage() {
 
     return (
         <main>
-            <SubpageHero titleEn="CONTACT" titleJa="お問い合わせ" />
+            <SubpageHero
+                titleEn="CONTACT"
+                titleJa="お問い合わせ"
+                backgroundImage="/images/contact-bg.png"
+            />
 
             <div className="container mx-auto px-6 py-24">
                 <div className="max-w-4xl mx-auto">
@@ -108,8 +112,8 @@ export default function ContactPage() {
                                             <option>お見積もり依頼</option>
                                             <option>その他</option>
                                         </select>
-                                        <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-emerald-500">
-                                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                                        <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-emerald-500 text-sm">
+                                            ▼
                                         </div>
                                     </div>
                                 </div>

@@ -46,21 +46,35 @@ export default function Home() {
           </AnimatePresence>
         </div>
 
-        {/* Main Copy - Left aligned, large Japanese text */}
+        {/* Main Copy - Left half of screen */}
         <div className="absolute inset-0 flex items-center z-10">
-          <div className="px-8 md:px-16 lg:px-24">
-            <motion.h1
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-black leading-[1.3] tracking-tight"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-            >
-              業界の常識を<br />
-              非常識に<br />
-              建設派遣の<br />
-              在り方を<br />
-              変えていく
-            </motion.h1>
+          <div className="w-full md:w-2/3 h-full flex items-center pl-8 md:pl-16 lg:pl-20">
+            <h1 className="text-[12vw] md:text-[9vw] lg:text-[8vw] font-black leading-[1.1] tracking-tight text-black">
+              <motion.span
+                className="block overflow-hidden"
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
+              >
+                日本の
+              </motion.span>
+              <motion.span
+                className="block overflow-hidden"
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
+              >
+                施工管理業界を
+              </motion.span>
+              <motion.span
+                className="block overflow-hidden"
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.7, duration: 0.8, ease: "easeOut" }}
+              >
+                新しく創る
+              </motion.span>
+            </h1>
           </div>
         </div>
 
@@ -152,19 +166,19 @@ export default function Home() {
             {/* Right: Text */}
             <div className="w-full md:w-1/2 flex items-center">
               <div className="px-8 md:px-16 py-16">
-                <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 text-right">
+                <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
                   BUSINESS
                 </h2>
-                <p className="text-sm text-gray-500 tracking-wide mb-12 text-right">
+                <p className="text-sm text-gray-500 tracking-wide mb-12">
                   事業内容
                 </p>
-                <h3 className="text-xl md:text-2xl font-bold mb-6 text-center">
-                  サブコン特化型人材派遣
+                <h3 className="text-xl md:text-2xl font-bold mb-6">
+                  施工管理の人材派遣
                 </h3>
-                <p className="text-gray-600 leading-[2] mb-10 text-justify">
-                  株式会社リッチ＆ビルドは、"業界初"のサブコン（設備・電気）に特化した施工管理・CADオペレーターの人材派遣を行っています。未だかつてない設備・電気のプロフェッショナル集団を目指しております。
+                <p className="text-gray-600 leading-[2] mb-10">
+                  株式会社リッチ＆ビルドは、施工管理の人材派遣を行っています。若い力と情熱で日本の建設業界を支え、施工管理のプロフェッショナル集団を目指しております。
                 </p>
-                <div className="text-center">
+                <div>
                   <Link
                     href="/service"
                     className="inline-block border border-black rounded-full px-10 py-3 text-sm font-medium hover:bg-black hover:text-white transition-colors"
@@ -187,17 +201,16 @@ export default function Home() {
           </div>
 
           <LogoGrid logos={[
-            { src: '', alt: 'Sumitomo Densetsu' },
-            { src: '', alt: 'Hibiya' },
-            { src: '', alt: 'Konoike' },
-            { src: '', alt: 'Kandenko' },
-            { src: '', alt: 'Kyudenko' },
-            { src: '', alt: 'Nihon Denki Kogyo' },
-            { src: '', alt: 'Showa' },
-            { src: '', alt: 'Hokuriku' },
-            { src: '', alt: 'Relia' },
-            { src: '', alt: 'Techno' },
-            { src: '', alt: 'Toko' },
+            { src: '', alt: '住友電設株式会社' },
+            { src: '', alt: '株式会社日比谷アメニス' },
+            { src: '', alt: '株式会社関電工' },
+            { src: '', alt: '東急建設株式会社' },
+            { src: '', alt: '大成建設株式会社' },
+            { src: '', alt: '鹿島建設株式会社' },
+            { src: '', alt: '清水建設株式会社' },
+            { src: '', alt: '株式会社大林組' },
+            { src: '', alt: '株式会社竹中工務店' },
+            { src: '', alt: '戸田建設株式会社' },
           ]} />
 
           <div className="text-center mt-12">
@@ -250,17 +263,11 @@ export default function Home() {
           <p className="text-sm text-white/80 tracking-wide mb-10">
             お問い合わせ
           </p>
-          <p className="text-white/90 leading-[2] mb-10">
-            施工管理・CADオペレーターに関するお問い合わせやお悩みなど、お気軽にご相談ください。
-          </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 bg-[#DC2626] text-white px-10 py-4 rounded-full font-medium hover:bg-[#B91C1C] transition-colors"
           >
-            VIEW MORE
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
+            お問い合わせはこちら →
           </Link>
         </div>
       </section>

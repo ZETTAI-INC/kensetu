@@ -9,6 +9,7 @@ export default function RecruitPage() {
             <SubpageHero
                 titleEn="RECRUIT"
                 titleJa="採用情報"
+                backgroundImage="/images/concept-workers.png"
             />
 
             {/* Intro */}
@@ -76,11 +77,11 @@ export default function RecruitPage() {
                 </div>
             </section>
 
-            {/* Why Rich & Build */}
+            {/* Why リッチ＆ビルド */}
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <p className="text-emerald-500 font-bold tracking-widest text-sm mb-4">WHY RICH & BUILD</p>
+                        <p className="text-emerald-500 font-bold tracking-widest text-sm mb-4">WHY リッチ＆ビルド</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#064E3B]">リッチ＆ビルドが選ばれる理由</h2>
                     </div>
 
@@ -124,49 +125,21 @@ export default function RecruitPage() {
                         <h2 className="text-3xl md:text-4xl font-bold text-[#064E3B]">募集職種</h2>
                     </div>
 
-                    <div className="max-w-4xl mx-auto space-y-8">
-                        {[
-                            {
-                                title: '施工管理（未経験）',
-                                tags: ['正社員', '未経験歓迎', '研修あり'],
-                                desc: '建設プロジェクトの進行管理、安全管理、品質管理などのサポート業務からスタートします。',
-                                salary: '月給 25万円〜'
-                            },
-                            {
-                                title: '施工管理（経験者）',
-                                tags: ['正社員', '経験者優遇', '高収入'],
-                                desc: '即戦力として、大規模プロジェクトの施工管理業務をお任せします。',
-                                salary: '月給 40万円〜'
-                            },
-                            {
-                                title: 'CADオペレーター',
-                                tags: ['正社員', '契約社員', '女性活躍中'],
-                                desc: '設計図面の作成・修正業務。専用ソフト（CAD）を使用しますが、操作方法は研修で学べます。',
-                                salary: '月給 23万円〜'
-                            }
-                        ].map((job, index) => (
-                            <div key={index} className="bg-white p-8 rounded-xl shadow-sm border border-emerald-100 hover:border-emerald-300 transition-colors group cursor-pointer">
-                                <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-                                    <div>
-                                        <div className="flex flex-wrap gap-2 mb-3">
-                                            {job.tags.map((tag, i) => (
-                                                <span key={i} className="bg-emerald-50 text-emerald-600 text-xs font-bold px-3 py-1 rounded-full">
-                                                    {tag}
-                                                </span>
-                                            ))}
-                                        </div>
-                                        <h3 className="text-2xl font-bold text-[#064E3B] mb-2 group-hover:text-emerald-600 transition-colors">{job.title}</h3>
-                                        <p className="text-emerald-800/70 mb-4 md:mb-0">{job.desc}</p>
-                                    </div>
-                                    <div className="flex flex-col items-start md:items-end gap-2 min-w-[140px]">
-                                        <span className="text-lg font-bold text-[#064E3B]">{job.salary}</span>
-                                        <span className="text-emerald-400 group-hover:translate-x-2 transition-transform duration-300">
-                                            <ArrowRight className="w-6 h-6" />
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                    <div className="max-w-2xl mx-auto text-center">
+                        <div className="bg-white p-12 rounded-2xl shadow-sm border border-emerald-100">
+                            <h3 className="text-2xl font-bold text-[#064E3B] mb-4">施工管理スタッフ</h3>
+                            <p className="text-emerald-800/70 mb-8 leading-relaxed">
+                                募集条件や給与などの詳細については、<br />
+                                お気軽にお問い合わせください。
+                            </p>
+                            <Link
+                                href="/contact"
+                                className="inline-flex items-center gap-2 bg-emerald-500 text-white px-8 py-4 rounded-full font-bold hover:bg-emerald-600 transition-colors"
+                            >
+                                お問い合わせはこちら
+                                <ArrowRight className="w-5 h-5" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>

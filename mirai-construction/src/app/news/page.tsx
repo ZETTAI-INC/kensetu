@@ -23,7 +23,11 @@ export default function NewsPage() {
 
     return (
         <main>
-            <SubpageHero titleEn="NEWS" titleJa="お知らせ" />
+            <SubpageHero
+                titleEn="NEWS"
+                titleJa="お知らせ"
+                backgroundImage="/images/news-keyboard.png"
+            />
 
             <div className="container mx-auto px-6 py-24">
                 <div className="max-w-4xl mx-auto">

@@ -3,7 +3,11 @@ import { SubpageHero } from '@/components/SubpageHero';
 export default function PrivacyPage() {
     return (
         <main>
-            <SubpageHero titleEn="PRIVACY POLICY" titleJa="個人情報保護方針" />
+            <SubpageHero
+                titleEn="PRIVACY POLICY"
+                titleJa="個人情報保護方針"
+                backgroundImage="/images/business-building.png"
+            />
 
             <div className="container mx-auto px-6 py-24">
                 <div className="max-w-3xl mx-auto bg-white p-8 md:p-16 rounded-2xl shadow-sm border border-emerald-100">

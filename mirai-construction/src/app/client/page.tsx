@@ -1,6 +1,5 @@
 import { SubpageHero } from '@/components/SubpageHero';
 import { LogoGrid } from '@/components/LogoGrid';
-import { CheckCircle2, Users, TrendingUp, Shield, Zap, Award } from 'lucide-react';
 
 export default function ClientPage() {
     return (
@@ -8,6 +7,7 @@ export default function ClientPage() {
             <SubpageHero
                 titleEn="CLIENT"
                 titleJa="企業の皆様へ"
+                backgroundImage="/images/business-building.png"
             />
 
             {/* Intro */}
@@ -37,25 +37,23 @@ export default function ClientPage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         {[
                             {
-                                icon: Users,
+                                num: '01',
                                 title: '若手人材の\n定着と活躍',
                                 desc: '平均年齢20代の若手人材が中心。素直で吸収力のある人材が、現場の活性化に貢献します。高い定着率も自慢です。'
                             },
                             {
-                                icon: Zap,
+                                num: '02',
                                 title: 'スピーディーな\nマッチング',
                                 desc: '独自のデータベースとマッチングシステムにより、急な欠員や増員にも迅速に対応。最短3日での派遣開始も可能です。'
                             },
                             {
-                                icon: Shield,
+                                num: '03',
                                 title: '万全の\nフォロー体制',
                                 desc: '派遣後も専任担当者が定期的に現場を訪問。スタッフのメンタルケアや労務管理を徹底し、トラブルを未然に防ぎます。'
                             }
                         ].map((item, index) => (
                             <div key={index} className="bg-white p-10 rounded-xl shadow-sm border border-emerald-100 hover:shadow-xl transition-all duration-300 group">
-                                <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-400 mb-8 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                                    <item.icon className="w-8 h-8" />
-                                </div>
+                                <div className="text-emerald-500 font-bold text-4xl mb-6">{item.num}</div>
                                 <h3 className="text-xl font-bold mb-4 whitespace-pre-line text-[#064E3B]">{item.title}</h3>
                                 <p className="text-emerald-800/70 leading-relaxed">
                                     {item.desc}
@@ -77,25 +75,22 @@ export default function ClientPage() {
                                     独自の教育システムで<br />
                                     即戦力を育成
                                 </h2>
-                                <div className="space-y-6">
+                                <div className="space-y-4">
                                     {[
                                         'ビジネスマナー研修（挨拶、名刺交換、電話対応など）',
                                         '建設業界の基礎知識（用語、法規、安全管理など）',
-                                        '図面の見方・CAD操作の基礎',
+                                        '図面の見方・現場管理の基礎',
                                         'PCスキル研修（Excel、Word、メール作成など）',
                                         '安全衛生教育・フルハーネス講習'
                                     ].map((item, index) => (
                                         <div key={index} className="flex items-start gap-4">
-                                            <CheckCircle2 className="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" />
+                                            <span className="text-emerald-500 font-bold mt-0.5">●</span>
                                             <p className="text-emerald-800/70 font-medium">{item}</p>
                                         </div>
                                     ))}
                                 </div>
                                 <div className="mt-10 p-6 bg-[#F0FDF4] rounded-xl border border-emerald-100">
-                                    <div className="flex items-center gap-4 mb-2">
-                                        <Award className="w-8 h-8 text-emerald-500" />
-                                        <h4 className="font-bold text-[#064E3B] text-lg">資格取得もサポート</h4>
-                                    </div>
+                                    <h4 className="font-bold text-[#064E3B] text-lg mb-2">資格取得もサポート</h4>
                                     <p className="text-emerald-800/70 text-sm">
                                         施工管理技士などの国家資格取得を全面的にバックアップ。社員のスキルアップが、貴社の現場の品質向上に直結します。
                                     </p>

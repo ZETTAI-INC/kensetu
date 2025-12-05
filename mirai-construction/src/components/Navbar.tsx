@@ -30,10 +30,10 @@ export const Navbar = () => {
         <>
             <header
                 className={cn(
-                    'fixed top-0 left-0 w-full z-50 transition-all duration-300',
+                    'fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white',
                     isScrolled || isMobileMenuOpen
-                        ? 'bg-white shadow-sm py-4'
-                        : 'bg-transparent py-6'
+                        ? 'shadow-sm py-4'
+                        : 'py-5'
                 )}
             >
                 <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -44,7 +44,7 @@ export const Navbar = () => {
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
                         <div className="font-bold">
-                            <span className="text-xl tracking-tight text-[#111]">RICH&BUILD</span>
+                            <span className="text-xl tracking-tight text-[#111]">リッチ＆ビルド</span>
                         </div>
                     </Link>
 

@@ -1,5 +1,4 @@
 import { SubpageHero } from '@/components/SubpageHero';
-import { Building2, GraduationCap, TrendingUp, Users, MessageCircle, Heart, HardHat, Zap, Shield } from 'lucide-react';
 
 export default function ServicePage() {
     return (
@@ -7,6 +6,7 @@ export default function ServicePage() {
             <SubpageHero
                 titleEn="SERVICE"
                 titleJa="事業紹介"
+                backgroundImage="/images/service_main_bg.png"
             />
 
             {/* Intro */}
@@ -33,17 +33,16 @@ export default function ServicePage() {
                         <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-emerald-100">
                             <div className="flex flex-col md:flex-row">
                                 <div className="w-full md:w-1/2 bg-gray-900 relative min-h-[400px]">
-                                    <div className="absolute inset-0 opacity-40">
+                                    <div className="absolute inset-0">
                                         <img
                                             src="/images/service_main_bg.png"
                                             alt="Construction Management"
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full object-cover opacity-60"
                                         />
                                     </div>
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <div className="text-center">
-                                            <HardHat className="w-20 h-20 text-emerald-400 mx-auto mb-6" />
-                                            <p className="text-white font-bold tracking-[0.2em] text-xl">CONSTRUCTION</p>
+                                            <p className="text-white font-bold tracking-[0.2em] text-2xl">CONSTRUCTION</p>
                                             <p className="text-emerald-200/70 text-sm mt-2">MANAGEMENT</p>
                                         </div>
                                     </div>
@@ -54,23 +53,17 @@ export default function ServicePage() {
                                     <p className="text-emerald-800/70 leading-relaxed mb-10">
                                         建築・土木・設備・電気など、あらゆる建設現場において、工程管理・品質管理・安全管理を行う施工管理技術者を派遣します。大規模プロジェクトから改修工事まで、幅広いニーズに対応可能です。
                                     </p>
-                                    <div className="space-y-6">
-                                        <div className="flex items-center gap-6 group">
-                                            <div className="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center group-hover:bg-emerald-500 transition-colors duration-300">
-                                                <HardHat className="w-6 h-6 text-emerald-400 group-hover:text-white transition-colors" />
-                                            </div>
+                                    <div className="space-y-4">
+                                        <div className="flex items-center gap-4">
+                                            <span className="text-emerald-500 font-bold">●</span>
                                             <span className="font-bold text-[#064E3B]">建築・土木・設備・電気工事</span>
                                         </div>
-                                        <div className="flex items-center gap-6 group">
-                                            <div className="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center group-hover:bg-emerald-500 transition-colors duration-300">
-                                                <Zap className="w-6 h-6 text-emerald-400 group-hover:text-white transition-colors" />
-                                            </div>
+                                        <div className="flex items-center gap-4">
+                                            <span className="text-emerald-500 font-bold">●</span>
                                             <span className="font-bold text-[#064E3B]">即戦力から育成人材まで対応</span>
                                         </div>
-                                        <div className="flex items-center gap-6 group">
-                                            <div className="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center group-hover:bg-emerald-500 transition-colors duration-300">
-                                                <Shield className="w-6 h-6 text-emerald-400 group-hover:text-white transition-colors" />
-                                            </div>
+                                        <div className="flex items-center gap-4">
+                                            <span className="text-emerald-500 font-bold">●</span>
                                             <span className="font-bold text-[#064E3B]">安心のフォロー体制</span>
                                         </div>
                                     </div>
@@ -116,40 +109,38 @@ export default function ServicePage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         {[
                             {
-                                icon: Users,
+                                num: '01',
                                 title: '若手人材の\n積極採用・育成',
                                 text: '未経験者でも安心。独自の研修プログラムで基礎からしっかり学べる環境を整えています。若い力で現場に活気を。'
                             },
                             {
-                                icon: GraduationCap,
+                                num: '02',
                                 title: '実践的な\n教育カリキュラム',
                                 text: '現場経験豊富な講師陣による実践的な研修。資格取得支援制度も充実しており、着実にスキルアップできます。'
                             },
                             {
-                                icon: TrendingUp,
+                                num: '03',
                                 title: 'キャリア形成\nサポート',
                                 text: '一人ひとりの将来のビジョンに合わせたキャリアプランの作成と実現をサポート。長期的な成長を支援します。'
                             },
                             {
-                                icon: Building2,
+                                num: '04',
                                 title: '豊富な\n取引実績',
                                 text: '大手ゼネコン・サブコンを中心に多数の取引実績。現場の特性を熟知したマッチングで、最適な人材を派遣します。'
                             },
                             {
-                                icon: MessageCircle,
+                                num: '05',
                                 title: '密な\nコミュニケーション',
                                 text: '派遣後も定期的なフォローを実施。現場での悩みやトラブルにも迅速に対応し、安心して働ける環境を整えます。'
                             },
                             {
-                                icon: Heart,
+                                num: '06',
                                 title: '高い\n定着率',
                                 text: '働きやすい環境づくりと手厚いサポートにより、業界平均を上回る定着率を実現。長く安定して働ける職場です。'
                             }
                         ].map((item, index) => (
                             <div key={index} className="bg-white p-10 rounded-xl hover:shadow-xl transition-all duration-300 group border border-emerald-100">
-                                <div className="w-14 h-14 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-400 mb-8 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
-                                    <item.icon className="w-7 h-7" />
-                                </div>
+                                <div className="text-emerald-500 font-bold text-3xl mb-6">{item.num}</div>
                                 <h3 className="text-xl font-bold mb-4 whitespace-pre-line text-[#064E3B]">{item.title}</h3>
                                 <p className="text-emerald-800/70 text-sm leading-relaxed">
                                     {item.text}

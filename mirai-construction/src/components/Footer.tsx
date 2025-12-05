@@ -24,17 +24,14 @@ export const Footer = () => {
                     {/* Logo & Info */}
                     <div>
                         <div className="font-bold text-xl tracking-tight mb-4">
-                            RICH&BUILD
+                            リッチ＆ビルド
                         </div>
-                        <p className="text-[#888] text-sm leading-relaxed mb-4">
-                            株式会社リッチ＆ビルド
-                        </p>
-                        <div className="space-y-4 text-white">
-                            <p>株式会社リッチ＆ビルド</p>
-                            <p>代表取締役：荒井 武志</p>
-                            <p>資本金：2,000万円</p>
-                            <p>TEL：090-7797-6699</p>
-                            <p>MAIL：takeshi.arai625@gmail.com</p>
+                        <div className="space-y-2 text-white text-sm mt-4">
+                            <p className="text-white">株式会社リッチ＆ビルド</p>
+                            <p className="text-white">代表取締役：荒井 武志</p>
+                            <p className="text-white">資本金：2,000万円</p>
+                            <p className="text-white">TEL：090-7797-6699</p>
+                            <p className="text-white">MAIL：takeshi.arai625@gmail.com</p>
                         </div>
                     </div>
 
@@ -57,7 +54,7 @@ export const Footer = () => {
             <div className="border-t border-[#333]">
                 <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-xs text-[#666]">
-                        &copy; {new Date().getFullYear()} Rich&Build Inc. All Rights Reserved.
+                        &copy; {new Date().getFullYear()} 株式会社リッチ＆ビルド All Rights Reserved.
                     </p>
                     <button
                         onClick={scrollToTop}

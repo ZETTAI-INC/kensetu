@@ -1,6 +1,5 @@
 import { SubpageHero } from '@/components/SubpageHero';
 import { SectionHeader } from '@/components/SectionHeader';
-import { Building2, Users, Target, Zap } from 'lucide-react';
 
 export default function CompanyPage() {
     return (
@@ -8,6 +7,7 @@ export default function CompanyPage() {
             <SubpageHero
                 titleEn="COMPANY"
                 titleJa="会社情報"
+                backgroundImage="/images/business-building.png"
             />
 
             {/* Mission Section */}
@@ -31,10 +31,13 @@ export default function CompanyPage() {
                             </div>
                         </div>
                         <div className="w-full md:w-1/2">
-                            <div className="aspect-square bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl relative overflow-hidden group">
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <Building2 className="w-32 h-32 text-emerald-200 group-hover:text-emerald-500 transition-colors duration-500" />
-                                </div>
+                            <div className="aspect-square rounded-2xl relative overflow-hidden group shadow-lg">
+                                <img
+                                    src="/images/concept-workers.png"
+                                    alt="Construction workers discussing"
+                                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                />
+                                <div className="absolute inset-0 bg-emerald-900/10 group-hover:bg-transparent transition-colors duration-500" />
                             </div>
                         </div>
                     </div>
@@ -56,10 +59,13 @@ export default function CompanyPage() {
                             </div>
                         </div>
                         <div className="w-full md:w-1/2">
-                            <div className="aspect-square bg-gradient-to-bl from-emerald-50 to-emerald-100 rounded-2xl relative overflow-hidden group">
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <Target className="w-32 h-32 text-emerald-200 group-hover:text-emerald-500 transition-colors duration-500" />
-                                </div>
+                            <div className="aspect-square rounded-2xl relative overflow-hidden group shadow-lg">
+                                <img
+                                    src="/images/hero-slide-3.png"
+                                    alt="Young construction professional"
+                                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                />
+                                <div className="absolute inset-0 bg-emerald-900/10 group-hover:bg-transparent transition-colors duration-500" />
                             </div>
                         </div>
                     </div>
@@ -72,20 +78,23 @@ export default function CompanyPage() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                             {[
-                                { num: '01', icon: Zap, title: '継続は力なり', text: '誰よりもやり続けることで道を切り拓く' },
-                                { num: '02', icon: Users, title: '仲間を大切に', text: '共に成長し、共に挑戦する' },
-                                { num: '03', icon: Target, title: '常に挑戦', text: '変化を恐れず、新しい価値を創造する' },
-                                { num: '04', icon: Building2, title: '信頼第一', text: '誠実さとプロ意識で期待に応える' }
+                                { num: '01', title: '継続は力なり', text: '誰よりもやり続けることで道を切り拓く' },
+                                { num: '02', title: '仲間を大切に', text: '共に成長し、共に挑戦する' },
+                                { num: '03', title: '常に挑戦', text: '変化を恐れず、新しい価値を創造する' },
+                                { num: '04', title: '信頼第一', text: '誠実さとプロ意識で期待に応える' }
                             ].map((item) => (
-                                <div key={item.num} className="bg-white border border-emerald-100 p-10 rounded-xl hover:shadow-xl transition-all duration-300 group">
-                                    <div className="flex items-start justify-between mb-6">
-                                        <span className="text-5xl font-bold text-emerald-50 group-hover:text-emerald-100 transition-colors">{item.num}</span>
-                                        <div className="w-12 h-12 bg-emerald-50 rounded-full flex items-center justify-center group-hover:bg-emerald-500 transition-colors duration-300">
-                                            <item.icon className="w-6 h-6 text-emerald-300 group-hover:text-white transition-colors" />
-                                        </div>
+                                <div key={item.num} className="bg-white border border-emerald-100 p-10 rounded-xl hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                                    <div className="absolute -right-4 -top-4 text-9xl font-bold text-emerald-50 group-hover:text-emerald-100/50 transition-colors select-none pointer-events-none">
+                                        {item.num}
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#064E3B] mb-3">{item.title}</h3>
-                                    <p className="text-emerald-800/70 leading-relaxed">{item.text}</p>
+                                    <div className="relative z-10">
+                                        <div className="flex items-center gap-4 mb-4">
+                                            <span className="text-emerald-500 font-bold tracking-widest text-sm">VALUE {item.num}</span>
+                                            <div className="h-px flex-1 bg-emerald-100 group-hover:bg-emerald-200 transition-colors" />
+                                        </div>
+                                        <h3 className="text-2xl font-bold text-[#064E3B] mb-4">{item.title}</h3>
+                                        <p className="text-emerald-800/70 leading-relaxed">{item.text}</p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -106,7 +115,7 @@ export default function CompanyPage() {
                         <div className="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-emerald-100">
                             <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
                                 <div className="w-full md:w-1/3">
-                                    <div className="aspect-[3/4] bg-emerald-100 rounded-xl overflow-hidden relative">
+                                    <div className="aspect-[3/4] bg-emerald-100 rounded-xl overflow-hidden relative shadow-inner">
                                         <img
                                             src="/images/ceo_portrait.png"
                                             alt="CEO Portrait"
@@ -140,9 +149,12 @@ export default function CompanyPage() {
                         <div className="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-emerald-100">
                             <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
                                 <div className="w-full md:w-1/3">
-                                    <div className="aspect-[3/4] bg-emerald-100 rounded-xl overflow-hidden relative">
-                                        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-transparent to-black/10">
-                                            <Users className="w-20 h-20 text-white/50" />
+                                    <div className="aspect-[3/4] bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl overflow-hidden relative shadow-inner flex items-center justify-center group">
+                                        <div className="text-center">
+                                            <div className="w-24 h-24 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform duration-500">
+                                                <span className="text-3xl font-bold text-emerald-200">YU</span>
+                                            </div>
+                                            <p className="text-emerald-300 font-bold tracking-widest text-sm">DIRECTOR</p>
                                         </div>
                                     </div>
                                 </div>
@@ -160,9 +172,16 @@ export default function CompanyPage() {
                                         <p>
                                             20歳の時に恩師と出会い、営業の世界へ。2年間休み0日で働き抜き、営業成績トップを獲得。貯めたお金で23歳で起業。
                                         </p>
-                                        <p>
-                                            現在は、うやまリゾート株式会社、グリーンサウナ株式会社、株式会社タビルモ、株式会社リモアなど複数の会社を経営する実業家として活躍中。
-                                        </p>
+                                        <div className="bg-emerald-50 p-4 rounded-lg">
+                                            <p className="font-bold text-[#064E3B] mb-2">現在の役職</p>
+                                            <ul className="text-sm space-y-1">
+                                                <li>うやまリゾート株式会社　代表取締役</li>
+                                                <li>グリーンサウナ株式会社　代表取締役</li>
+                                                <li>株式会社タビルモ　代表取締役</li>
+                                                <li>株式会社リモア　取締役</li>
+                                                <li>株式会社リッチ＆ビルド　取締役</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
