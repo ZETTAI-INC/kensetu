@@ -23,7 +23,7 @@ export const HeroSection = () => {
     return (
         <section className="relative h-screen w-full overflow-hidden">
             {/* Background Image Slider */}
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 z-0">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={currentImageIndex}
@@ -40,33 +40,39 @@ export const HeroSection = () => {
                         />
                     </motion.div>
                 </AnimatePresence>
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/30" />
             </div>
 
-            {/* Center Content */}
-            <div className="absolute inset-0 flex items-center justify-center z-10">
-                <div className="text-center text-white px-6">
+            {/* Diagonal White Overlay */}
+            <div
+                className="absolute inset-0 z-10 bg-white/90 md:bg-white/85 backdrop-blur-[2px] [clip-path:polygon(0_0,100%_0,100%_100%,0%_100%)] md:[clip-path:polygon(0_0,55%_0,40%_100%,0%_100%)]"
+            />
+
+            {/* Content */}
+            <div className="absolute inset-0 z-20 flex items-center">
+                <div className="container mx-auto px-6 md:px-12">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
+                        className="max-w-xl"
                     >
-                        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
+                        <p className="text-sm md:text-base font-bold tracking-widest text-gray-500 mb-4">
                             RICH&BUILD
-                        </h1>
-                        <p className="text-lg md:text-xl font-medium tracking-wide mb-2">
-                            日本の施工管理業界を新しく創る
                         </p>
+                        <h1 className="text-4xl md:text-7xl lg:text-8xl font-black tracking-tight text-black leading-[1.1]">
+                            <span className="block">日本の</span>
+                            <span className="block">施工管理業界を</span>
+                            <span className="block">新しく創る</span>
+                        </h1>
                     </motion.div>
                 </div>
             </div>
 
-            {/* Scroll Indicator */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
-                <span className="text-white/80 text-xs tracking-[0.3em]">Scroll</span>
+            {/* Scroll Indicator - Bottom Right Vertical */}
+            <div className="absolute bottom-12 right-8 z-20 hidden md:flex flex-col items-center gap-4">
+                <span className="text-black/80 text-xs tracking-[0.3em] rotate-90 origin-center translate-y-4">SCROLL</span>
                 <motion.div
-                    className="w-px h-12 bg-white/50"
+                    className="w-px h-24 bg-black/30 mt-8"
                     initial={{ scaleY: 0 }}
                     animate={{ scaleY: 1 }}
                     transition={{ duration: 1, delay: 1 }}
@@ -74,15 +80,20 @@ export const HeroSection = () => {
                 />
             </div>
 
-            {/* Slide Indicators */}
-            <div className="absolute bottom-8 right-8 z-20 flex gap-2">
+            {/* Slide Indicators - Bottom Center? Or keep them? 
+               The reference image doesn't clearly show them, but let's keep them unobtrusive.
+               Maybe move to bottom center or left?
+               Let's keep them bottom center for now, but style for light background if they fall there?
+               Actually, with the diagonal split, bottom center might be on the image or the white part depending on width.
+               Let's put them bottom center.
+            */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
                 {heroImages.map((_, index) => (
                     <button
                         key={index}
                         onClick={() => setCurrentImageIndex(index)}
-                        className={`w-2 h-2 rounded-full transition-all ${
-                            index === currentImageIndex ? 'bg-white w-6' : 'bg-white/50'
-                        }`}
+                        className={`w-2 h-2 rounded-full transition-all ${index === currentImageIndex ? 'bg-black w-6' : 'bg-black/30'
+                            }`}
                         aria-label={`スライド ${index + 1}`}
                     />
                 ))}

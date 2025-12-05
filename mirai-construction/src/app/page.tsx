@@ -1,109 +1,13 @@
-'use client';
-
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { LogoGrid } from '@/components/LogoGrid';
 import { NewsList } from '@/components/NewsList';
-
-const heroImages = [
-  '/images/hero-slide-1.png',
-  '/images/hero-slide-2.png',
-  '/images/hero-slide-3.png',
-];
+import { HeroSection } from '@/components/HeroSection';
 
 export default function Home() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <>
-      {/* Hero Section - nextcons.jp style */}
-      <section className="relative h-screen w-full overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentImageIndex}
-              className="absolute inset-0"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.5 }}
-            >
-              <img
-                src={heroImages[currentImageIndex]}
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
-          </AnimatePresence>
-        </div>
-
-        {/* Main Copy - Left half of screen */}
-        <div className="absolute inset-0 flex items-center z-10">
-          <div className="w-full md:w-2/3 h-full flex items-center pl-8 md:pl-16 lg:pl-20">
-            <h1 className="text-[12vw] md:text-[9vw] lg:text-[8vw] font-black leading-[1.1] tracking-tight text-black">
-              <motion.span
-                className="block overflow-hidden"
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-              >
-                日本の
-              </motion.span>
-              <motion.span
-                className="block overflow-hidden"
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
-              >
-                施工管理業界を
-              </motion.span>
-              <motion.span
-                className="block overflow-hidden"
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.7, duration: 0.8, ease: "easeOut" }}
-              >
-                新しく創る
-              </motion.span>
-            </h1>
-          </div>
-        </div>
-
-        {/* Scroll Indicator - Right side */}
-        <div className="absolute bottom-8 right-8 z-20 flex flex-col items-center gap-2">
-          <motion.div
-            className="w-px h-16 bg-black/50"
-            initial={{ scaleY: 0 }}
-            animate={{ scaleY: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-            style={{ transformOrigin: 'top' }}
-          />
-          <span className="text-black/70 text-xs tracking-[0.2em] [writing-mode:vertical-rl]">SCROLL</span>
-        </div>
-
-        {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-          {heroImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentImageIndex(index)}
-              className={`h-1 rounded-full transition-all ${
-                index === currentImageIndex ? 'bg-black w-8' : 'bg-black/30 w-4'
-              }`}
-              aria-label={`スライド ${index + 1}`}
-            />
-          ))}
-        </div>
-      </section>
+      {/* Hero Section */}
+      <HeroSection />
 
       {/* Concept Section - Split layout */}
       <section className="py-24 md:py-32 bg-white">

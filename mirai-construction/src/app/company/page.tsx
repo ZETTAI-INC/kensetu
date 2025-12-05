@@ -1,5 +1,6 @@
 import { SubpageHero } from '@/components/SubpageHero';
 import { SectionHeader } from '@/components/SectionHeader';
+import { Mail, Phone } from 'lucide-react';
 
 export default function CompanyPage() {
     return (
@@ -213,7 +214,25 @@ export default function CompanyPage() {
                                     ].map((row, index) => (
                                         <tr key={index} className="hover:bg-emerald-50/50 transition-colors">
                                             <th className="px-8 py-6 text-left font-bold text-[#064E3B] w-1/3 bg-emerald-50/50">{row.label}</th>
-                                            <td className="px-8 py-6 text-emerald-800/70">{row.value}</td>
+                                            <td className="px-8 py-6 text-emerald-800/70">
+                                                {row.label === 'メールアドレス' ? (
+                                                    <div className="flex items-center gap-2">
+                                                        <Mail className="w-4 h-4 text-emerald-500" />
+                                                        <a href={`mailto:${row.value}`} className="hover:text-emerald-600 hover:underline transition-colors">
+                                                            {row.value}
+                                                        </a>
+                                                    </div>
+                                                ) : row.label === '電話番号' ? (
+                                                    <div className="flex items-center gap-2">
+                                                        <Phone className="w-4 h-4 text-emerald-500" />
+                                                        <a href={`tel:${row.value}`} className="hover:text-emerald-600 hover:underline transition-colors">
+                                                            {row.value}
+                                                        </a>
+                                                    </div>
+                                                ) : (
+                                                    row.value
+                                                )}
+                                            </td>
                                         </tr>
                                     ))}
                                 </tbody>
