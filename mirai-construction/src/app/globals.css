@@ -3,11 +3,11 @@
 @theme {
   --color-primary: #10B981;
   --color-primary-hover: #059669;
-  --color-secondary: #111111;
+  --color-secondary: #059669;
   --color-accent: #34D399;
-  --color-background: #ffffff;
+  --color-background: #F0FDF4;
   --color-surface: #FFFFFF;
-  --color-text-primary: #111111;
+  --color-text-primary: #064E3B;
   --color-text-secondary: #555555;
   --color-border: #e0e0e0;
   --color-muted: #f5f5f5;
@@ -31,7 +31,12 @@
     line-height: 1.8;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: 700;
     line-height: 1.4;
     letter-spacing: 0.02em;

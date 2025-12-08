@@ -19,7 +19,7 @@ export default function RecruitPage() {
                         未経験から、<br />
                         一生モノのスキルを。
                     </h2>
-                    <p className="text-emerald-800/70 leading-loose text-lg text-left md:text-center">
+                    <p className="text-[#064E3B]/70 leading-loose text-lg text-left md:text-center">
                         「自分には何もない」と思っていませんか？<br />
                         リッチ＆ビルドでは、学歴も経験も関係ありません。<br />
                         必要なのは、「変わりたい」「成長したい」という気持ちだけ。<br />
@@ -43,17 +43,17 @@ export default function RecruitPage() {
                                     />
                                 </div>
                                 <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm p-6 rounded-xl border border-white/50 shadow-lg max-w-xs">
-                                    <p className="text-emerald-500 font-bold tracking-widest text-xs mb-1">REPRESENTATIVE DIRECTOR</p>
+                                    <p className="text-[#10B981] font-bold tracking-widest text-xs mb-1">REPRESENTATIVE DIRECTOR</p>
                                     <p className="text-xl font-bold text-[#064E3B]">荒井 武志</p>
                                 </div>
                             </div>
                             <div className="w-full md:w-1/2 bg-white p-12 md:p-20 flex flex-col justify-center">
-                                <p className="text-emerald-500 font-bold tracking-widest text-sm mb-6">MESSAGE</p>
+                                <p className="text-[#10B981] font-bold tracking-widest text-sm mb-6">MESSAGE</p>
                                 <h3 className="text-3xl md:text-4xl font-bold mb-8 leading-tight text-[#064E3B]">
                                     「やり続ける力」が<br />
                                     未来を切り拓く
                                 </h3>
-                                <div className="space-y-6 text-emerald-800/70 leading-relaxed">
+                                <div className="space-y-6 text-[#064E3B]/70 leading-relaxed">
                                     <p>
                                         私は、特別な才能があったわけではありません。勉強ができたわけでも、器用だったわけでもない。<br />
                                         ただ一つ、「決めたことをやり続ける」ことだけは誰にも負けませんでした。
@@ -81,7 +81,7 @@ export default function RecruitPage() {
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <p className="text-emerald-500 font-bold tracking-widest text-sm mb-4">WHY リッチ＆ビルド</p>
+                        <p className="text-[#10B981] font-bold tracking-widest text-sm mb-4">WHY リッチ＆ビルド</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#064E3B]">リッチ＆ビルドが選ばれる理由</h2>
                     </div>
 
@@ -104,11 +104,11 @@ export default function RecruitPage() {
                             }
                         ].map((item, index) => (
                             <div key={index} className="bg-[#F0FDF4] p-10 rounded-2xl border border-emerald-100 hover:shadow-xl transition-all duration-300 group text-center">
-                                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-emerald-400 mx-auto mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 shadow-sm">
+                                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-emerald-400 mx-auto mb-6 group-hover:bg-[#10B981] group-hover:text-white transition-all duration-300 shadow-sm">
                                     <item.icon className="w-8 h-8" />
                                 </div>
                                 <h3 className="text-xl font-bold mb-4 text-[#064E3B]">{item.title}</h3>
-                                <p className="text-emerald-800/70 leading-relaxed text-sm">
+                                <p className="text-[#064E3B]/70 leading-relaxed text-sm">
                                     {item.desc}
                                 </p>
                             </div>
@@ -121,20 +121,20 @@ export default function RecruitPage() {
             <section className="py-24 bg-[#F0FDF4]">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <p className="text-emerald-500 font-bold tracking-widest text-sm mb-4">JOB TYPE</p>
+                        <p className="text-[#10B981] font-bold tracking-widest text-sm mb-4">JOB TYPE</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#064E3B]">募集職種</h2>
                     </div>
 
                     <div className="max-w-2xl mx-auto text-center">
                         <div className="bg-white p-12 rounded-2xl shadow-sm border border-emerald-100">
                             <h3 className="text-2xl font-bold text-[#064E3B] mb-4">施工管理スタッフ</h3>
-                            <p className="text-emerald-800/70 mb-8 leading-relaxed">
+                            <p className="text-[#064E3B]/70 mb-8 leading-relaxed">
                                 募集条件や給与などの詳細については、<br />
                                 お気軽にお問い合わせください。
                             </p>
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center gap-2 bg-emerald-500 text-white px-8 py-4 rounded-full font-bold hover:bg-emerald-600 transition-colors"
+                                className="inline-flex items-center gap-2 bg-[#10B981] text-white px-8 py-4 rounded-full font-bold hover:bg-[#059669] transition-colors"
                             >
                                 お問い合わせはこちら
                                 <ArrowRight className="w-5 h-5" />
@@ -148,7 +148,7 @@ export default function RecruitPage() {
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <p className="text-emerald-500 font-bold tracking-widest text-sm mb-4">REQUIREMENTS</p>
+                        <p className="text-[#10B981] font-bold tracking-widest text-sm mb-4">REQUIREMENTS</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#064E3B]">募集要項</h2>
                     </div>
 
@@ -164,7 +164,7 @@ export default function RecruitPage() {
                                 ].map((row, index) => (
                                     <tr key={index} className="hover:bg-emerald-50/50 transition-colors">
                                         <th className="px-8 py-6 text-left font-bold text-[#064E3B] w-1/3 bg-emerald-50/50 whitespace-pre-line align-top">{row.label}</th>
-                                        <td className="px-8 py-6 text-emerald-800/70 whitespace-pre-line">{row.value}</td>
+                                        <td className="px-8 py-6 text-[#064E3B]/70 whitespace-pre-line">{row.value}</td>
                                     </tr>
                                 ))}
                             </tbody>

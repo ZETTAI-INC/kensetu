@@ -18,13 +18,13 @@ export default function CompanyPage() {
                     <div className="flex flex-col md:flex-row items-center gap-16 mb-32">
                         <div className="w-full md:w-1/2">
                             <div className="relative">
-                                <p className="text-emerald-500 font-bold tracking-widest text-sm mb-4">MISSION</p>
-                                <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight text-[#064E3B]">
+                                <p className="text-[#10B981] font-black tracking-widest text-base mb-4">MISSION</p>
+                                <h2 className="text-5xl md:text-7xl font-black mb-8 leading-tight text-[#064E3B] tracking-tight">
                                     日本の<br />
                                     施工管理業界を<br />
                                     新しく創る
                                 </h2>
-                                <p className="text-emerald-800/70 leading-loose text-lg">
+                                <p className="text-[#064E3B]/80 leading-loose text-2xl font-bold">
                                     建設業界は日本のインフラを支える重要な産業です。<br />
                                     しかし、人材不足や高齢化など多くの課題を抱えています。<br />
                                     私たちは若い力と情熱で、この業界に新しい風を吹き込み、<br />
@@ -48,12 +48,12 @@ export default function CompanyPage() {
                     <div className="flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
                         <div className="w-full md:w-1/2">
                             <div className="relative">
-                                <p className="text-emerald-500 font-bold tracking-widest text-sm mb-4">VISION</p>
-                                <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight text-[#064E3B]">
+                                <p className="text-[#10B981] font-black tracking-widest text-base mb-4">VISION</p>
+                                <h2 className="text-5xl md:text-7xl font-black mb-8 leading-tight text-[#064E3B] tracking-tight">
                                     若者が輝く<br />
                                     建設業界の実現
                                 </h2>
-                                <p className="text-emerald-800/70 leading-loose text-lg">
+                                <p className="text-[#064E3B] leading-loose text-2xl font-bold">
                                     施工管理の仕事を通じて、若い人材が成長し、活躍できる場を創出します。<br />
                                     経験やスキルがなくても、「やり続ける力」があれば必ず成功できる。<br />
                                     そんな環境を整え、建設業界の新しいスタンダードを創ります。
@@ -75,8 +75,8 @@ export default function CompanyPage() {
                     {/* Value */}
                     <div className="mb-16">
                         <div className="text-center mb-16">
-                            <p className="text-emerald-500 font-bold tracking-widest text-sm mb-4">VALUE</p>
-                            <h2 className="text-3xl font-bold text-[#064E3B]">行動指針</h2>
+                            <p className="text-[#10B981] font-black tracking-widest text-base mb-4">VALUE</p>
+                            <h2 className="text-4xl md:text-5xl font-black text-[#064E3B]">行動指針</h2>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                             {[
@@ -86,16 +86,16 @@ export default function CompanyPage() {
                                 { num: '04', title: '信頼第一', text: '誠実さとプロ意識で期待に応える' }
                             ].map((item) => (
                                 <div key={item.num} className="bg-white border border-emerald-100 p-10 rounded-xl hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
-                                    <div className="absolute -right-4 -top-4 text-9xl font-bold text-emerald-50 group-hover:text-emerald-100/50 transition-colors select-none pointer-events-none">
+                                    <div className="absolute -right-4 -top-4 text-9xl font-black text-emerald-50 group-hover:text-emerald-100/50 transition-colors select-none pointer-events-none">
                                         {item.num}
                                     </div>
                                     <div className="relative z-10">
                                         <div className="flex items-center gap-4 mb-4">
-                                            <span className="text-emerald-500 font-bold tracking-widest text-sm">VALUE {item.num}</span>
+                                            <span className="text-[#10B981] font-black tracking-widest text-base">VALUE {item.num}</span>
                                             <div className="h-px flex-1 bg-emerald-100 group-hover:bg-emerald-200 transition-colors" />
                                         </div>
-                                        <h3 className="text-2xl font-bold text-[#064E3B] mb-4">{item.title}</h3>
-                                        <p className="text-emerald-800/70 leading-relaxed">{item.text}</p>
+                                        <h3 className="text-3xl font-black text-[#064E3B] mb-4">{item.title}</h3>
+                                        <p className="text-[#064E3B]/80 font-medium text-lg leading-relaxed">{item.text}</p>
                                     </div>
                                 </div>
                             ))}
@@ -108,8 +108,8 @@ export default function CompanyPage() {
             <section className="py-24 bg-[#F0FDF4]">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <p className="text-emerald-500 font-bold tracking-widest text-sm mb-4">MEMBER</p>
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#064E3B]">経営陣</h2>
+                        <p className="text-[#10B981] font-black tracking-widest text-base mb-4">MEMBER</p>
+                        <h2 className="text-4xl md:text-5xl font-black text-[#064E3B]">経営陣</h2>
                     </div>
 
                     <div className="max-w-5xl mx-auto space-y-16">
@@ -127,19 +127,19 @@ export default function CompanyPage() {
                                 </div>
                                 <div className="w-full md:w-2/3">
                                     <div className="mb-6">
-                                        <p className="text-emerald-500 font-bold tracking-widest text-sm mb-2">CEO / 代表取締役</p>
-                                        <h3 className="text-3xl font-bold text-[#064E3B] mb-1">荒井 武志</h3>
-                                        <p className="text-emerald-600/60 text-sm">Takeshi Arai</p>
+                                        <p className="text-[#10B981] font-black tracking-widest text-base mb-2">CEO / 代表取締役</p>
+                                        <h3 className="text-4xl font-black text-[#064E3B] mb-1">荒井 武志</h3>
+                                        <p className="text-emerald-600/80 font-bold text-base">Takeshi Arai</p>
                                     </div>
 
-                                    <div className="space-y-6 text-emerald-800/70 leading-relaxed">
+                                    <div className="space-y-6 text-[#064E3B]/80 leading-relaxed text-lg font-medium">
                                         <p>
                                             山形県出身。高校卒業後、「行くところがなかった」という理由でアメリカへ渡り、4年間の"筋肉留学"を経験。帰国後、その身体を活かして建築現場でアルバイトを始めるも、腰を痛めて挫折。
                                         </p>
                                         <p>
                                             その後、職を転々としながら営業職に出会い、スキルや経験がなくても「誰よりもやり続ける」ことで営業成績トップを達成。筋トレで培った継続力が仕事でも通用することに気づく。
                                         </p>
-                                        <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-[#064E3B] bg-emerald-50 py-4 pr-4 rounded-r-lg">
+                                        <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-[#064E3B] bg-emerald-50 py-4 pr-4 rounded-r-lg font-bold text-xl">
                                             「仲間と一緒に全部デカくしていく会社を目指して、日々筋トレ中。」
                                         </blockquote>
                                     </div>
@@ -162,12 +162,12 @@ export default function CompanyPage() {
                                 </div>
                                 <div className="w-full md:w-2/3">
                                     <div className="mb-6">
-                                        <p className="text-emerald-500 font-bold tracking-widest text-sm mb-2">DIRECTOR / 取締役</p>
+                                        <p className="text-[#10B981] font-bold tracking-widest text-sm mb-2">DIRECTOR / 取締役</p>
                                         <h3 className="text-3xl font-bold text-[#064E3B] mb-1">鵜山 康宏</h3>
                                         <p className="text-emerald-600/60 text-sm">Yasuhiro Uyama</p>
                                     </div>
 
-                                    <div className="space-y-6 text-emerald-800/70 leading-relaxed">
+                                    <div className="space-y-6 text-[#064E3B]/70 leading-relaxed">
                                         <p>
                                             千葉県館山市出身。代々職人の家系に生まれ、中学を出たら大工になるつもりが、まさかの高校進学。偏差値44の高校を卒業後、就職も決まらずフリーターに。
                                         </p>
@@ -196,7 +196,7 @@ export default function CompanyPage() {
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <p className="text-emerald-500 font-bold tracking-widest text-sm mb-4">OVERVIEW</p>
+                        <p className="text-[#10B981] font-bold tracking-widest text-sm mb-4">OVERVIEW</p>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#064E3B]">会社概要</h2>
                     </div>
 
@@ -215,17 +215,17 @@ export default function CompanyPage() {
                                     ].map((row, index) => (
                                         <tr key={index} className="hover:bg-emerald-50/50 transition-colors">
                                             <th className="px-8 py-6 text-left font-bold text-[#064E3B] w-1/3 bg-emerald-50/50">{row.label}</th>
-                                            <td className="px-8 py-6 text-emerald-800/70">
+                                            <td className="px-8 py-6 text-[#064E3B]/70">
                                                 {row.label === 'メールアドレス' ? (
                                                     <div className="flex items-center gap-2">
-                                                        <Mail className="w-4 h-4 text-emerald-500" />
+                                                        <Mail className="w-4 h-4 text-[#10B981]" />
                                                         <a href={`mailto:${row.value}`} className="hover:text-emerald-600 hover:underline transition-colors">
                                                             {row.value}
                                                         </a>
                                                     </div>
                                                 ) : row.label === '電話番号' ? (
                                                     <div className="flex items-center gap-2">
-                                                        <Phone className="w-4 h-4 text-emerald-500" />
+                                                        <Phone className="w-4 h-4 text-[#10B981]" />
                                                         <a href={`tel:${row.value}`} className="hover:text-emerald-600 hover:underline transition-colors">
                                                             {row.value}
                                                         </a>

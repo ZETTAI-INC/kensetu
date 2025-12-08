@@ -30,22 +30,20 @@ export const NewsList = ({ items }: NewsListProps) => {
     const newsItems = items || defaultNewsItems;
 
     return (
-        <div className="divide-y divide-gray-200">
+        <div className="divide-y divide-black/10 border-t border-b border-black/10">
             {newsItems.map((item) => (
-                <Link
-                    key={item.id}
-                    href={`/news/${item.id}`}
-                    className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 py-6 group"
-                >
-                    <time className="text-sm text-[#888] w-24 flex-shrink-0">
-                        {item.date}
-                    </time>
-                    <span className="text-xs bg-[#111] text-white px-3 py-1 rounded w-fit">
-                        {item.category}
-                    </span>
-                    <h3 className="text-[#333] group-hover:text-[#10B981] transition-colors flex-1">
-                        {item.title}
-                    </h3>
+                <Link key={item.id} href={`/news/${item.id}`} className="group block">
+                    <div className="flex flex-col md:flex-row md:items-center gap-4 py-8 border-b border-gray-100 hover:bg-gray-50 transition-colors px-4 -mx-4 rounded-xl">
+                        <div className="flex items-center gap-4 shrink-0">
+                            <span className="text-gray-500 font-bold text-base font-mono">{item.date}</span>
+                            <span className="px-3 py-1 bg-[#F0FDF4] text-[#10B981] text-sm font-bold rounded border border-[#10B981]/20">
+                                {item.category}
+                            </span>
+                        </div>
+                        <h3 className="text-lg font-bold text-[#064E3B] group-hover:text-[#10B981] transition-colors line-clamp-1">
+                            {item.title}
+                        </h3>
+                    </div>
                 </Link>
             ))}
         </div>

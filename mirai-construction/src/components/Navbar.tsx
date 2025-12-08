@@ -10,12 +10,12 @@ export const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const navItems = [
-        { name: 'Company', href: '/company' },
-        { name: 'Service', href: '/service' },
-        { name: 'Client', href: '/client' },
-        { name: 'News', href: '/news' },
-        { name: 'Contact', href: '/contact' },
-        { name: 'Recruit', href: '/recruit' },
+        { name: '会社案内', href: '/company' },
+        { name: '事業内容', href: '/service' },
+        { name: '企業の皆様へ', href: '/client' },
+        { name: 'お知らせ', href: '/news' },
+        { name: '採用情報', href: '/recruit' },
+        { name: 'お問い合わせ', href: '/contact' },
     ];
 
     useEffect(() => {
@@ -32,8 +32,8 @@ export const Navbar = () => {
                 className={cn(
                     'fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white',
                     isScrolled || isMobileMenuOpen
-                        ? 'shadow-sm py-4'
-                        : 'py-5'
+                        ? 'shadow-sm py-8'
+                        : 'py-10'
                 )}
             >
                 <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -44,17 +44,17 @@ export const Navbar = () => {
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
                         <div className="font-bold">
-                            <span className="text-xl tracking-tight text-[#111]">リッチ＆ビルド</span>
+                            <span className="text-3xl tracking-tight text-[#111]">リッチ＆ビルド</span>
                         </div>
                     </Link>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden md:flex items-center gap-10">
+                    <nav className="hidden md:flex items-center gap-12">
                         {navItems.map((item) => (
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="text-sm font-medium text-[#333] hover:text-[#10B981] transition-colors"
+                                className="text-lg font-bold text-[#333] hover:text-[#10B981] transition-colors"
                             >
                                 {item.name}
                             </Link>

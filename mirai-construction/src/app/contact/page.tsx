@@ -49,7 +49,7 @@ export default function ContactPage() {
 
 
                     <motion.div variants={itemVariants} className="text-center mb-16">
-                        <p className="text-lg text-emerald-800/80 leading-loose font-medium">
+                        <p className="text-xl text-[#064E3B] leading-loose font-medium">
                             人材に関するご相談、お見積もり、採用に関するお問い合わせは<br className="hidden md:block" />
                             以下のフォームよりお気軽にご連絡ください。<br />
                             担当者より3営業日以内にご連絡させていただきます。
@@ -61,10 +61,10 @@ export default function ContactPage() {
                             {/* Name */}
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start border-b border-emerald-50 pb-10">
                                 <label htmlFor="name" className="md:col-span-1 text-lg font-bold text-[#064E3B] pt-3">
-                                    お名前 <span className="text-emerald-500 ml-1">*</span>
+                                    お名前 <span className="text-[#10B981] ml-1">*</span>
                                 </label>
                                 <div className="md:col-span-2">
-                                    <input type="text" id="name" className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-emerald-500 outline-none transition-all placeholder:text-emerald-800/30" placeholder="山田 太郎" />
+                                    <input type="text" id="name" className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-[#10B981] outline-none transition-all placeholder:text-[#064E3B]/30" placeholder="山田 太郎" />
                                 </div>
                             </div>
 
@@ -74,44 +74,44 @@ export default function ContactPage() {
                                     貴社名
                                 </label>
                                 <div className="md:col-span-2">
-                                    <input type="text" id="company" className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-emerald-500 outline-none transition-all placeholder:text-emerald-800/30" placeholder="株式会社サンプル" />
+                                    <input type="text" id="company" className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-[#10B981] outline-none transition-all placeholder:text-[#064E3B]/30" placeholder="株式会社サンプル" />
                                 </div>
                             </div>
 
                             {/* Email */}
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start border-b border-emerald-50 pb-10">
                                 <label htmlFor="email" className="md:col-span-1 text-lg font-bold text-[#064E3B] pt-3">
-                                    メールアドレス <span className="text-emerald-500 ml-1">*</span>
+                                    メールアドレス <span className="text-[#10B981] ml-1">*</span>
                                 </label>
                                 <div className="md:col-span-2">
-                                    <input type="email" id="email" className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-emerald-500 outline-none transition-all placeholder:text-emerald-800/30" placeholder="example@email.com" />
+                                    <input type="email" id="email" className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-[#10B981] outline-none transition-all placeholder:text-[#064E3B]/30" placeholder="example@email.com" />
                                 </div>
                             </div>
 
                             {/* Phone */}
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start border-b border-emerald-50 pb-10">
                                 <label htmlFor="phone" className="md:col-span-1 text-lg font-bold text-[#064E3B] pt-3">
-                                    電話番号 <span className="text-emerald-500 ml-1">*</span>
+                                    電話番号 <span className="text-[#10B981] ml-1">*</span>
                                 </label>
                                 <div className="md:col-span-2">
-                                    <input type="tel" id="phone" className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-emerald-500 outline-none transition-all placeholder:text-emerald-800/30" placeholder="090-1234-5678" />
+                                    <input type="tel" id="phone" className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-[#10B981] outline-none transition-all placeholder:text-[#064E3B]/30" placeholder="090-1234-5678" />
                                 </div>
                             </div>
 
                             {/* Category */}
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start border-b border-emerald-50 pb-10">
                                 <label htmlFor="category" className="md:col-span-1 text-lg font-bold text-[#064E3B] pt-3">
-                                    お問い合わせ種別 <span className="text-emerald-500 ml-1">*</span>
+                                    お問い合わせ種別 <span className="text-[#10B981] ml-1">*</span>
                                 </label>
                                 <div className="md:col-span-2">
                                     <div className="relative">
-                                        <select id="category" className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-emerald-500 outline-none transition-all appearance-none text-[#064E3B]">
+                                        <select id="category" className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-[#10B981] outline-none transition-all appearance-none text-[#064E3B]">
                                             <option>人材派遣のご相談</option>
                                             <option>採用について</option>
                                             <option>お見積もり依頼</option>
                                             <option>その他</option>
                                         </select>
-                                        <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-emerald-500">
+                                        <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-[#10B981]">
                                             ▼
                                         </div>
                                     </div>
@@ -121,10 +121,10 @@ export default function ContactPage() {
                             {/* Message */}
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start border-b border-emerald-50 pb-10">
                                 <label htmlFor="message" className="md:col-span-1 text-lg font-bold text-[#064E3B] pt-3">
-                                    お問い合わせ内容 <span className="text-emerald-500 ml-1">*</span>
+                                    お問い合わせ内容 <span className="text-[#10B981] ml-1">*</span>
                                 </label>
                                 <div className="md:col-span-2">
-                                    <textarea id="message" rows={8} className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-emerald-500 outline-none transition-all resize-none placeholder:text-emerald-800/30" placeholder="お問い合わせ内容をご記入ください"></textarea>
+                                    <textarea id="message" rows={8} className="w-full px-6 py-4 text-lg rounded-xl bg-[#F0FDF4] border border-emerald-100 focus:ring-4 focus:ring-emerald-100 focus:border-[#10B981] outline-none transition-all resize-none placeholder:text-[#064E3B]/30" placeholder="お問い合わせ内容をご記入ください"></textarea>
                                 </div>
                             </div>
 
@@ -138,13 +138,13 @@ export default function ContactPage() {
                                             checked={agreed}
                                             onChange={(e) => setAgreed(e.target.checked)}
                                         />
-                                        <div className="w-6 h-6 border-2 border-emerald-300 rounded bg-white peer-checked:bg-emerald-500 peer-checked:border-emerald-500 transition-all"></div>
+                                        <div className="w-6 h-6 border-2 border-emerald-300 rounded bg-white peer-checked:bg-[#10B981] peer-checked:border-[#064E3B] transition-all"></div>
                                         <svg className="absolute w-4 h-4 text-white left-1 top-1 opacity-0 peer-checked:opacity-100 transition-opacity pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                                         </svg>
                                     </div>
-                                    <span className="text-base text-emerald-800/70 group-hover:text-[#064E3B] transition-colors">
-                                        <a href="/privacy" className="text-emerald-600 font-bold hover:underline underline-offset-4" target="_blank">個人情報保護方針</a>に同意する
+                                    <span className="text-base text-[#064E3B]/70 group-hover:text-[#064E3B] transition-colors">
+                                        <a href="/privacy" className="text-[#059669] font-bold hover:underline underline-offset-4" target="_blank">個人情報保護方針</a>に同意する
                                     </span>
                                 </label>
                             </div>
@@ -158,7 +158,7 @@ export default function ContactPage() {
                                     <Button
                                         type="submit"
                                         className={cn(
-                                            "bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-16 py-8 rounded-full text-xl font-bold tracking-widest min-w-[300px] shadow-xl hover:shadow-2xl transition-all",
+                                            "bg-gradient-to-r from-[#10B981] to-[#059669] hover:from-emerald-600 hover:to-teal-700 text-white px-16 py-8 rounded-full text-xl font-bold tracking-widest min-w-[300px] shadow-xl hover:shadow-2xl transition-all",
                                             !agreed && "opacity-50 cursor-not-allowed hover:shadow-none grayscale"
                                         )}
                                         disabled={!agreed}
@@ -170,35 +170,7 @@ export default function ContactPage() {
                         </div>
                     </motion.form>
 
-                    {/* Contact Info */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
-                        <motion.div variants={itemVariants} className="bg-[#F0FDF4] p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-emerald-100">
-                            <div className="flex flex-col items-center text-center gap-4">
-                                <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg shadow-emerald-200">
-                                    <Mail className="w-8 h-8 text-white" />
-                                </div>
-                                <div>
-                                    <p className="text-lg text-emerald-600 font-bold mb-2">メール</p>
-                                    <a href="mailto:takeshi.arai625@gmail.com" className="text-xl sm:text-2xl md:text-3xl font-bold text-[#064E3B] hover:text-emerald-500 transition-colors break-words">
-                                        takeshi.arai625@gmail.com
-                                    </a>
-                                </div>
-                            </div>
-                        </motion.div>
-                        <motion.div variants={itemVariants} className="bg-[#F0FDF4] p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-emerald-100">
-                            <div className="flex flex-col items-center text-center gap-4">
-                                <div className="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg shadow-emerald-200">
-                                    <Phone className="w-8 h-8 text-white" />
-                                </div>
-                                <div>
-                                    <p className="text-lg text-emerald-600 font-bold mb-2">電話</p>
-                                    <a href="tel:090-7797-6699" className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#064E3B] hover:text-emerald-500 transition-colors tracking-wider">
-                                        090-7797-6699
-                                    </a>
-                                </div>
-                            </div>
-                        </motion.div>
-                    </div>
+                    {/* Contact Info Removed */}
                 </motion.div>
             </div>
         </main>
