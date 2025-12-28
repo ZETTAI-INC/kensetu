@@ -12,7 +12,6 @@ export const Navbar = () => {
     const navItems = [
         { name: '会社案内', href: '/company' },
         { name: '事業内容', href: '/service' },
-        { name: '企業の皆様へ', href: '/client' },
         { name: 'お知らせ', href: '/news' },
         { name: '採用情報', href: '/recruit' },
         { name: 'お問い合わせ', href: '/contact' },
@@ -37,7 +36,7 @@ export const Navbar = () => {
                 )}
             >
                 <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-                    {/* Logo */}{/* TODO: Replace with real text or SVG logo logic later if needed */}
+                    {/* Logo */}
                     <Link
                         href="/"
                         className="z-50 relative group"
@@ -137,7 +136,7 @@ export const Navbar = () => {
                             className="mt-8"
                         >
                             <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                                <span className="inline-block bg-[var(--color-primary)] text-white font-bold py-4 px-12 rounded-none hover:bg-[var(--color-primary-hover)] transition-all shadow-lg tracking-widest text-sm">
+                                <span className="inline-block bg-[var(--color-primary)] text-white font-bold py-4 px-12 rounded-full hover:bg-[var(--color-primary-hover)] transition-all shadow-lg tracking-widest text-sm">
                                     CONTACT US
                                 </span>
                             </Link>
@@ -148,4 +147,3 @@ export const Navbar = () => {
         </>
     );
 };
-

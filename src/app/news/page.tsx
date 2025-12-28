@@ -4,6 +4,7 @@ import { SubpageHero } from '@/components/SubpageHero';
 import { NewsList } from '@/components/NewsList';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
+import { HorizontalScroll } from '@/components/ui/HorizontalScroll';
 
 // Mock Data
 const ALL_NEWS = [
@@ -12,7 +13,7 @@ const ALL_NEWS = [
     { id: '3', date: '2025.01.05', category: 'お知らせ', title: '新年のご挨拶' },
 ];
 
-const CATEGORIES = ['ALL', 'お知らせ', '採用', 'プレスリリース'];
+const CATEGORIES = ['ALL', 'お知らせ', '採用', 'プレスリリース', 'メディア掲載', 'IR情報']; // Added more to test scroll
 
 export default function NewsPage() {
     const [activeCategory, setActiveCategory] = useState('ALL');
@@ -22,31 +23,33 @@ export default function NewsPage() {
         : ALL_NEWS.filter(item => item.category === activeCategory);
 
     return (
-        <main>
+        <main className="overflow-x-hidden">
             <SubpageHero
                 titleEn="NEWS"
                 titleJa="お知らせ"
                 backgroundImage="/images/news-keyboard.png"
             />
 
-            <div className="container mx-auto px-6 py-24">
+            <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">
                 <div className="max-w-4xl mx-auto">
                     {/* Category Filter */}
-                    <div className="flex flex-wrap gap-4 mb-16 justify-center">
-                        {CATEGORIES.map((cat) => (
-                            <button
-                                key={cat}
-                                onClick={() => setActiveCategory(cat)}
-                                className={cn(
-                                    "px-6 py-3 rounded-full text-base font-bold tracking-wider transition-all duration-300 border",
-                                    activeCategory === cat
-                                        ? "bg-[#10B981] text-white border-[#10B981]"
-                                        : "bg-white text-[#059669] border-[#10B981] hover:border-[#10B981]"
-                                )}
-                            >
-                                {cat}
-                            </button>
-                        ))}
+                    <div className="mb-10 md:mb-16">
+                        <HorizontalScroll className="md:flex md:flex-wrap md:justify-center md:gap-4 md:overflow-visible pb-4 md:pb-0">
+                            {CATEGORIES.map((cat) => (
+                                <button
+                                    key={cat}
+                                    onClick={() => setActiveCategory(cat)}
+                                    className={cn(
+                                        "px-6 py-3 rounded-full text-base font-black tracking-wider transition-all duration-300 border whitespace-nowrap snap-start",
+                                        activeCategory === cat
+                                            ? "bg-[#10B981] text-white border-[#10B981]"
+                                            : "bg-white text-[#059669] border-[#10B981] hover:border-[#10B981]"
+                                    )}
+                                >
+                                    {cat}
+                                </button>
+                            ))}
+                        </HorizontalScroll>
                     </div>
 
                     {/* News List */}

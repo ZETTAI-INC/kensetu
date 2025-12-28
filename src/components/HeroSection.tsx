@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export const HeroSection = () => {
     return (
         <section className="relative h-dvh w-full overflow-hidden">
-            {/* Background Image - Static & Professional */}
+            {/* Background Image - Modern & Inclusive */}
             <div className="absolute inset-0 z-0">
                 <motion.div
                     className="absolute inset-0"
@@ -14,13 +14,13 @@ export const HeroSection = () => {
                     transition={{ duration: 1.5, ease: "easeOut" }}
                 >
                     <img
-                        src="/images/hero-construction-manager.png"
-                        alt="Construction Site Manager"
-                        className="w-full h-full object-cover object-[center_20%]"
+                        src="/images/hero-main.png"
+                        alt="Professional Team"
+                        className="w-full h-full object-cover object-center"
                     />
                 </motion.div>
-                {/* Cinematic Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent z-10" />
+                {/* Neutral Dark Overlay - More natural */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#1a2e35]/90 via-[#1a2e35]/60 to-transparent z-10" />
             </div>
 
             <div className="absolute inset-0 z-20 flex items-center">
@@ -32,16 +32,17 @@ export const HeroSection = () => {
                         className="max-w-3xl"
                     >
                         <h1 className="font-bold text-white tracking-widest leading-tight drop-shadow-xl mb-8">
-                            <span className="block text-2xl md:text-3xl mb-4 text-white/90 font-medium tracking-[0.2em] pl-1">
-                                日本の建設業界を、
+                            <span className="block text-xl md:text-2xl mb-4 text-white/90 font-medium tracking-[0.2em] pl-1">
+                                人と企業の成長を支援する
                             </span>
-                            <span className="block text-5xl md:text-7xl lg:text-8xl font-black tracking-wider">
-                                新しく創る。
+                            <span className="block text-4xl md:text-6xl lg:text-7xl font-black tracking-wider">
+                                あなたの可能性を、<br />
+                                最大化する。
                             </span>
                         </h1>
-                        <p className="text-white/80 text-base md:text-xl font-medium tracking-widest max-w-xl leading-relaxed border-l-4 border-[var(--color-primary)] pl-6">
-                            信頼と実績で築く、確かな未来。<br className="hidden md:block" />
-                            私たちは施工管理のプロフェッショナル集団です。
+                        <p className="text-white/80 text-base md:text-lg font-medium tracking-widest max-w-xl leading-relaxed border-l-4 border-white/50 pl-6">
+                            人材派遣・紹介・育成・SNSコンサル。<br className="hidden md:block" />
+                            4つの事業で、キャリアと企業の未来を創ります。
                         </p>
                     </motion.div>
                 </div>

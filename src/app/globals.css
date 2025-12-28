@@ -1,21 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  /* Premium Construction Palette */
-  --color-primary: #1B4332; /* Deep Forest Green */
-  --color-primary-hover: #0F3826; /* Darker Forest */
-  --color-secondary: #F5F5F0; /* Warm Stone / Greige */
-  --color-accent: #D4A373; /* Muted Gold/Earth tone */
-  
+  /* Modern HR Consulting Palette - Natural Green Brand */
+  --color-primary: #2E7D5E;
+  /* Forest Green - Natural, Sophisticated */
+  --color-primary-hover: #246B4E;
+  /* Darker Forest Green */
+  --color-secondary: #F7FAF8;
+  /* Very subtle green-tinted white */
+  --color-accent: #5BA88A;
+  /* Soft Sage - Natural accent */
+
   --color-background: #FFFFFF;
-  --color-surface: #F5F5F0;
-  
-  --color-text-primary: #1A1A1A; /* Charcoal, not pure black */
-  --color-text-secondary: #4A4A4A;
-  --color-text-muted: #888888;
-  
-  --color-border: #E5E5E0;
-  --color-muted: #F0F0F0;
+  --color-surface: #F8F9FC;
+
+  --color-text-primary: #2D3748;
+  /* Softer charcoal */
+  --color-text-secondary: #4A5568;
+  --color-text-muted: #A0AEC0;
+
+  --color-border: #E2E8F0;
+  --color-muted: #EDF2F7;
 
   --font-sans: var(--font-noto-sans-jp), "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   --font-display: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
@@ -34,11 +39,19 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.8;
+    font-weight: 500;
+    /* Increased from default 400 */
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
-    font-weight: 700;
+    font-weight: 800;
+    /* Increased from 700 */
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--color-text-primary);
@@ -53,9 +66,10 @@
 
 @layer utilities {
   .text-shadow {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
   .text-shadow-lg {
-    text-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
