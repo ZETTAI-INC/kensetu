@@ -25,22 +25,22 @@ export const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-20">
                     {/* Logo & Info */}
                     <div className="md:w-1/3">
-                        <div className="font-black text-2xl tracking-tighter mb-6 text-white">
+                        <div className="font-black text-3xl tracking-tighter mb-6 text-white">
                             RICH & BUILD
                         </div>
-                        <div className="space-y-4 text-white text-sm">
-                            <p className="font-bold">株式会社リッチ＆ビルド</p>
+                        <div className="space-y-4 text-white text-base">
+                            <p className="font-bold text-white">株式会社リッチ＆ビルド</p>
                             <div className="space-y-1">
-                                <p className="font-bold">人材派遣 / 人材紹介 / 人材コンサルティング</p>
+                                <p className="font-bold text-white">人材派遣 / 人材紹介 / 人材コンサルティング</p>
                             </div>
 
                             <div className="pt-4 space-y-3">
                                 <div className="flex items-center gap-3">
-                                    <span className="text-[10px] uppercase font-black tracking-widest bg-white/20 px-2 py-0.5 rounded text-white">Tel</span>
-                                    <a href="tel:090-7797-6699" className="hover:opacity-70 transition-opacity tracking-widest font-bold text-white">090-7797-6699</a>
+                                    <span className="text-xs uppercase font-black tracking-widest bg-white/20 px-2 py-1 rounded text-white">Tel</span>
+                                    <a href="tel:090-7797-6699" className="hover:opacity-70 transition-opacity tracking-widest font-bold text-white text-lg">090-7797-6699</a>
                                 </div>
                                 <div className="flex items-center gap-3">
-                                    <span className="text-[10px] uppercase font-black tracking-widest bg-white/20 px-2 py-0.5 rounded text-white">Mail</span>
+                                    <span className="text-xs uppercase font-black tracking-widest bg-white/20 px-2 py-1 rounded text-white">Mail</span>
                                     <a href="mailto:info@rich-and-build.co.jp" className="hover:opacity-70 transition-opacity tracking-wide font-bold text-white">info@rich-and-build.co.jp</a>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@ export const Footer = () => {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="text-sm font-bold text-white/60 hover:text-white hover:translate-x-1 transition-all duration-300"
+                                className="text-base font-bold text-white hover:text-white/80 hover:translate-x-1 transition-all duration-300"
                             >
                                 {item.name}
                             </Link>
@@ -65,12 +65,12 @@ export const Footer = () => {
             {/* Copyright */}
             <div className="border-t border-white/10 bg-black/20">
                 <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-xs text-white/50 font-medium tracking-wide">
+                    <p className="text-sm text-white font-medium tracking-wide">
                         &copy; {new Date().getFullYear()} RICH & BUILD Inc. All Rights Reserved.
                     </p>
                     <button
                         onClick={scrollToTop}
-                        className="text-xs font-bold text-white/50 hover:text-white transition-colors tracking-widest flex items-center gap-2"
+                        className="text-sm font-bold text-white hover:text-white/80 transition-colors tracking-widest flex items-center gap-2"
                     >
                         PAGE TOP ↑
                     </button>

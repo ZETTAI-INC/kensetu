@@ -33,7 +33,7 @@ export default function CompanyPage() {
                         <div className="w-full md:w-1/2">
                             <div className="aspect-square rounded-2xl relative overflow-hidden group shadow-lg">
                                 <img
-                                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
+                                    src="/images/company-mission.png"
                                     alt="可能性を解放する"
                                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />
@@ -61,7 +61,7 @@ export default function CompanyPage() {
                         <div className="w-full md:w-1/2">
                             <div className="aspect-square rounded-2xl relative overflow-hidden group shadow-lg">
                                 <img
-                                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1974&auto=format&fit=crop"
+                                    src="/images/company-vision.png"
                                     alt="自分の選択でキャリアを描く"
                                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />

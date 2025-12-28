@@ -65,7 +65,7 @@ export const Navbar = () => {
                                 key={item.name}
                                 href={item.href}
                                 className={cn(
-                                    "text-sm font-bold tracking-wider transition-colors duration-300 hover:text-[var(--color-accent)]",
+                                    "text-base font-bold tracking-wider transition-colors duration-300 hover:text-[var(--color-accent)]",
                                     isScrolled
                                         ? "text-[var(--color-primary)]"
                                         : "text-white drop-shadow-md"
@@ -121,7 +121,7 @@ export const Navbar = () => {
                                 >
                                     <Link
                                         href={item.href}
-                                        className="text-xl font-bold text-[var(--color-primary)] py-2 block hover:text-[var(--color-accent)] transition-colors border-b border-[var(--color-border)] mx-auto w-1/2"
+                                        className="text-2xl font-black text-[var(--color-primary)] py-3 block hover:text-[var(--color-accent)] transition-colors border-b border-[var(--color-border)] mx-auto w-2/3"
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         {item.name}

@@ -33,7 +33,7 @@ export default function ServicePage() {
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                                     <img
-                                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1974&auto=format&fit=crop"
+                                        src="/images/service-page-staffing.png"
                                         alt="人材派遣"
                                         className="w-full h-full object-cover"
                                     />
@@ -74,7 +74,7 @@ export default function ServicePage() {
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                                     <img
-                                        src="https://images.unsplash.com/photo-1573497019236-17f8177b81e8?q=80&w=2070&auto=format&fit=crop"
+                                        src="/images/service-page-recruitment.png"
                                         alt="人材紹介"
                                         className="w-full h-full object-cover"
                                     />
@@ -115,7 +115,7 @@ export default function ServicePage() {
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                                     <img
-                                        src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop"
+                                        src="/images/service-page-consulting.png"
                                         alt="人材コンサル"
                                         className="w-full h-full object-cover"
                                     />
