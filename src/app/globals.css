@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  /* Modern HR Consulting Palette - Natural Green Brand */
-  --color-primary: #2E7D5E;
-  /* Forest Green - Natural, Sophisticated */
-  --color-primary-hover: #246B4E;
-  /* Darker Forest Green */
-  --color-secondary: #F7FAF8;
-  /* Very subtle green-tinted white */
-  --color-accent: #5BA88A;
-  /* Soft Sage - Natural accent */
+  /* Modern HR Consulting Palette - Mynavi-inspired Light Blue & White */
+  --color-primary: #00ABEB;
+  /* Mynavi-style Bright Cyan Blue - Fresh, Youthful */
+  --color-primary-hover: #008FE2;
+  /* Deeper Cyan Blue */
+  --color-secondary: #F0F9FF;
+  /* Very subtle cyan-tinted white */
+  --color-accent: #38BDF8;
+  /* Sky Blue - Fresh accent */
 
   --color-background: #FFFFFF;
-  --color-surface: #F8F9FC;
+  --color-surface: #F8FCFF;
 
-  --color-text-primary: #2D3748;
-  /* Softer charcoal */
-  --color-text-secondary: #4A5568;
-  --color-text-muted: #A0AEC0;
+  --color-text-primary: #1E293B;
+  /* Modern slate */
+  --color-text-secondary: #475569;
+  --color-text-muted: #94A3B8;
 
   --color-border: #E2E8F0;
-  --color-muted: #EDF2F7;
+  --color-muted: #F1F5F9;
 
   --font-sans: var(--font-noto-sans-jp), "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   --font-display: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;

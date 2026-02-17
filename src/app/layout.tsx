@@ -18,8 +18,8 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: "株式会社リッチ＆ビルド | 人材コンサルティングで未来を創る",
-  description: "株式会社リッチ＆ビルドは、人材派遣・人材紹介・人材育成・人材SNSコンサルティングを通じて、企業と人材の成長を支援します。あなたのキャリアアップを全力でサポートします。",
-  keywords: "人材派遣, 人材紹介, 人材育成, キャリアアップ, HRコンサルティング, リッチ＆ビルド",
+  description: "株式会社リッチ＆ビルドは、総合人材コンサルティングを通じて、企業と人材の成長を支援します。あなたのキャリアアップを全力でサポートします。",
+  keywords: "総合人材コンサルティング, 人材育成, キャリアアップ, HRコンサルティング, リッチ＆ビルド",
 };
 
 export default function RootLayout({

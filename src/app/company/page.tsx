@@ -8,7 +8,7 @@ export default function CompanyPage() {
             <SubpageHero
                 titleEn="COMPANY"
                 titleJa="会社情報"
-                backgroundImage="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+                backgroundImage="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2070&auto=format&fit=crop"
             />
 
             {/* Mission Section */}
@@ -33,7 +33,7 @@ export default function CompanyPage() {
                         <div className="w-full md:w-1/2">
                             <div className="aspect-square rounded-2xl relative overflow-hidden group shadow-lg">
                                 <img
-                                    src="/images/company-mission.png"
+                                    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2070&auto=format&fit=crop"
                                     alt="可能性を解放する"
                                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />
@@ -61,7 +61,7 @@ export default function CompanyPage() {
                         <div className="w-full md:w-1/2">
                             <div className="aspect-square rounded-2xl relative overflow-hidden group shadow-lg">
                                 <img
-                                    src="/images/company-vision.png"
+                                    src="https://images.unsplash.com/photo-1573167243872-43c6433b9d40?q=80&w=2070&auto=format&fit=crop"
                                     alt="自分の選択でキャリアを描く"
                                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />
@@ -158,8 +158,8 @@ export default function CompanyPage() {
                                     {[
                                         { label: '会社名', value: '株式会社リッチ＆ビルド' },
                                         { label: '代表者', value: '代表取締役 荒井 武志' },
-                                        { label: '住所', value: '〒107-0062 東京都港区南青山2-2-15 ウィン青山1403' },
-                                        { label: '事業内容', value: '人材派遣事業 / 人材紹介事業 / 人材コンサルティング事業' },
+                                        { label: '住所', value: '〒150-0021 東京都渋谷区恵比寿西２丁目８－５ 高麗羅ビル2F' },
+                                        { label: '事業内容', value: '総合人材コンサルティング事業' },
                                     ].map((row, index) => (
                                         <tr key={index} className="hover:bg-[var(--color-secondary)]/50 transition-colors flex flex-col md:table-row">
                                             <th className="px-6 md:px-8 py-4 md:py-6 text-left font-bold text-[var(--color-text-primary)] w-full md:w-1/3 bg-[var(--color-secondary)]/50 block md:table-cell">{row.label}</th>

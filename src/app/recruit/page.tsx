@@ -8,11 +8,11 @@ export default function RecruitPage() {
             <section className="relative h-[70vh] md:h-[80vh] w-full">
                 <div className="absolute inset-0">
                     <img
-                        src="/images/recruit-hero.png"
-                        alt="キャリアを築く"
+                        src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2070&auto=format&fit=crop"
+                        alt="キャリアを築く若い女性たち"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#1a2e35]/90 via-[#1a2e35]/70 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#1E3A5F]/90 via-[#1E3A5F]/70 to-transparent" />
                 </div>
                 <div className="absolute inset-0 flex items-center">
                     <div className="container mx-auto px-6 md:px-12">
@@ -98,7 +98,7 @@ export default function RecruitPage() {
             </section>
 
             {/* Statement Section */}
-            <section className="py-16 md:py-24 bg-[#1a2e35]">
+            <section className="py-16 md:py-24 bg-[#1E3A5F]">
                 <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
                     <h2 className="text-3xl md:text-5xl font-black text-white leading-tight mb-4">
                         Be Professional

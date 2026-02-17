@@ -46,8 +46,8 @@ export default function Home() {
             <div className="w-full md:w-1/2">
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-xl">
                 <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
-                  alt="チームワーク"
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
+                  alt="若い女性チームの協業"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>
@@ -67,32 +67,32 @@ export default function Home() {
               事業内容
             </h2>
             <p className="mt-6 text-[var(--color-text-secondary)] max-w-2xl mx-auto font-bold text-base md:text-lg leading-relaxed">
-              人材派遣、人材紹介、人材コンサルティング。<br />
-              3つの柱で、企業の成長をトータルサポートします。
+              総合人材コンサルティングで、<br />
+              企業の成長をトータルサポートします。
             </p>
           </div>
 
           <div className="space-y-12 md:space-y-24">
             {[
               {
-                title: '人材派遣',
-                subtitle: 'Staffing',
-                desc: 'ニーズに寄り添い、最適な人材を派遣。\n伴走型で一緒に事業拡大に貢献します。',
-                image: '/images/service-staffing.png',
-                color: 'text-[var(--color-primary)]',
-              },
-              {
-                title: '人材紹介',
-                subtitle: 'Recruitment',
-                desc: 'ニーズに寄り添い、最適な人材を紹介。\n求職者と企業の幸せな出会いを創出します。',
-                image: '/images/service-recruitment.png',
-                color: 'text-[var(--color-primary)]',
-              },
-              {
-                title: '人材コンサル',
+                title: '総合人材コンサルティング',
                 subtitle: 'Consulting',
-                desc: '採用戦略、人材育成、評価制度設計、組織開発など、\n多角的な視点で課題解決を支援します。',
-                image: '/images/service-consulting.png',
+                desc: '採用戦略の立案から人材育成、評価制度設計、組織開発まで。\n「人」に関わるあらゆる課題に対し、多角的な視点で解決を支援します。',
+                image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop',
+                color: 'text-[var(--color-primary)]',
+              },
+              {
+                title: '人材育成',
+                subtitle: 'Training',
+                desc: '独自の教育プログラムで即戦力を育成。\nビジネスマナーから専門スキルまで、段階的な研修体制を整えています。',
+                image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2070&auto=format&fit=crop',
+                color: 'text-[var(--color-primary)]',
+              },
+              {
+                title: 'キャリアサポート',
+                subtitle: 'Career Support',
+                desc: '一人ひとりの「やりたいこと」と企業の「求める人材像」を\n高い精度で結びつけ、双方にとって最適なキャリアを実現します。',
+                image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=2070&auto=format&fit=crop',
                 color: 'text-[var(--color-primary)]',
               },
             ].map((item, index) => (
@@ -151,8 +151,8 @@ export default function Home() {
               <div className="relative">
                 <div className="aspect-[4/3] md:aspect-[3/4] rounded-xl overflow-hidden shadow-xl">
                   <img
-                    src="/images/career-growth.png"
-                    alt="RICH & BUILD - キャリアを築く"
+                    src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=2070&auto=format&fit=crop"
+                    alt="キャリアアップを目指す若い女性"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -224,7 +224,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="relative py-12 md:py-24 bg-[#1a2e35] overflow-hidden">
+      <section className="relative py-12 md:py-24 bg-[#1E3A5F] overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop')] bg-cover bg-center"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">

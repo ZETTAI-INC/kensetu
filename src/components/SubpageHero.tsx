@@ -6,7 +6,7 @@ interface SubpageHeroProps {
 
 export const SubpageHero = ({ titleEn, titleJa, backgroundImage }: SubpageHeroProps) => {
     return (
-        <div className="relative pt-52 pb-24 md:pt-64 md:pb-32 overflow-hidden bg-[#064E3B]">
+        <div className="relative pt-52 pb-24 md:pt-64 md:pb-32 overflow-hidden bg-[#1E3A5F]">
             {backgroundImage && (
                 <div className="absolute inset-0 z-0">
                     <img src={backgroundImage} alt="" className="w-full h-full object-cover opacity-50" />

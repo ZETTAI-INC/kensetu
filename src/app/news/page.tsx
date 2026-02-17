@@ -27,7 +27,7 @@ export default function NewsPage() {
             <SubpageHero
                 titleEn="NEWS"
                 titleJa="お知らせ"
-                backgroundImage="/images/news-keyboard.png"
+                backgroundImage="https://images.unsplash.com/photo-1504711434969-e33886168d6c?q=80&w=2070&auto=format&fit=crop"
             />
 
             <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">
@@ -42,8 +42,8 @@ export default function NewsPage() {
                                     className={cn(
                                         "px-6 py-3 rounded-full text-base font-black tracking-wider transition-all duration-300 border whitespace-nowrap snap-start",
                                         activeCategory === cat
-                                            ? "bg-[#10B981] text-white border-[#10B981]"
-                                            : "bg-white text-[#059669] border-[#10B981] hover:border-[#10B981]"
+                                            ? "bg-[#00ABEB] text-white border-[#00ABEB]"
+                                            : "bg-white text-[#008FE2] border-[#00ABEB] hover:border-[#00ABEB]"
                                     )}
                                 >
                                     {cat}
@@ -57,7 +57,7 @@ export default function NewsPage() {
                         {filteredNews.length > 0 ? (
                             <NewsList items={filteredNews} />
                         ) : (
-                            <div className="text-center py-16 text-[#059669]/60">
+                            <div className="text-center py-16 text-[#008FE2]/60">
                                 該当するニュースがありません
                             </div>
                         )}
@@ -66,7 +66,7 @@ export default function NewsPage() {
                     {/* Pagination (Static for now) */}
                     {filteredNews.length > 0 && (
                         <div className="mt-16 flex justify-center gap-2">
-                            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-[#10B981] text-white font-bold">1</button>
+                            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-[#00ABEB] text-white font-bold">1</button>
                         </div>
                     )}
                 </div>

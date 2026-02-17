@@ -31,7 +31,7 @@ export const Footer = () => {
                         <div className="space-y-4 text-white text-base">
                             <p className="font-bold text-white">株式会社リッチ＆ビルド</p>
                             <div className="space-y-1">
-                                <p className="font-bold text-white">人材派遣 / 人材紹介 / 人材コンサルティング</p>
+                                <p className="font-bold text-white">総合人材コンサルティング</p>
                             </div>
 
                             <div className="pt-4 space-y-3">
