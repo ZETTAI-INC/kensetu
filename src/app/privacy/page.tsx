@@ -10,7 +10,7 @@ export default function PrivacyPage() {
                 backgroundImage="/images/business-construction.png"
             />
 
-            <div className="container mx-auto px-6 py-16 md:py-24">
+            <div className="container mx-auto px-5 md:px-6 py-16 md:py-24">
                 <div className="max-w-3xl mx-auto bg-white p-8 md:p-14 rounded-2xl shadow-sm border border-[var(--color-border)]">
                     <div className="prose max-w-none">
                         <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed">

@@ -12,7 +12,7 @@ export default function ClientPage() {
 
             {/* Intro */}
             <section className="py-16 md:py-24 bg-white">
-                <div className="container mx-auto px-6 max-w-4xl text-center">
+                <div className="container mx-auto px-5 md:px-6 max-w-4xl text-center">
                     <h2 className="text-3xl md:text-5xl font-black mb-10 leading-tight text-[var(--color-text-primary)] tracking-tight">
                         人材の質が、<br />
                         現場の質を変える。
@@ -28,7 +28,7 @@ export default function ClientPage() {
 
             {/* Value Proposition */}
             <section className="py-16 md:py-24 bg-[var(--color-secondary)]">
-                <div className="container mx-auto px-6">
+                <div className="container mx-auto px-5 md:px-6">
                     <div className="text-center mb-12">
                         <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">VALUE</p>
                         <h2 className="text-3xl md:text-4xl font-black text-[var(--color-text-primary)]">提供価値</h2>
@@ -66,7 +66,7 @@ export default function ClientPage() {
 
             {/* Education System */}
             <section className="py-16 md:py-24 bg-white">
-                <div className="container mx-auto px-6">
+                <div className="container mx-auto px-5 md:px-6">
                     <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
                         <div className="w-full md:w-1/2">
                             <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">EDUCATION</p>
@@ -110,7 +110,7 @@ export default function ClientPage() {
 
             {/* Logo Grid */}
             <section className="py-16 md:py-24 bg-[var(--color-secondary)]">
-                <div className="container mx-auto px-6 text-center">
+                <div className="container mx-auto px-5 md:px-6 text-center">
                     <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">PARTNERS</p>
                     <h2 className="text-3xl md:text-4xl font-black text-[var(--color-text-primary)] mb-12">主要取引先</h2>
                     <LogoGrid

@@ -30,7 +30,7 @@ export default function NewsPage() {
                 backgroundImage="/images/contact-bg.png"
             />
 
-            <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">
+            <div className="container mx-auto px-5 md:px-6 py-16 md:py-24">
                 <div className="max-w-4xl mx-auto">
                     {/* Category Filter */}
                     <div className="mb-10 md:mb-16">

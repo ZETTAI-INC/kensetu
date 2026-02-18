@@ -25,17 +25,27 @@ export const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Prevent body scroll when mobile menu is open
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+        return () => { document.body.style.overflow = ''; };
+    }, [isMobileMenuOpen]);
+
     return (
         <>
             <header
                 className={cn(
                     'fixed top-0 left-0 w-full z-50 transition-all duration-300',
                     isScrolled || isMobileMenuOpen
-                        ? 'bg-white/98 backdrop-blur-md shadow-sm py-3 border-b border-border'
-                        : 'bg-transparent py-5'
+                        ? 'bg-white/98 backdrop-blur-md shadow-sm py-2.5 md:py-3 border-b border-border'
+                        : 'bg-transparent py-4 md:py-5'
                 )}
             >
-                <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+                <div className="max-w-7xl mx-auto px-5 md:px-6 flex items-center justify-between">
                     {/* Logo - リチビル */}
                     <Link
                         href="/"
@@ -44,13 +54,13 @@ export const Navbar = () => {
                     >
                         <div className="font-black flex items-baseline leading-none tracking-tight">
                             <span className={cn(
-                                "text-3xl md:text-4xl transition-colors duration-300",
+                                "text-2xl md:text-4xl transition-colors duration-300",
                                 isScrolled || isMobileMenuOpen ? "text-[var(--color-primary)]" : "text-white drop-shadow-lg"
                             )}>
                                 リチ
                             </span>
                             <span className={cn(
-                                "text-3xl md:text-4xl transition-colors duration-300",
+                                "text-2xl md:text-4xl transition-colors duration-300",
                                 isScrolled || isMobileMenuOpen ? "text-[#1A202C]" : "text-white drop-shadow-lg"
                             )}>
                                 ビル
@@ -79,24 +89,24 @@ export const Navbar = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden z-50 relative w-10 h-10 flex flex-col justify-center items-center group"
+                        className="md:hidden z-50 relative w-10 h-10 flex flex-col justify-center items-center"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         aria-label="メニュー"
                     >
                         <span className={cn(
-                            "w-6 h-[2px] transition-all duration-300 absolute",
+                            "w-5 h-[2px] transition-all duration-300 absolute",
                             isMobileMenuOpen || isScrolled ? "bg-[var(--color-primary)]" : "bg-white",
-                            isMobileMenuOpen ? "rotate-45" : "-translate-y-2"
+                            isMobileMenuOpen ? "rotate-45" : "-translate-y-1.5"
                         )} />
                         <span className={cn(
-                            "w-6 h-[2px] transition-all duration-300",
+                            "w-5 h-[2px] transition-all duration-300",
                             isMobileMenuOpen || isScrolled ? "bg-[var(--color-primary)]" : "bg-white",
                             isMobileMenuOpen ? "opacity-0" : "opacity-100"
                         )} />
                         <span className={cn(
-                            "w-6 h-[2px] transition-all duration-300 absolute",
+                            "w-5 h-[2px] transition-all duration-300 absolute",
                             isMobileMenuOpen || isScrolled ? "bg-[var(--color-primary)]" : "bg-white",
-                            isMobileMenuOpen ? "-rotate-45" : "translate-y-2"
+                            isMobileMenuOpen ? "-rotate-45" : "translate-y-1.5"
                         )} />
                     </button>
                 </div>
@@ -106,23 +116,23 @@ export const Navbar = () => {
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.3, ease: 'easeInOut' }}
-                        className="fixed inset-0 z-40 bg-white/98 backdrop-blur-xl pt-28 px-6 md:hidden flex flex-col items-center justify-start"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="fixed inset-0 z-40 bg-white pt-20 px-5 md:hidden overflow-y-auto"
                     >
-                        <nav className="flex flex-col gap-1 w-full max-w-sm">
+                        <nav className="flex flex-col w-full">
                             {navItems.map((item, index) => (
                                 <motion.div
                                     key={item.name}
-                                    initial={{ opacity: 0, y: 10 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: index * 0.05 + 0.1 }}
+                                    initial={{ opacity: 0, x: -10 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: index * 0.04 + 0.1 }}
                                 >
                                     <Link
                                         href={item.href}
-                                        className="text-lg font-bold text-[var(--color-text-primary)] py-4 block hover:text-[var(--color-primary)] transition-colors border-b border-[var(--color-border)]"
+                                        className="text-base font-bold text-[var(--color-text-primary)] py-4 block hover:text-[var(--color-primary)] transition-colors border-b border-[var(--color-border)]"
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         {item.name}
@@ -133,11 +143,11 @@ export const Navbar = () => {
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 0.4 }}
-                            className="mt-8"
+                            transition={{ delay: 0.35 }}
+                            className="mt-6 pb-8"
                         >
                             <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                                <span className="inline-block bg-[var(--color-primary)] text-white font-bold py-4 px-12 rounded-full hover:bg-[var(--color-primary-hover)] transition-all shadow-lg tracking-widest text-sm">
+                                <span className="inline-block w-full text-center bg-[var(--color-primary)] text-white font-bold py-3.5 rounded-full hover:bg-[var(--color-primary-hover)] transition-all shadow-md text-sm">
                                     お問い合わせ
                                 </span>
                             </Link>

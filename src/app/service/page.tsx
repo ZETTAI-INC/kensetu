@@ -12,8 +12,8 @@ export default function ServicePage() {
             />
 
             {/* Intro */}
-            <section className="py-12 md:py-20 bg-white">
-                <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
+            <section className="py-10 md:py-20 bg-white">
+                <div className="container mx-auto px-5 md:px-6 max-w-4xl text-center">
                     <h2 className="text-2xl md:text-4xl font-black mb-6 leading-tight text-[var(--color-text-primary)] tracking-tight">
                         人材の<br className="md:hidden" />総合コンサルタント
                     </h2>
@@ -26,8 +26,8 @@ export default function ServicePage() {
             </section>
 
             {/* Service 1: Consulting */}
-            <section className="py-12 md:py-20 bg-[var(--color-secondary)]">
-                <div className="container mx-auto px-4 md:px-6">
+            <section className="py-10 md:py-20 bg-[var(--color-secondary)]">
+                <div className="container mx-auto px-5 md:px-6">
                     <div className="max-w-6xl mx-auto">
                         <div className="flex flex-col md:flex-row gap-8 items-center">
                             <div className="w-full md:w-1/2">
@@ -67,8 +67,8 @@ export default function ServicePage() {
             </section>
 
             {/* Service 2: Training */}
-            <section className="py-12 md:py-20 bg-white">
-                <div className="container mx-auto px-4 md:px-6">
+            <section className="py-10 md:py-20 bg-white">
+                <div className="container mx-auto px-5 md:px-6">
                     <div className="max-w-6xl mx-auto">
                         <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
                             <div className="w-full md:w-1/2">
@@ -108,8 +108,8 @@ export default function ServicePage() {
             </section>
 
             {/* Service 3: Career Support */}
-            <section className="py-12 md:py-20 bg-[var(--color-secondary)]">
-                <div className="container mx-auto px-4 md:px-6">
+            <section className="py-10 md:py-20 bg-[var(--color-secondary)]">
+                <div className="container mx-auto px-5 md:px-6">
                     <div className="max-w-6xl mx-auto">
                         <div className="flex flex-col md:flex-row gap-8 items-center">
                             <div className="w-full md:w-1/2">

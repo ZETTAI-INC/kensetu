@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { NewsList } from '@/components/NewsList';
 import { HeroSection } from '@/components/HeroSection';
+import { LottieAnimation } from '@/components/LottieAnimation';
 import { ArrowRight } from 'lucide-react';
 
 export default function Home() {
@@ -9,9 +10,9 @@ export default function Home() {
       <HeroSection />
 
       {/* Concept Section */}
-      <section className="py-16 md:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
-          <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
+      <section className="py-12 md:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-5 md:px-12 w-full">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
             {/* Left: Text */}
             <div className="w-full md:w-1/2">
               <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-4">
@@ -56,8 +57,8 @@ export default function Home() {
       </section>
 
       {/* Business Section - 3 Pillars */}
-      <section className="py-16 md:py-28 bg-[var(--color-secondary)]">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
+      <section className="py-12 md:py-28 bg-[var(--color-secondary)]">
+        <div className="max-w-7xl mx-auto px-5 md:px-12 w-full">
           <div className="text-center mb-12 md:mb-20">
             <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">
               BUSINESS
@@ -71,7 +72,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="space-y-16 md:space-y-24">
+          <div className="space-y-12 md:space-y-24">
             {[
               {
                 title: '総合人材コンサルティング',
@@ -92,7 +93,7 @@ export default function Home() {
                 image: '/images/recruit-hero.png',
               },
             ].map((item, index) => (
-              <div key={index} className={`flex flex-col md:flex-row gap-8 md:gap-14 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
+              <div key={index} className={`flex flex-col md:flex-row gap-6 md:gap-14 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                 <div className="w-full md:w-1/2">
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg group">
                     <img
@@ -138,34 +139,29 @@ export default function Home() {
       </section>
 
       {/* Career Growth Section */}
-      <section className="py-16 md:py-28 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
-          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
-            {/* Left: Image */}
-            <div className="w-full lg:w-1/2">
-              <div className="relative">
-                <div className="aspect-[4/3] md:aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
-                  <img
-                    src="/images/career-growth.png"
-                    alt="キャリアアップを目指す若い女性"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                {/* Accent block */}
-                <div className="absolute -bottom-3 -right-3 md:-bottom-5 md:-right-5 w-14 md:w-20 h-14 md:h-20 bg-[var(--color-primary)] rounded-xl -z-10 opacity-20" />
+      <section className="py-12 md:py-28 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-5 md:px-12 w-full">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-16">
+            {/* Left: Lottie Animation */}
+            <div className="w-full lg:w-1/2 flex items-center justify-center">
+              <div className="w-3/4 max-w-xs md:max-w-sm lg:max-w-lg mx-auto">
+                <LottieAnimation
+                  src="https://assets-v2.lottiefiles.com/a/e230d174-117d-11ee-b969-83893fd0d7e9/f8gAWC2jne.lottie"
+                  className="w-full h-auto"
+                />
               </div>
             </div>
 
             {/* Right: Content */}
             <div className="w-full lg:w-1/2 flex flex-col justify-center">
-              <span className="inline-block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">
+              <span className="inline-block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-2 md:mb-3">
                 CAREER GROWTH
               </span>
-              <h2 className="text-2xl md:text-4xl font-black leading-tight mb-6 text-[var(--color-text-primary)]">
+              <h2 className="text-xl md:text-4xl font-black leading-tight mb-4 md:mb-6 text-[var(--color-text-primary)]">
                 顧客成長と自己成長を、<br />
                 同時実現していく。
               </h2>
-              <div className="space-y-4 text-sm text-[var(--color-text-secondary)] leading-relaxed mb-6">
+              <div className="space-y-3 text-xs md:text-sm text-[var(--color-text-secondary)] leading-relaxed mb-5 md:mb-6">
                 <p>
                   事業成長のプロフェッショナル集団として、
                   徹底した教育制度とキャリアサポートを用意しています。
@@ -177,11 +173,11 @@ export default function Home() {
               </div>
 
               {/* Values - Clean tags */}
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap gap-1.5 md:gap-2 mb-5 md:mb-6">
                 {['可能性を重視する', '一歩目は一緒に', '失敗は成長の通過点', '向き合い続ける', '人生に責任を持つ'].map((value, i) => (
                   <span
                     key={i}
-                    className="inline-block bg-[var(--color-primary-light)] text-[var(--color-primary)] px-4 py-2 rounded-full font-bold text-xs"
+                    className="inline-block bg-[var(--color-primary-light)] text-[var(--color-primary)] px-3 md:px-4 py-1.5 md:py-2 rounded-full font-bold text-[10px] md:text-xs"
                   >
                     {value}
                   </span>
@@ -190,10 +186,10 @@ export default function Home() {
 
               <Link
                 href="/recruit"
-                className="group inline-flex items-center gap-2 font-bold text-[var(--color-primary)] text-sm"
+                className="group inline-flex items-center gap-2 font-bold text-[var(--color-primary)] text-xs md:text-sm"
               >
                 採用情報を見る
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
           </div>
@@ -201,8 +197,8 @@ export default function Home() {
       </section>
 
       {/* News Section */}
-      <section className="py-16 md:py-24 bg-[var(--color-secondary)]">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 w-full">
+      <section className="py-12 md:py-24 bg-[var(--color-secondary)]">
+        <div className="max-w-4xl mx-auto px-5 md:px-12 w-full">
           <div className="flex justify-between items-end mb-8">
             <div>
               <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-2">NEWS</span>
@@ -223,10 +219,10 @@ export default function Home() {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="relative py-16 md:py-24 bg-[var(--color-dark)] overflow-hidden">
+      <section className="relative py-12 md:py-24 bg-[var(--color-dark)] overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-[url('/images/contact-bg.png')] bg-cover bg-center"></div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-4xl mx-auto px-5 md:px-6 text-center">
           <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">CONTACT</span>
           <h2 className="text-2xl md:text-4xl font-black text-white mb-4">
             お気軽にお問い合わせください

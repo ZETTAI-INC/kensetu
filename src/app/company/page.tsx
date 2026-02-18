@@ -12,8 +12,8 @@ export default function CompanyPage() {
             />
 
             {/* Mission Section */}
-            <section className="py-16 md:py-24 bg-white relative overflow-hidden">
-                <div className="container mx-auto px-4 md:px-6">
+            <section className="py-12 md:py-24 bg-white relative overflow-hidden">
+                <div className="container mx-auto px-5 md:px-6">
                     <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-16">
                         <div className="w-full md:w-1/2">
                             <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">MISSION</p>
@@ -99,8 +99,8 @@ export default function CompanyPage() {
             </section>
 
             {/* Top Message */}
-            <section className="py-16 md:py-24 bg-[var(--color-secondary)]">
-                <div className="container mx-auto px-4 md:px-6">
+            <section className="py-12 md:py-24 bg-[var(--color-secondary)]">
+                <div className="container mx-auto px-5 md:px-6">
                     <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-[var(--color-border)]">
                         <div className="text-center mb-8">
                             <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">TOP MESSAGE</p>
@@ -134,8 +134,8 @@ export default function CompanyPage() {
             </section>
 
             {/* Company Overview */}
-            <section className="py-16 md:py-24 bg-white">
-                <div className="container mx-auto px-4 md:px-6">
+            <section className="py-12 md:py-24 bg-white">
+                <div className="container mx-auto px-5 md:px-6">
                     <div className="text-center mb-10 md:mb-14">
                         <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">OVERVIEW</p>
                         <h2 className="text-3xl md:text-4xl font-black text-[var(--color-text-primary)]">会社概要</h2>

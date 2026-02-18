@@ -5,27 +5,29 @@ export default function RecruitPage() {
     return (
         <main className="overflow-x-hidden">
             {/* Hero - Full Screen with Image */}
-            <section className="relative h-[70vh] md:h-[80vh] w-full">
+            <section className="relative h-[60vh] md:h-[80vh] w-full">
                 <div className="absolute inset-0">
                     <img
                         src="/images/concept-workers.png"
                         alt="キャリアを築く若い女性たち"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-dark)]/85 via-[var(--color-dark)]/60 to-transparent" />
+                    {/* Mobile: full coverage / Desktop: gradient */}
+                    <div className="absolute inset-0 bg-[var(--color-dark)]/70 md:bg-transparent" />
+                    <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-[var(--color-dark)]/85 via-[var(--color-dark)]/60 to-transparent" />
                 </div>
-                <div className="absolute inset-0 flex items-center">
-                    <div className="container mx-auto px-6 md:px-12">
+                <div className="absolute inset-0 flex items-end pb-12 md:items-center md:pb-0">
+                    <div className="w-full max-w-7xl mx-auto px-5 md:px-12">
                         <div className="max-w-2xl">
-                            <span className="inline-block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-4">
+                            <span className="inline-block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3 md:mb-4">
                                 CAREERS
                             </span>
-                            <h1 className="text-4xl md:text-6xl font-black text-white leading-tight mb-6">
+                            <h1 className="text-3xl md:text-6xl font-black text-white leading-tight mb-4 md:mb-6">
                                 事業成長の<br />
                                 プロフェッショナル<br />
                                 集団として
                             </h1>
-                            <p className="text-white/70 text-sm md:text-base font-medium leading-relaxed">
+                            <p className="text-white/60 text-xs md:text-base font-medium leading-relaxed">
                                 顧客成長と自己成長を、同時実現していく。<br />
                                 私たちは、そんな意欲あふれる仲間を求めています。
                             </p>
@@ -35,8 +37,8 @@ export default function RecruitPage() {
             </section>
 
             {/* Growth Environment */}
-            <section className="py-16 md:py-24 bg-white">
-                <div className="max-w-6xl mx-auto px-6 md:px-12">
+            <section className="py-12 md:py-24 bg-white">
+                <div className="max-w-6xl mx-auto px-5 md:px-12">
                     <div className="mb-12 md:mb-16">
                         <span className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs">ENVIRONMENT</span>
                         <h2 className="text-3xl md:text-5xl font-black text-[var(--color-text-primary)] mt-3">
@@ -45,7 +47,7 @@ export default function RecruitPage() {
                     </div>
 
                     {/* Features Grid - 2x2 */}
-                    <div className="grid md:grid-cols-2 gap-8 md:gap-10">
+                    <div className="grid md:grid-cols-2 gap-4 md:gap-10">
                         {[
                             {
                                 num: '01',
@@ -68,7 +70,7 @@ export default function RecruitPage() {
                                 text: '年齢や社歴に関わらず、意欲と実力のあるメンバーには重要なポジションやプロジェクトを任せます。圧倒的な成長スピードを実現できる環境です。'
                             },
                         ].map((item) => (
-                            <div key={item.num} className="bg-[var(--color-secondary)] rounded-2xl p-8 hover:shadow-md transition-all">
+                            <div key={item.num} className="bg-[var(--color-secondary)] rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
                                 <span className="text-3xl font-black text-[var(--color-primary)]/20">{item.num}</span>
                                 <h3 className="text-xl font-black text-[var(--color-text-primary)] mt-2 mb-3">
                                     {item.title}
@@ -83,9 +85,9 @@ export default function RecruitPage() {
             </section>
 
             {/* Statement Section */}
-            <section className="py-16 md:py-24 bg-[var(--color-dark)]">
-                <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
-                    <h2 className="text-3xl md:text-5xl font-black text-white leading-tight mb-4">
+            <section className="py-12 md:py-24 bg-[var(--color-dark)]">
+                <div className="max-w-4xl mx-auto px-5 md:px-12 text-center">
+                    <h2 className="text-2xl md:text-5xl font-black text-white leading-tight mb-3 md:mb-4">
                         Be Professional
                     </h2>
                     <p className="text-base md:text-lg text-white/60 leading-relaxed">
@@ -95,10 +97,10 @@ export default function RecruitPage() {
             </section>
 
             {/* Entry CTA */}
-            <section className="py-16 md:py-24 bg-white">
-                <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
-                    <span className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-4 block">ENTRY</span>
-                    <h2 className="text-3xl md:text-4xl font-black text-[var(--color-text-primary)] mb-6 leading-tight">
+            <section className="py-12 md:py-24 bg-white">
+                <div className="max-w-4xl mx-auto px-5 md:px-12 text-center">
+                    <span className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3 md:mb-4 block">ENTRY</span>
+                    <h2 className="text-2xl md:text-4xl font-black text-[var(--color-text-primary)] mb-5 md:mb-6 leading-tight">
                         まずは、お話ししませんか？
                     </h2>
                     <p className="text-sm md:text-base text-[var(--color-text-secondary)] mb-8 leading-relaxed">

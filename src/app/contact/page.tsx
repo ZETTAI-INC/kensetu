@@ -38,7 +38,7 @@ export default function ContactPage() {
                 backgroundImage="/images/contact-bg.png"
             />
 
-            <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">
+            <div className="container mx-auto px-5 md:px-6 py-12 md:py-24">
                 <motion.div
                     className="max-w-4xl mx-auto"
                     variants={containerVariants}
@@ -53,7 +53,7 @@ export default function ContactPage() {
                         </p>
                     </motion.div>
 
-                    <motion.form variants={itemVariants} className="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-[var(--color-border)]">
+                    <motion.form variants={itemVariants} className="bg-white p-5 md:p-10 rounded-2xl shadow-sm border border-[var(--color-border)]">
                         <div className="space-y-6 md:space-y-8">
                             {/* Row 1: Name & Company */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
