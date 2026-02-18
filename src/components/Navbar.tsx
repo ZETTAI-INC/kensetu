@@ -31,47 +31,48 @@ export const Navbar = () => {
                 className={cn(
                     'fixed top-0 left-0 w-full z-50 transition-all duration-300',
                     isScrolled || isMobileMenuOpen
-                        ? 'bg-white/95 backdrop-blur-sm shadow-sm py-4 border-b border-border'
-                        : 'bg-transparent py-6'
+                        ? 'bg-white/98 backdrop-blur-md shadow-sm py-3 border-b border-border'
+                        : 'bg-transparent py-5'
                 )}
             >
                 <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-                    {/* Logo */}
+                    {/* Logo - リチビル */}
                     <Link
                         href="/"
                         className="z-50 relative group"
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
-                        <div className="font-bold flex flex-col leading-none">
+                        <div className="font-black flex items-baseline leading-none tracking-tight">
                             <span className={cn(
-                                "text-2xl tracking-tighter transition-colors duration-300",
-                                isScrolled || isMobileMenuOpen ? "text-[var(--color-primary)]" : "text-white drop-shadow-md"
+                                "text-3xl md:text-4xl transition-colors duration-300",
+                                isScrolled || isMobileMenuOpen ? "text-[var(--color-primary)]" : "text-white drop-shadow-lg"
                             )}>
-                                RICH & BUILD
+                                リチ
                             </span>
                             <span className={cn(
-                                "text-[10px] tracking-[0.2em] font-medium transition-colors duration-300",
-                                isScrolled || isMobileMenuOpen ? "text-[var(--color-text-secondary)]" : "text-white/90 drop-shadow-md"
+                                "text-3xl md:text-4xl transition-colors duration-300",
+                                isScrolled || isMobileMenuOpen ? "text-[#1A202C]" : "text-white drop-shadow-lg"
                             )}>
-                                株式会社リッチ＆ビルド
+                                ビル
                             </span>
                         </div>
                     </Link>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden md:flex items-center gap-8 lg:gap-12">
+                    <nav className="hidden md:flex items-center gap-8 lg:gap-10">
                         {navItems.map((item) => (
                             <Link
                                 key={item.name}
                                 href={item.href}
                                 className={cn(
-                                    "text-base font-bold tracking-wider transition-colors duration-300 hover:text-[var(--color-accent)]",
+                                    "text-sm font-bold tracking-wider transition-all duration-300 relative group/nav",
                                     isScrolled
-                                        ? "text-[var(--color-primary)]"
-                                        : "text-white drop-shadow-md"
+                                        ? "text-[var(--color-text-primary)] hover:text-[var(--color-primary)]"
+                                        : "text-white/90 hover:text-white drop-shadow-sm"
                                 )}
                             >
                                 {item.name}
+                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[var(--color-primary)] transition-all duration-300 group-hover/nav:w-full" />
                             </Link>
                         ))}
                     </nav>
@@ -109,9 +110,9 @@ export const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.3, ease: 'easeInOut' }}
-                        className="fixed inset-0 z-40 bg-[var(--color-secondary)]/98 backdrop-blur-xl pt-32 px-6 md:hidden flex flex-col items-center justify-start space-y-8"
+                        className="fixed inset-0 z-40 bg-white/98 backdrop-blur-xl pt-28 px-6 md:hidden flex flex-col items-center justify-start"
                     >
-                        <nav className="flex flex-col gap-6 w-full text-center">
+                        <nav className="flex flex-col gap-1 w-full max-w-sm">
                             {navItems.map((item, index) => (
                                 <motion.div
                                     key={item.name}
@@ -121,7 +122,7 @@ export const Navbar = () => {
                                 >
                                     <Link
                                         href={item.href}
-                                        className="text-2xl font-black text-[var(--color-primary)] py-3 block hover:text-[var(--color-accent)] transition-colors border-b border-[var(--color-border)] mx-auto w-2/3"
+                                        className="text-lg font-bold text-[var(--color-text-primary)] py-4 block hover:text-[var(--color-primary)] transition-colors border-b border-[var(--color-border)]"
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         {item.name}
@@ -132,12 +133,12 @@ export const Navbar = () => {
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 0.5 }}
+                            transition={{ delay: 0.4 }}
                             className="mt-8"
                         >
                             <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                                 <span className="inline-block bg-[var(--color-primary)] text-white font-bold py-4 px-12 rounded-full hover:bg-[var(--color-primary-hover)] transition-all shadow-lg tracking-widest text-sm">
-                                    CONTACT US
+                                    お問い合わせ
                                 </span>
                             </Link>
                         </motion.div>

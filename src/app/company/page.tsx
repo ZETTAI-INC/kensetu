@@ -12,20 +12,17 @@ export default function CompanyPage() {
             />
 
             {/* Mission Section */}
-            <section className="py-12 md:py-20 bg-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-[var(--color-secondary)] -skew-x-12 translate-x-1/4 -z-10" />
+            <section className="py-16 md:py-24 bg-white relative overflow-hidden">
                 <div className="container mx-auto px-4 md:px-6">
-                    <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 mb-12">
+                    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-16">
                         <div className="w-full md:w-1/2">
-                            <div className="relative">
-                                <p className="text-[var(--color-primary)] font-black tracking-widest text-sm md:text-base mb-3 md:mb-4">MISSION</p>
-                                <h2 className="text-2xl md:text-4xl font-black mb-4 md:mb-6 leading-tight text-[var(--color-text-primary)] tracking-tight">
-                                    人生を変える"最初の一歩"を<br />
-                                    ともに踏み出し、<br />
-                                    人生が変わったと<br className="md:hidden" />
-                                    心から言えるまで共に歩む。
-                                </h2>
-                            </div>
+                            <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">MISSION</p>
+                            <h2 className="text-2xl md:text-4xl font-black mb-4 leading-tight text-[var(--color-text-primary)] tracking-tight">
+                                人生を変える"最初の一歩"を<br />
+                                ともに踏み出し、<br />
+                                人生が変わったと<br className="md:hidden" />
+                                心から言えるまで共に歩む。
+                            </h2>
                         </div>
                         <div className="w-full md:w-1/2">
                             <div className="aspect-square rounded-2xl relative overflow-hidden group shadow-lg">
@@ -39,18 +36,16 @@ export default function CompanyPage() {
                     </div>
 
                     {/* Vision */}
-                    <div className="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12 mb-12">
+                    <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 mb-16">
                         <div className="w-full md:w-1/2">
-                            <div className="relative">
-                                <p className="text-[var(--color-primary)] font-black tracking-widest text-sm md:text-base mb-3 md:mb-4">VISION</p>
-                                <h2 className="text-2xl md:text-4xl font-black mb-4 md:mb-6 leading-tight text-[var(--color-text-primary)] tracking-tight">
-                                    一人ひとりに向き合い、<br />
-                                    挑戦できる環境と<br className="md:hidden" />
-                                    成長の機会を<br />
-                                    提供し続け、<br className="md:hidden" />
-                                    可能性を最大化する
-                                </h2>
-                            </div>
+                            <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">VISION</p>
+                            <h2 className="text-2xl md:text-4xl font-black mb-4 leading-tight text-[var(--color-text-primary)] tracking-tight">
+                                一人ひとりに向き合い、<br />
+                                挑戦できる環境と<br className="md:hidden" />
+                                成長の機会を<br />
+                                提供し続け、<br className="md:hidden" />
+                                可能性を最大化する
+                            </h2>
                         </div>
                         <div className="w-full md:w-1/2">
                             <div className="aspect-square rounded-2xl relative overflow-hidden group shadow-lg">
@@ -65,8 +60,8 @@ export default function CompanyPage() {
 
                     {/* Values (Action Guidelines) */}
                     <div className="mb-0">
-                        <div className="text-center mb-6 md:mb-10">
-                            <p className="text-[var(--color-primary)] font-black tracking-widest text-sm md:text-base mb-3 md:mb-4">VALUES</p>
+                        <div className="text-center mb-8 md:mb-12">
+                            <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">VALUES</p>
                             <h2 className="text-2xl md:text-4xl font-black text-[var(--color-text-primary)]">行動指針</h2>
                         </div>
 
@@ -78,42 +73,42 @@ export default function CompanyPage() {
                                 { num: '04', title: '結果が出るまで、向き合い続ける', text: '一緒に一歩を踏み出したら、結果が出るところまで一緒に走る。' },
                                 { num: '05', title: '一人ひとりの人生に責任を持つ', text: '一人ひとりの人生に責任を持ち、決して妥協しない。' }
                             ].map((item) => (
-                                <div key={item.num} className="bg-white border border-[var(--color-border)] p-8 rounded-xl hover:shadow-xl transition-all duration-300 group relative overflow-hidden min-w-[80vw] md:min-w-0 snap-center shadow-sm flex flex-col h-full">
+                                <div key={item.num} className="bg-white border border-[var(--color-border)] p-7 rounded-2xl hover:shadow-lg transition-all duration-300 group relative overflow-hidden min-w-[80vw] md:min-w-0 snap-center shadow-sm flex flex-col h-full">
                                     <div className="absolute -right-4 -top-4 text-8xl md:text-9xl font-black text-[var(--color-secondary)] group-hover:text-[var(--color-primary)]/10 transition-colors select-none pointer-events-none">
                                         {item.num}
                                     </div>
                                     <div className="relative z-10 flex flex-col h-full">
-                                        <div className="flex items-center gap-4 mb-4">
-                                            <span className="text-[var(--color-primary)] font-black tracking-widest text-sm">VALUE {item.num}</span>
-                                            <div className="h-px flex-1 bg-[var(--color-border)] group-hover:bg-[var(--color-primary)]/20 transition-colors" />
+                                        <div className="flex items-center gap-3 mb-4">
+                                            <span className="text-[var(--color-primary)] font-bold tracking-[0.15em] text-xs">VALUE {item.num}</span>
+                                            <div className="h-px flex-1 bg-[var(--color-border)]" />
                                         </div>
-                                        <h3 className="text-2xl font-black text-[var(--color-text-primary)] mb-4">{item.title}</h3>
-                                        <p className="text-[var(--color-text-secondary)] font-bold leading-relaxed">{item.text}</p>
+                                        <h3 className="text-xl font-black text-[var(--color-text-primary)] mb-3">{item.title}</h3>
+                                        <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed">{item.text}</p>
                                     </div>
                                 </div>
                             ))}
                         </HorizontalScroll>
 
                         {/* Swipe Hint for Mobile */}
-                        <div className="flex justify-center mt-4 md:hidden text-[var(--color-primary)] text-sm font-bold items-center gap-2 animate-pulse">
-                            <ChevronRight className="w-4 h-4" />
+                        <div className="flex justify-center mt-4 md:hidden text-[var(--color-primary)] text-xs font-bold items-center gap-2 animate-pulse">
+                            <ChevronRight className="w-3.5 h-3.5" />
                             <span>SWIPE</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Top Message (New Section) */}
-            <section className="py-12 md:py-20 bg-[var(--color-secondary)]">
+            {/* Top Message */}
+            <section className="py-16 md:py-24 bg-[var(--color-secondary)]">
                 <div className="container mx-auto px-4 md:px-6">
-                    <div className="max-w-4xl mx-auto bg-white p-6 md:p-10 rounded-xl shadow-sm border border-[var(--color-border)]">
-                        <div className="text-center mb-6">
-                            <p className="text-[var(--color-primary)] font-bold tracking-widest text-sm mb-4">TOP MESSAGE</p>
-                            <h2 className="text-2xl md:text-4xl font-black leading-tight text-[var(--color-text-primary)]">
+                    <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-[var(--color-border)]">
+                        <div className="text-center mb-8">
+                            <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">TOP MESSAGE</p>
+                            <h2 className="text-2xl md:text-3xl font-black leading-tight text-[var(--color-text-primary)]">
                                 共に描き、共に創る未来。
                             </h2>
                         </div>
-                        <div className="space-y-4 text-[var(--color-text-secondary)] leading-relaxed text-base font-bold">
+                        <div className="space-y-4 text-[var(--color-text-secondary)] leading-relaxed text-sm">
                             <p>
                                 人の可能性は無限大です。<br />
                                 私たちは、スキルや経歴だけを見るマッチングは行いません。
@@ -139,11 +134,11 @@ export default function CompanyPage() {
             </section>
 
             {/* Company Overview */}
-            <section className="py-12 md:py-20 bg-white">
+            <section className="py-16 md:py-24 bg-white">
                 <div className="container mx-auto px-4 md:px-6">
-                    <div className="text-center mb-8 md:mb-12">
-                        <p className="text-[var(--color-primary)] font-bold tracking-widest text-sm mb-4">OVERVIEW</p>
-                        <h2 className="text-3xl md:text-4xl font-bold text-[var(--color-text-primary)]">会社概要</h2>
+                    <div className="text-center mb-10 md:mb-14">
+                        <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">OVERVIEW</p>
+                        <h2 className="text-3xl md:text-4xl font-black text-[var(--color-text-primary)]">会社概要</h2>
                     </div>
 
                     <div className="max-w-3xl mx-auto">
@@ -157,8 +152,8 @@ export default function CompanyPage() {
                                         { label: '事業内容', value: '総合人材コンサルティング事業' },
                                     ].map((row, index) => (
                                         <tr key={index} className="hover:bg-[var(--color-secondary)]/50 transition-colors flex flex-col md:table-row">
-                                            <th className="px-6 md:px-8 py-4 md:py-6 text-left font-bold text-[var(--color-text-primary)] w-full md:w-1/3 bg-[var(--color-secondary)]/50 block md:table-cell">{row.label}</th>
-                                            <td className="px-6 md:px-8 py-4 md:py-6 text-[var(--color-text-secondary)] block md:table-cell">
+                                            <th className="px-6 md:px-8 py-4 md:py-5 text-left text-sm font-bold text-[var(--color-text-primary)] w-full md:w-1/3 bg-[var(--color-secondary)]/50 block md:table-cell">{row.label}</th>
+                                            <td className="px-6 md:px-8 py-4 md:py-5 text-sm text-[var(--color-text-secondary)] block md:table-cell">
                                                 {row.value}
                                             </td>
                                         </tr>

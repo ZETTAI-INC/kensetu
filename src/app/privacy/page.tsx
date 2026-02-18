@@ -10,71 +10,50 @@ export default function PrivacyPage() {
                 backgroundImage="/images/business-construction.png"
             />
 
-            <div className="container mx-auto px-6 py-24">
-                <div className="max-w-3xl mx-auto bg-white p-8 md:p-16 rounded-2xl shadow-sm border border-blue-100">
-                    <div className="prose prose-blue max-w-none prose-headings:font-bold prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-p:text-blue-800/70">
-                        <p className="text-[#1E3A5F] font-medium">
+            <div className="container mx-auto px-6 py-16 md:py-24">
+                <div className="max-w-3xl mx-auto bg-white p-8 md:p-14 rounded-2xl shadow-sm border border-[var(--color-border)]">
+                    <div className="prose max-w-none">
+                        <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed">
                             当社は、お客様の個人情報を適切に保護することを重要な責務と考え、以下の方針に基づき個人情報の保護に努めます。
                         </p>
 
-                        <h3 className="flex items-center gap-3 text-[#1E3A5F] border-b border-blue-100 pb-2">
-                            <span className="text-blue-500 font-bold">01</span>
-                            個人情報の収集について
-                        </h3>
-                        <p>
-                            当社は、適法かつ公正な手段によって個人情報を収集いたします。
-                        </p>
+                        {[
+                            { num: '01', title: '個人情報の収集について', text: '当社は、適法かつ公正な手段によって個人情報を収集いたします。' },
+                            { num: '02', title: '個人情報の利用目的', text: '収集した個人情報は、以下の目的で利用いたします。' },
+                            { num: '03', title: '個人情報の第三者提供', text: '当社は、法令に基づく場合を除き、お客様の同意なく個人情報を第三者に提供することはありません。' },
+                            { num: '04', title: '個人情報の管理', text: '当社は、個人情報の漏洩、滅失、毀損等を防止するため、適切な安全管理措置を講じます。' },
+                            { num: '05', title: 'お問い合わせ', text: '個人情報の取り扱いに関するお問い合わせは、当社までご連絡ください。' },
+                        ].map((section) => (
+                            <div key={section.num} className="mt-8">
+                                <h3 className="flex items-center gap-3 text-[var(--color-text-primary)] border-b border-[var(--color-border)] pb-2 text-base font-bold">
+                                    <span className="text-[var(--color-primary)] font-bold">{section.num}</span>
+                                    {section.title}
+                                </h3>
+                                <p className="mt-3 text-sm text-[var(--color-text-secondary)] leading-relaxed">{section.text}</p>
+                                {section.num === '02' && (
+                                    <ul className="list-disc pl-5 space-y-1.5 mt-3 text-sm text-[var(--color-text-secondary)]">
+                                        <li>お客様へのサービス提供</li>
+                                        <li>お問い合わせへの対応</li>
+                                        <li>サービス改善のための分析</li>
+                                    </ul>
+                                )}
+                            </div>
+                        ))}
 
-                        <h3 className="flex items-center gap-3 text-[#1E3A5F] border-b border-blue-100 pb-2">
-                            <span className="text-blue-500 font-bold">02</span>
-                            個人情報の利用目的
-                        </h3>
-                        <p>
-                            収集した個人情報は、以下の目的で利用いたします。
-                        </p>
-                        <ul className="list-disc pl-5 space-y-2 text-blue-800/70">
-                            <li>お客様へのサービス提供</li>
-                            <li>お問い合わせへの対応</li>
-                            <li>サービス改善のための分析</li>
-                        </ul>
-
-                        <h3 className="flex items-center gap-3 text-[#1E3A5F] border-b border-blue-100 pb-2">
-                            <span className="text-blue-500 font-bold">03</span>
-                            個人情報の第三者提供
-                        </h3>
-                        <p>
-                            当社は、法令に基づく場合を除き、お客様の同意なく個人情報を第三者に提供することはありません。
-                        </p>
-
-                        <h3 className="flex items-center gap-3 text-[#1E3A5F] border-b border-blue-100 pb-2">
-                            <span className="text-blue-500 font-bold">04</span>
-                            個人情報の管理
-                        </h3>
-                        <p>
-                            当社は、個人情報の漏洩、滅失、毀損等を防止するため、適切な安全管理措置を講じます。
-                        </p>
-
-                        <h3 className="flex items-center gap-3 text-[#1E3A5F] border-b border-blue-100 pb-2">
-                            <span className="text-blue-500 font-bold">05</span>
-                            お問い合わせ
-                        </h3>
-                        <p>
-                            個人情報の取り扱いに関するお問い合わせは、当社までご連絡ください。
-                        </p>
-                        <div className="bg-[#EFF6FF] p-6 rounded-lg mt-4 not-prose">
-                            <p className="font-bold text-[#1E3A5F] mb-3">株式会社リッチ＆ビルド</p>
-                            <div className="space-y-2 text-sm text-blue-800/70">
+                        <div className="bg-[var(--color-secondary)] p-6 rounded-xl mt-8">
+                            <p className="font-bold text-[var(--color-text-primary)] text-sm mb-3">株式会社リッチ＆ビルド</p>
+                            <div className="space-y-2 text-sm text-[var(--color-text-secondary)]">
                                 <div className="flex items-center gap-2">
-                                    <Mail className="w-4 h-4 text-blue-500" />
+                                    <Mail className="w-4 h-4 text-[var(--color-primary)]" />
                                     <span className="font-medium">メール：</span>
-                                    <a href="mailto:takeshi.arai625@gmail.com" className="hover:text-blue-600 hover:underline transition-colors">
+                                    <a href="mailto:takeshi.arai625@gmail.com" className="hover:text-[var(--color-primary)] hover:underline transition-colors">
                                         takeshi.arai625@gmail.com
                                     </a>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <Phone className="w-4 h-4 text-blue-500" />
+                                    <Phone className="w-4 h-4 text-[var(--color-primary)]" />
                                     <span className="font-medium">電話：</span>
-                                    <a href="tel:090-7797-6699" className="hover:text-blue-600 hover:underline transition-colors">
+                                    <a href="tel:090-7797-6699" className="hover:text-[var(--color-primary)] hover:underline transition-colors">
                                         090-7797-6699
                                     </a>
                                 </div>
@@ -83,8 +62,8 @@ export default function PrivacyPage() {
                         </div>
                     </div>
 
-                    <div className="mt-16 pt-8 border-t border-blue-100 text-right">
-                        <p className="text-sm text-blue-600/70">
+                    <div className="mt-12 pt-6 border-t border-[var(--color-border)] text-right">
+                        <p className="text-xs text-[var(--color-text-muted)]">
                             制定日：{new Date().getFullYear()}年1月1日<br />
                             株式会社リッチ＆ビルド<br />
                             代表取締役 荒井 武志

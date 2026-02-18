@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { NewsList } from '@/components/NewsList';
 import { HeroSection } from '@/components/HeroSection';
-import { Users, Briefcase, GraduationCap, ArrowRight, TrendingUp, Heart, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -9,19 +9,19 @@ export default function Home() {
       <HeroSection />
 
       {/* Concept Section */}
-      <section className="py-12 md:py-24 bg-[var(--color-secondary)]">
+      <section className="py-16 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
-          <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
             {/* Left: Text */}
             <div className="w-full md:w-1/2">
-              <span className="block text-[var(--color-primary)] font-bold tracking-widest text-sm mb-4">
+              <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-4">
                 OUR CONCEPT
               </span>
               <h2 className="text-2xl md:text-4xl font-black leading-tight mb-6 text-[var(--color-text-primary)]">
                 人生を変える"最初の一歩"を<br />
                 ともに踏み出す。
               </h2>
-              <div className="space-y-6 text-[var(--color-text-secondary)] leading-loose font-bold">
+              <div className="space-y-5 text-[var(--color-text-secondary)] leading-loose text-sm md:text-base">
                 <p>
                   株式会社リッチ＆ビルドは、人材の総合コンサルタントです。<br />
                   一人ひとりに向き合い、挑戦できる環境と成長の機会を提供し続け、可能性を最大化します。
@@ -30,20 +30,20 @@ export default function Home() {
                   人生が変わったと心から言えるまで、共に歩みます。
                 </p>
               </div>
-              <div className="mt-10">
+              <div className="mt-8">
                 <Link
                   href="/company"
-                  className="inline-flex items-center gap-2 text-sm font-bold tracking-widest border-b border-[var(--color-primary)] pb-1 text-[var(--color-primary)] hover:opacity-70 transition-opacity"
+                  className="inline-flex items-center gap-2 text-sm font-bold tracking-wider text-[var(--color-primary)] hover:opacity-70 transition-opacity group"
                 >
                   VIEW MORE
-                  <span>→</span>
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
             </div>
 
             {/* Right: Image */}
             <div className="w-full md:w-1/2">
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-xl">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-lg">
                 <img
                   src="/images/company-vision.png"
                   alt="若い女性チームの協業"
@@ -55,50 +55,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Business Section - 3 Pillars (Industry Conscious Layout) */}
-      <section className="py-12 md:py-24 bg-white">
+      {/* Business Section - 3 Pillars */}
+      <section className="py-16 md:py-28 bg-[var(--color-secondary)]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
-          <div className="text-center mb-10 md:mb-20">
-            <span className="block text-[var(--color-primary)] font-black tracking-widest text-sm mb-3">
+          <div className="text-center mb-12 md:mb-20">
+            <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">
               BUSINESS
             </span>
             <h2 className="text-3xl md:text-5xl font-black text-[var(--color-text-primary)]">
               事業内容
             </h2>
-            <p className="mt-6 text-[var(--color-text-secondary)] max-w-2xl mx-auto font-bold text-base md:text-lg leading-relaxed">
+            <p className="mt-5 text-[var(--color-text-secondary)] max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
               総合人材コンサルティングで、<br />
               企業の成長をトータルサポートします。
             </p>
           </div>
 
-          <div className="space-y-12 md:space-y-24">
+          <div className="space-y-16 md:space-y-24">
             {[
               {
                 title: '総合人材コンサルティング',
                 subtitle: 'Consulting',
                 desc: '採用戦略の立案から人材育成、評価制度設計、組織開発まで。\n「人」に関わるあらゆる課題に対し、多角的な視点で解決を支援します。',
                 image: '/images/service-consulting.png',
-                color: 'text-[var(--color-primary)]',
               },
               {
                 title: '人材育成',
                 subtitle: 'Training',
                 desc: '独自の教育プログラムで即戦力を育成。\nビジネスマナーから専門スキルまで、段階的な研修体制を整えています。',
                 image: '/images/service-page-consulting.png',
-                color: 'text-[var(--color-primary)]',
               },
               {
                 title: 'キャリアサポート',
                 subtitle: 'Career Support',
                 desc: '一人ひとりの「やりたいこと」と企業の「求める人材像」を\n高い精度で結びつけ、双方にとって最適なキャリアを実現します。',
                 image: '/images/recruit-hero.png',
-                color: 'text-[var(--color-primary)]',
               },
             ].map((item, index) => (
-              <div key={index} className={`flex flex-col md:flex-row gap-6 md:gap-16 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
+              <div key={index} className={`flex flex-col md:flex-row gap-8 md:gap-14 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
                 <div className="w-full md:w-1/2">
-                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl group">
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg group">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -108,19 +104,19 @@ export default function Home() {
                 </div>
                 <div className="w-full md:w-1/2">
                   <div className="flex flex-col h-full justify-center">
-                    <span className={`text-sm font-black tracking-widest mb-4 uppercase ${item.color} opacity-80`}>
+                    <span className="text-xs font-bold tracking-[0.2em] mb-3 uppercase text-[var(--color-primary)]">
                       {item.subtitle}
                     </span>
-                    <h3 className="text-2xl md:text-4xl font-black text-[var(--color-text-primary)] mb-4 leading-tight">
+                    <h3 className="text-2xl md:text-3xl font-black text-[var(--color-text-primary)] mb-4 leading-tight">
                       {item.title}
                     </h3>
-                    <p className="text-[var(--color-text-secondary)] text-base leading-relaxed font-bold whitespace-pre-line">
+                    <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed whitespace-pre-line">
                       {item.desc}
                     </p>
-                    <div className="mt-6 md:mt-8">
-                      <Link href="/service" className="group inline-flex items-center gap-2 font-black text-[var(--color-text-primary)] border-b-2 border-[var(--color-primary)] pb-1 hover:text-[var(--color-primary)] transition-colors">
+                    <div className="mt-6">
+                      <Link href="/service" className="group inline-flex items-center gap-2 text-sm font-bold text-[var(--color-primary)] hover:opacity-70 transition-opacity">
                         VIEW MORE
-                        <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-2" />
+                        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </div>
                   </div>
@@ -129,26 +125,26 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mt-12 md:mt-20 text-center">
+          <div className="mt-14 md:mt-20 text-center">
             <Link
               href="/service"
-              className="inline-flex items-center gap-3 bg-[var(--color-primary)] text-white px-10 py-5 rounded-full font-black text-lg hover:bg-[var(--color-primary-hover)] hover:scale-105 transition-all shadow-xl"
+              className="inline-flex items-center gap-3 bg-[var(--color-primary)] text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-[var(--color-primary-hover)] transition-all shadow-md hover:shadow-lg"
             >
               事業内容を詳しく見る
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Career Growth Section */}
-      <section className="py-12 md:py-24 bg-[var(--color-secondary)] overflow-hidden">
+      <section className="py-16 md:py-28 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
             {/* Left: Image */}
             <div className="w-full lg:w-1/2">
               <div className="relative">
-                <div className="aspect-[4/3] md:aspect-[3/4] rounded-xl overflow-hidden shadow-xl">
+                <div className="aspect-[4/3] md:aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
                   <img
                     src="/images/career-growth.png"
                     alt="キャリアアップを目指す若い女性"
@@ -156,20 +152,20 @@ export default function Home() {
                   />
                 </div>
                 {/* Accent block */}
-                <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 w-16 md:w-24 h-16 md:h-24 bg-[var(--color-primary)] rounded-xl -z-10" />
+                <div className="absolute -bottom-3 -right-3 md:-bottom-5 md:-right-5 w-14 md:w-20 h-14 md:h-20 bg-[var(--color-primary)] rounded-xl -z-10 opacity-20" />
               </div>
             </div>
 
             {/* Right: Content */}
             <div className="w-full lg:w-1/2 flex flex-col justify-center">
-              <span className="inline-block text-[var(--color-primary)] font-black tracking-widest text-sm mb-3">
+              <span className="inline-block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">
                 CAREER GROWTH
               </span>
               <h2 className="text-2xl md:text-4xl font-black leading-tight mb-6 text-[var(--color-text-primary)]">
                 顧客成長と自己成長を、<br />
                 同時実現していく。
               </h2>
-              <div className="space-y-4 text-base text-[var(--color-text-secondary)] leading-relaxed font-bold mb-6">
+              <div className="space-y-4 text-sm text-[var(--color-text-secondary)] leading-relaxed mb-6">
                 <p>
                   事業成長のプロフェッショナル集団として、
                   徹底した教育制度とキャリアサポートを用意しています。
@@ -180,12 +176,12 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Values - Simple horizontal badges */}
+              {/* Values - Clean tags */}
               <div className="flex flex-wrap gap-2 mb-6">
                 {['可能性を重視する', '一歩目は一緒に', '失敗は成長の通過点', '向き合い続ける', '人生に責任を持つ'].map((value, i) => (
                   <span
                     key={i}
-                    className="inline-block bg-[var(--color-primary)] text-white px-4 py-2 rounded-full font-black text-xs tracking-wide"
+                    className="inline-block bg-[var(--color-primary-light)] text-[var(--color-primary)] px-4 py-2 rounded-full font-bold text-xs"
                   >
                     {value}
                   </span>
@@ -194,10 +190,10 @@ export default function Home() {
 
               <Link
                 href="/recruit"
-                className="group inline-flex items-center gap-2 font-black text-[var(--color-primary)] text-base"
+                className="group inline-flex items-center gap-2 font-bold text-[var(--color-primary)] text-sm"
               >
                 採用情報を見る
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-2" />
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
           </div>
@@ -205,41 +201,47 @@ export default function Home() {
       </section>
 
       {/* News Section */}
-      <section className="py-12 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-[var(--color-secondary)]">
         <div className="max-w-4xl mx-auto px-6 md:px-12 w-full">
           <div className="flex justify-between items-end mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-[var(--color-text-primary)]">
-              NEWS
-            </h2>
+            <div>
+              <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-2">NEWS</span>
+              <h2 className="text-2xl md:text-3xl font-black text-[var(--color-text-primary)]">
+                お知らせ
+              </h2>
+            </div>
             <Link
               href="/news"
-              className="text-sm font-bold text-[var(--color-primary)] hover:opacity-70"
+              className="text-sm font-bold text-[var(--color-primary)] hover:opacity-70 flex items-center gap-1"
             >
-              VIEW ALL →
+              VIEW ALL
+              <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
           <NewsList />
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="relative py-12 md:py-24 bg-[#1E3A5F] overflow-hidden">
+      {/* Contact CTA Section */}
+      <section className="relative py-16 md:py-24 bg-[var(--color-dark)] overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-[url('/images/contact-bg.png')] bg-cover bg-center"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+          <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">CONTACT</span>
           <h2 className="text-2xl md:text-4xl font-black text-white mb-4">
-            CONTACT
+            お気軽にお問い合わせください
           </h2>
-          <p className="text-white/70 font-bold mb-8 leading-relaxed text-sm md:text-base">
+          <p className="text-white/60 text-sm mb-8 leading-relaxed">
             人材に関するご相談、採用に関するご質問など、<br />
             お気軽にお問い合わせください。
           </p>
 
           <Link
             href="/contact"
-            className="inline-block bg-[var(--color-primary)] text-white text-base font-black tracking-widest px-10 py-4 rounded-full hover:bg-[var(--color-primary-hover)] transition-all duration-300 shadow-xl"
+            className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white text-sm font-bold tracking-wider px-8 py-4 rounded-full hover:bg-[var(--color-primary-hover)] transition-all shadow-md hover:shadow-lg"
           >
             お問い合わせ
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>

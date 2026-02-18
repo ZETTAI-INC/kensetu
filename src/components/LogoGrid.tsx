@@ -8,7 +8,7 @@ export const LogoGrid = ({ logos }: LogoGridProps) => {
             {logos.map((logo, index) => (
                 <div
                     key={index}
-                    className="flex items-center justify-center h-32 bg-[var(--color-surface)] border border-[var(--color-border)] p-4 hover:shadow-lg transition-all duration-300"
+                    className="flex items-center justify-center h-28 bg-white border border-[var(--color-border)] p-4 rounded-xl hover:shadow-md transition-all duration-300"
                 >
                     {logo.src ? (
                         <img
