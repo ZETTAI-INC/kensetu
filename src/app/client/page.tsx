@@ -7,7 +7,7 @@ export default function ClientPage() {
             <SubpageHero
                 titleEn="CLIENT"
                 titleJa="企業の皆様へ"
-                backgroundImage="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
+                backgroundImage="/images/hero-slide-3.png"
             />
 
             {/* Intro */}
@@ -100,7 +100,7 @@ export default function ClientPage() {
                         <div className="w-full md:w-1/2">
                             <div className="aspect-[4/3] bg-blue-50 rounded-2xl relative overflow-hidden shadow-lg border border-blue-100">
                                 <img
-                                    src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop"
+                                    src="/images/education_system_visual.png"
                                     alt="教育システム"
                                     className="w-full h-full object-cover"
                                 />

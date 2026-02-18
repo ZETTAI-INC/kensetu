@@ -35,7 +35,7 @@ export default function ContactPage() {
             <SubpageHero
                 titleEn="CONTACT"
                 titleJa="お問い合わせ"
-                backgroundImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2070&auto=format&fit=crop"
+                backgroundImage="/images/contact-bg.png"
             />
 
             <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">

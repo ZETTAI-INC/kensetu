@@ -27,7 +27,7 @@ export default function NewsPage() {
             <SubpageHero
                 titleEn="NEWS"
                 titleJa="お知らせ"
-                backgroundImage="https://images.unsplash.com/photo-1504711434969-e33886168d6c?q=80&w=2070&auto=format&fit=crop"
+                backgroundImage="/images/contact-bg.png"
             />
 
             <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">

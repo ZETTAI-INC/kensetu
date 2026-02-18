@@ -8,7 +8,7 @@ export default function CompanyPage() {
             <SubpageHero
                 titleEn="COMPANY"
                 titleJa="会社情報"
-                backgroundImage="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2070&auto=format&fit=crop"
+                backgroundImage="/images/business-construction.png"
             />
 
             {/* Mission Section */}
@@ -30,7 +30,7 @@ export default function CompanyPage() {
                         <div className="w-full md:w-1/2">
                             <div className="aspect-square rounded-2xl relative overflow-hidden group shadow-lg">
                                 <img
-                                    src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2070&auto=format&fit=crop"
+                                    src="/images/company-mission.png"
                                     alt="可能性を解放する"
                                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />
@@ -55,7 +55,7 @@ export default function CompanyPage() {
                         <div className="w-full md:w-1/2">
                             <div className="aspect-square rounded-2xl relative overflow-hidden group shadow-lg">
                                 <img
-                                    src="https://images.unsplash.com/photo-1573167243872-43c6433b9d40?q=80&w=2070&auto=format&fit=crop"
+                                    src="/images/company-vision.png"
                                     alt="自分の選択でキャリアを描く"
                                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 />

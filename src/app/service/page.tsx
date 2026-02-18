@@ -8,7 +8,7 @@ export default function ServicePage() {
             <SubpageHero
                 titleEn="SERVICE"
                 titleJa="事業紹介"
-                backgroundImage="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+                backgroundImage="/images/hero-main.png"
             />
 
             {/* Intro */}
@@ -33,7 +33,7 @@ export default function ServicePage() {
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                                     <img
-                                        src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop"
+                                        src="/images/service-consulting.png"
                                         alt="総合人材コンサルティング"
                                         className="w-full h-full object-cover"
                                     />
@@ -74,7 +74,7 @@ export default function ServicePage() {
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                                     <img
-                                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2070&auto=format&fit=crop"
+                                        src="/images/service-page-consulting.png"
                                         alt="人材育成"
                                         className="w-full h-full object-cover"
                                     />
@@ -115,7 +115,7 @@ export default function ServicePage() {
                             <div className="w-full md:w-1/2">
                                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                                     <img
-                                        src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=2070&auto=format&fit=crop"
+                                        src="/images/recruit-hero.png"
                                         alt="キャリアサポート"
                                         className="w-full h-full object-cover"
                                     />

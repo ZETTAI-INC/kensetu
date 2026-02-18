@@ -7,7 +7,7 @@ export default function PrivacyPage() {
             <SubpageHero
                 titleEn="PRIVACY POLICY"
                 titleJa="個人情報保護方針"
-                backgroundImage="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
+                backgroundImage="/images/business-construction.png"
             />
 
             <div className="container mx-auto px-6 py-24">

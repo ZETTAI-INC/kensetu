@@ -8,7 +8,7 @@ export default function RecruitPage() {
             <section className="relative h-[70vh] md:h-[80vh] w-full">
                 <div className="absolute inset-0">
                     <img
-                        src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2070&auto=format&fit=crop"
+                        src="/images/concept-workers.png"
                         alt="キャリアを築く若い女性たち"
                         className="w-full h-full object-cover"
                     />

@@ -14,8 +14,8 @@ export const HeroSection = () => {
                     transition={{ duration: 1.5, ease: "easeOut" }}
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2070&auto=format&fit=crop"
-                        alt="若い女性プロフェッショナル"
+                        src="/images/hero-creative.png"
+                        alt="建設現場で活躍するプロフェッショナル"
                         className="w-full h-full object-cover object-center"
                     />
                 </motion.div>
