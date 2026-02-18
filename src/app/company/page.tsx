@@ -20,14 +20,11 @@ export default function CompanyPage() {
                             <div className="relative">
                                 <p className="text-[var(--color-primary)] font-black tracking-widest text-sm md:text-base mb-3 md:mb-4">MISSION</p>
                                 <h2 className="text-2xl md:text-4xl font-black mb-4 md:mb-6 leading-tight text-[var(--color-text-primary)] tracking-tight">
-                                    可能性を解放し、<br />
-                                    働くをもっと自由に。
+                                    人生を変える"最初の一歩"を<br />
+                                    ともに踏み出し、<br />
+                                    人生が変わったと<br className="md:hidden" />
+                                    心から言えるまで共に歩む。
                                 </h2>
-                                <p className="text-[var(--color-text-secondary)] leading-relaxed text-base font-bold">
-                                    私たちは、既成概念にとらわれず、すべての人が持つ無限の可能性を信じています。
-                                    「働く」ということを、もっと自由で、もっとワクワクするものへ。
-                                    一人ひとりが輝ける場所を創り出します。
-                                </p>
                             </div>
                         </div>
                         <div className="w-full md:w-1/2">
@@ -47,15 +44,12 @@ export default function CompanyPage() {
                             <div className="relative">
                                 <p className="text-[var(--color-primary)] font-black tracking-widest text-sm md:text-base mb-3 md:mb-4">VISION</p>
                                 <h2 className="text-2xl md:text-4xl font-black mb-4 md:mb-6 leading-tight text-[var(--color-text-primary)] tracking-tight">
-                                    誰もが“自分の選択”で<br />
-                                    キャリアを描ける<br />
-                                    社会をつくる。
+                                    一人ひとりに向き合い、<br />
+                                    挑戦できる環境と<br className="md:hidden" />
+                                    成長の機会を<br />
+                                    提供し続け、<br className="md:hidden" />
+                                    可能性を最大化する
                                 </h2>
-                                <p className="text-[var(--color-text-secondary)] leading-relaxed text-base font-bold">
-                                    誰かに決められたレールではなく、自分自身で選び取る未来。
-                                    私たちは、その選択肢を広げ、決断を支える存在でありたい。
-                                    自律的なキャリア形成が当たり前の社会を目指します。
-                                </p>
                             </div>
                         </div>
                         <div className="w-full md:w-1/2">
@@ -76,12 +70,13 @@ export default function CompanyPage() {
                             <h2 className="text-2xl md:text-4xl font-black text-[var(--color-text-primary)]">行動指針</h2>
                         </div>
 
-                        <HorizontalScroll className="md:grid-cols-4">
+                        <HorizontalScroll className="md:grid-cols-5">
                             {[
-                                { num: '01', title: '常に挑戦', text: '現状に満足せず、新しいことに挑み続ける姿勢を持ちます。' },
-                                { num: '02', title: '仕事に本気', text: 'プロフェッショナルとして、一つひとつの仕事に情熱を注ぎます。' },
-                                { num: '03', title: '継続は力なり', text: '日々の小さな積み重ねが、大きな成果を生むと信じて行動します。' },
-                                { num: '04', title: 'ヒトに誠実', text: '関わるすべての人に対し、誠意と思いやりを持って接します。' }
+                                { num: '01', title: '可能性を重視する', text: '一人ひとりの可能性を開放し、最大化することで一緒に会社も成長できる。' },
+                                { num: '02', title: '一歩目は、一緒に踏み出す', text: '最初の一歩は、才能でも経歴でもなく「環境」で決まる。' },
+                                { num: '03', title: '失敗を、成長の通過点にする', text: 'だから私たちは、踏み出す勇気が出るまで何度でも向き合う。' },
+                                { num: '04', title: '結果が出るまで、向き合い続ける', text: '一緒に一歩を踏み出したら、結果が出るところまで一緒に走る。' },
+                                { num: '05', title: '一人ひとりの人生に責任を持つ', text: '一人ひとりの人生に責任を持ち、決して妥協しない。' }
                             ].map((item) => (
                                 <div key={item.num} className="bg-white border border-[var(--color-border)] p-8 rounded-xl hover:shadow-xl transition-all duration-300 group relative overflow-hidden min-w-[80vw] md:min-w-0 snap-center shadow-sm flex flex-col h-full">
                                     <div className="absolute -right-4 -top-4 text-8xl md:text-9xl font-black text-[var(--color-secondary)] group-hover:text-[var(--color-primary)]/10 transition-colors select-none pointer-events-none">

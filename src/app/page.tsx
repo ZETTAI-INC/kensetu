@@ -18,17 +18,16 @@ export default function Home() {
                 OUR CONCEPT
               </span>
               <h2 className="text-2xl md:text-4xl font-black leading-tight mb-6 text-[var(--color-text-primary)]">
-                可能性を解放し、<br />
-                働くをもっと自由に。
+                人生を変える"最初の一歩"を<br />
+                ともに踏み出す。
               </h2>
               <div className="space-y-6 text-[var(--color-text-secondary)] leading-loose font-bold">
                 <p>
                   株式会社リッチ＆ビルドは、人材の総合コンサルタントです。<br />
-                  私たちは、既成概念にとらわれず、すべての人が持つ無限の可能性を信じています。
+                  一人ひとりに向き合い、挑戦できる環境と成長の機会を提供し続け、可能性を最大化します。
                 </p>
                 <p>
-                  「働く」を、もっと自由で、もっとワクワクするものへ。<br />
-                  一人ひとりが輝ける場所を創り出します。
+                  人生が変わったと心から言えるまで、共に歩みます。
                 </p>
               </div>
               <div className="mt-10">
@@ -183,7 +182,7 @@ export default function Home() {
 
               {/* Values - Simple horizontal badges */}
               <div className="flex flex-wrap gap-2 mb-6">
-                {['常に挑戦', '仕事に本気', '継続は力なり', 'ヒトに誠実'].map((value, i) => (
+                {['可能性を重視する', '一歩目は一緒に', '失敗は成長の通過点', '向き合い続ける', '人生に責任を持つ'].map((value, i) => (
                   <span
                     key={i}
                     className="inline-block bg-[var(--color-primary)] text-white px-4 py-2 rounded-full font-black text-xs tracking-wide"
