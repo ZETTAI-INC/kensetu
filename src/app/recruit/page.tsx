@@ -8,8 +8,8 @@ export default function RecruitPage() {
             <section className="relative h-[60vh] md:h-[80vh] w-full">
                 <div className="absolute inset-0">
                     <img
-                        src="/images/concept-workers.png"
-                        alt="キャリアを築く若い女性たち"
+                        src="/images/recruit-hero.png"
+                        alt="採用 - プロフェッショナルなビジネスチーム"
                         className="w-full h-full object-cover"
                     />
                     {/* Mobile: full coverage / Desktop: gradient */}
