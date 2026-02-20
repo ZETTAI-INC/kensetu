@@ -219,11 +219,11 @@ export default function Home() {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="relative py-12 md:py-24 bg-[var(--color-dark)] overflow-hidden">
+      <section className="relative py-12 md:py-24 bg-[var(--color-primary)] overflow-hidden">
         <div className="absolute inset-0 opacity-5 bg-[url('/images/contact-bg.png')] bg-cover bg-center"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-5 md:px-6 text-center">
-          <span className="block text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3">CONTACT</span>
+          <span className="block text-white/80 font-extrabold tracking-[0.2em] text-sm mb-3">CONTACT</span>
           <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
             お気軽にお問い合わせください
           </h2>
@@ -234,7 +234,7 @@ export default function Home() {
 
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white text-base font-extrabold tracking-wider px-8 py-4 rounded-full hover:bg-[var(--color-primary-hover)] transition-all shadow-md hover:shadow-lg"
+            className="inline-flex items-center gap-2 bg-black text-white text-base font-extrabold tracking-wider px-8 py-4 rounded-full hover:bg-gray-800 transition-all shadow-md hover:shadow-lg"
           >
             お問い合わせ
             <ArrowRight className="w-4 h-4" />
