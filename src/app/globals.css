@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  /* Corporate Palette - ロゴ「リチ」ブルー基準 */
-  --color-primary: #3A8ED5;
-  /* ロゴ「リチ」ブルー */
-  --color-primary-hover: #2D7DC2;
-  /* ホバー時の濃いブルー */
-  --color-primary-light: #E6F0FA;
-  /* バッジ・タグ用の薄いブルー */
-  --color-secondary: #EEF5FC;
-  /* 背景用の極薄ブルー */
-  --color-accent: #6BB0E8;
-  /* アクセント用の明るいブルー */
+  /* Corporate Palette - 水色ベース */
+  --color-primary: #4AABE8;
+  /* メインの水色 */
+  --color-primary-hover: #3A9AD8;
+  /* ホバー時のやや濃い水色 */
+  --color-primary-light: #E8F4FC;
+  /* バッジ・タグ用の薄い水色 */
+  --color-secondary: #F0F8FF;
+  /* 背景用の極薄水色 */
+  --color-accent: #7EC8F0;
+  /* アクセント用の明るい水色 */
 
   --color-background: #FFFFFF;
-  --color-surface: #F7FAFF;
+  --color-surface: #F7FBFF;
 
   --color-text-primary: #1A202C;
   --color-text-secondary: #4A5568;
@@ -22,8 +22,8 @@
 
   --color-border: #E2E8F0;
   --color-muted: #F1F5F9;
-  --color-dark: #1E4A7A;
-  /* ロゴ「リチ」ブルーの濃色版 */
+  --color-dark: #2B6FA0;
+  /* 水色の濃色版（フッター等） */
 
   /* Angular, squared fonts */
   --font-sans: var(--font-zen-kaku), "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
