@@ -2,19 +2,19 @@
 
 @theme {
   /* Corporate Palette - 水色ベース */
-  --color-primary: #4AABE8;
+  --color-primary: #5CC0EE;
   /* メインの水色 */
-  --color-primary-hover: #3A9AD8;
+  --color-primary-hover: #4AB0E0;
   /* ホバー時のやや濃い水色 */
-  --color-primary-light: #E8F4FC;
+  --color-primary-light: #EAF6FD;
   /* バッジ・タグ用の薄い水色 */
-  --color-secondary: #F0F8FF;
+  --color-secondary: #F2FAFF;
   /* 背景用の極薄水色 */
-  --color-accent: #7EC8F0;
+  --color-accent: #8AD4F5;
   /* アクセント用の明るい水色 */
 
   --color-background: #FFFFFF;
-  --color-surface: #F7FBFF;
+  --color-surface: #F8FCFF;
 
   --color-text-primary: #1A202C;
   --color-text-secondary: #4A5568;
@@ -22,7 +22,7 @@
 
   --color-border: #E2E8F0;
   --color-muted: #F1F5F9;
-  --color-dark: #2B6FA0;
+  --color-dark: #3A9AC5;
   /* 水色の濃色版（フッター等） */
 
   /* Angular, squared fonts */
