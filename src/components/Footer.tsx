@@ -18,7 +18,7 @@ export const Footer = () => {
     };
 
     return (
-        <footer className="bg-[var(--color-dark)] text-white relative overflow-hidden">
+        <footer className="bg-[var(--color-primary)] text-white relative overflow-hidden">
             <div className="max-w-6xl mx-auto px-5 md:px-6 py-10 md:py-16">
                 <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-20">
                     {/* Logo & Info */}
