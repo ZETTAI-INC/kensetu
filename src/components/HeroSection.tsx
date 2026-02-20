@@ -14,7 +14,7 @@ export const HeroSection = () => {
                     transition={{ duration: 1.5, ease: "easeOut" }}
                 >
                     <img
-                        src="/images/hero-creative.png"
+                        src="/images/hero-main-new.jpg"
                         alt="建設現場で活躍するプロフェッショナル"
                         className="w-full h-full object-cover object-center"
                     />

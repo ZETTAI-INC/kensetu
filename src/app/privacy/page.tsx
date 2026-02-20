@@ -46,8 +46,8 @@ export default function PrivacyPage() {
                                 <div className="flex items-center gap-2">
                                     <Mail className="w-4 h-4 text-[var(--color-primary)]" />
                                     <span className="font-bold">メール：</span>
-                                    <a href="mailto:takeshi.arai625@gmail.com" className="hover:text-[var(--color-primary)] hover:underline transition-colors">
-                                        takeshi.arai625@gmail.com
+                                    <a href="mailto:info@rich-and-build.co.jp" className="hover:text-[var(--color-primary)] hover:underline transition-colors">
+                                        info@rich-and-build.co.jp
                                     </a>
                                 </div>
                                 <div className="flex items-center gap-2">

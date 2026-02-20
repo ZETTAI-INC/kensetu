@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -41,31 +42,28 @@ export const Navbar = () => {
                 className={cn(
                     'fixed top-0 left-0 w-full z-50 transition-all duration-300',
                     isScrolled || isMobileMenuOpen
-                        ? 'bg-white/98 backdrop-blur-md shadow-sm py-2.5 md:py-3 border-b border-border'
-                        : 'bg-transparent py-4 md:py-5'
+                        ? 'bg-white/98 backdrop-blur-md shadow-sm py-1 md:py-1.5 border-b border-border'
+                        : 'bg-transparent py-1.5 md:py-2'
                 )}
             >
-                <div className="max-w-7xl mx-auto px-5 md:px-6 flex items-center justify-between">
+                <div className="max-w-7xl mx-auto px-2 md:px-3 flex items-center justify-between">
                     {/* Logo - リチビル */}
                     <Link
                         href="/"
                         className="z-50 relative group"
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
-                        <div className="font-black flex items-baseline leading-none tracking-tight">
-                            <span className={cn(
-                                "text-2xl md:text-4xl transition-colors duration-300",
-                                isScrolled || isMobileMenuOpen ? "text-[var(--color-primary)]" : "text-white drop-shadow-lg"
-                            )}>
-                                リチ
-                            </span>
-                            <span className={cn(
-                                "text-2xl md:text-4xl transition-colors duration-300",
-                                isScrolled || isMobileMenuOpen ? "text-[#1A202C]" : "text-white drop-shadow-lg"
-                            )}>
-                                ビル
-                            </span>
-                        </div>
+                        <Image
+                            src="/images/logo-richibiru.png"
+                            alt="リチビル"
+                            width={480}
+                            height={428}
+                            className={cn(
+                                "h-[120px] md:h-[160px] w-auto transition-all duration-300 -my-8 md:-my-12",
+                                isScrolled || isMobileMenuOpen ? "" : "brightness-0 invert drop-shadow-lg"
+                            )}
+                            priority
+                        />
                     </Link>
 
                     {/* Desktop Nav */}

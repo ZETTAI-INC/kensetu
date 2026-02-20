@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navItems = [
     { name: '会社案内', href: '/company' },
@@ -22,9 +23,14 @@ export const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-20">
                     {/* Logo & Info */}
                     <div className="md:w-1/3">
-                        <div className="font-black text-3xl md:text-4xl tracking-tight mb-4 md:mb-6 flex items-baseline">
-                            <span className="text-[var(--color-primary)]">リチ</span>
-                            <span className="text-white">ビル</span>
+                        <div className="-mb-8 md:-mb-10 -ml-4 md:-ml-6">
+                            <Image
+                                src="/images/logo-richibiru.png"
+                                alt="リチビル"
+                                width={480}
+                                height={428}
+                                className="h-[140px] md:h-[170px] w-auto brightness-0 invert"
+                            />
                         </div>
                         <div className="space-y-3 text-white/80 text-sm md:text-base">
                             <p className="font-extrabold text-white/90">株式会社リッチ＆ビルド</p>
