@@ -73,7 +73,7 @@ export default function CompanyPage() {
                                 { num: '04', title: '結果が出るまで、向き合い続ける', text: '一緒に一歩を踏み出したら、結果が出るところまで一緒に走る。' },
                                 { num: '05', title: '一人ひとりの人生に責任を持つ', text: '一人ひとりの人生に責任を持ち、決して妥協しない。' }
                             ].map((item) => (
-                                <div key={item.num} className="bg-white border border-[var(--color-border)] p-7 rounded-2xl hover:shadow-lg transition-all duration-300 group relative overflow-hidden min-w-[80vw] md:min-w-0 snap-center shadow-sm flex flex-col h-full">
+                                <div key={item.num} className="bg-white border border-[var(--color-border)] p-7 rounded-2xl hover:shadow-lg transition-all duration-300 group relative overflow-hidden min-w-[75vw] sm:min-w-[60vw] md:min-w-0 snap-center shadow-sm flex flex-col h-full">
                                     <div className="absolute -right-4 -top-4 text-8xl md:text-9xl font-black text-[var(--color-secondary)] group-hover:text-[var(--color-primary)]/10 transition-colors select-none pointer-events-none">
                                         {item.num}
                                     </div>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export const HeroSection = () => {
     return (
-        <section className="relative h-dvh w-full overflow-hidden">
+        <section className="relative h-[70vh] md:h-[80vh] w-full overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <motion.div
@@ -16,15 +16,15 @@ export const HeroSection = () => {
                     <img
                         src="/images/hero-main-new.jpg"
                         alt="建設現場で活躍するプロフェッショナル"
-                        className="w-full h-full object-cover object-center"
+                        className="w-full h-full object-cover object-[70%_center] md:object-center"
                     />
                 </motion.div>
                 {/* Mobile: full coverage overlay / Desktop: gradient to right */}
-                <div className="absolute inset-0 bg-[var(--color-dark)]/70 md:bg-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-dark)]/80 via-[var(--color-dark)]/40 to-[var(--color-dark)]/20 md:bg-transparent md:bg-none z-10" />
                 <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-[var(--color-dark)]/85 via-[var(--color-dark)]/50 to-transparent z-10" />
             </div>
 
-            <div className="absolute inset-0 z-20 flex items-end pb-24 md:items-center md:pb-0">
+            <div className="absolute inset-0 z-20 flex items-end pb-20 md:items-center md:pb-0">
                 <div className="w-full max-w-7xl mx-auto px-5 md:px-12">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

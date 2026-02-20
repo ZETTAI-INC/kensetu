@@ -46,7 +46,7 @@ export const Navbar = () => {
                         : 'bg-transparent py-1.5 md:py-2'
                 )}
             >
-                <div className="max-w-7xl mx-auto px-2 md:px-3 flex items-center justify-between">
+                <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between">
                     {/* Logo - リチビル */}
                     <Link
                         href="/"
@@ -87,7 +87,7 @@ export const Navbar = () => {
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="md:hidden z-50 relative w-10 h-10 flex flex-col justify-center items-center"
+                        className="md:hidden z-50 relative w-12 h-12 flex flex-col justify-center items-center"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         aria-label="メニュー"
                     >

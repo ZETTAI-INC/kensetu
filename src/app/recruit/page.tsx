@@ -22,7 +22,7 @@ export default function RecruitPage() {
                             <span className="inline-block text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3 md:mb-4">
                                 CAREERS
                             </span>
-                            <h1 className="text-4xl md:text-7xl font-black text-white leading-tight mb-4 md:mb-6">
+                            <h1 className="text-3xl md:text-7xl font-black text-white leading-tight mb-4 md:mb-6">
                                 事業成長の<br />
                                 プロフェッショナル<br />
                                 集団として
@@ -41,7 +41,7 @@ export default function RecruitPage() {
                 <div className="max-w-6xl mx-auto px-5 md:px-12">
                     <div className="mb-12 md:mb-16">
                         <span className="text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm">ENVIRONMENT</span>
-                        <h2 className="text-4xl md:text-6xl font-black text-[var(--color-text-primary)] mt-3">
+                        <h2 className="text-3xl md:text-6xl font-black text-[var(--color-text-primary)] mt-3">
                             成長を支える環境
                         </h2>
                     </div>

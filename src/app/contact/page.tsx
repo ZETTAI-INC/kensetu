@@ -110,7 +110,7 @@ export default function ContactPage() {
                                 <label htmlFor="message" className="text-base font-extrabold text-[var(--color-text-primary)] block">
                                     お問い合わせ内容 <span className="text-[var(--color-primary)] ml-1">*</span>
                                 </label>
-                                <textarea id="message" rows={6} className="w-full px-4 py-3 md:py-4 text-base rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all resize-none placeholder:text-[var(--color-text-muted)]" placeholder="お問い合わせ内容をご記入ください"></textarea>
+                                <textarea id="message" rows={3} className="w-full px-4 py-3 md:py-4 text-base rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all resize-none placeholder:text-[var(--color-text-muted)] md:!h-[200px]" placeholder="お問い合わせ内容をご記入ください"></textarea>
                             </div>
 
                             {/* Privacy */}
