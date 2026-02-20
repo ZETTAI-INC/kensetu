@@ -10,7 +10,7 @@ export default function RecruitPage() {
                     <img
                         src="/images/recruit-hero.png"
                         alt="採用 - プロフェッショナルなビジネスチーム"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-top"
                     />
                     {/* Mobile: full coverage / Desktop: gradient */}
                     <div className="absolute inset-0 bg-[var(--color-dark)]/70 md:bg-transparent" />
