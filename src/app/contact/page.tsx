@@ -46,7 +46,7 @@ export default function ContactPage() {
                     animate="visible"
                 >
                     <motion.div variants={itemVariants} className="text-center mb-10 md:mb-16">
-                        <p className="text-sm md:text-base text-[var(--color-text-secondary)] leading-relaxed">
+                        <p className="text-base md:text-lg text-[var(--color-text-secondary)] leading-relaxed">
                             人材に関するご相談、お見積もり、採用に関するお問い合わせは<br className="hidden md:block" />
                             以下のフォームよりお気軽にご連絡ください。<br />
                             担当者より3営業日以内にご連絡させていただきます。
@@ -58,48 +58,48 @@ export default function ContactPage() {
                             {/* Row 1: Name & Company */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label htmlFor="name" className="text-sm font-bold text-[var(--color-text-primary)] block">
+                                    <label htmlFor="name" className="text-base font-extrabold text-[var(--color-text-primary)] block">
                                         お名前 <span className="text-[var(--color-primary)] ml-1">*</span>
                                     </label>
-                                    <input type="text" id="name" className="w-full px-4 py-3 md:py-4 text-sm rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all placeholder:text-[var(--color-text-muted)]" placeholder="山田 太郎" />
+                                    <input type="text" id="name" className="w-full px-4 py-3 md:py-4 text-base rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all placeholder:text-[var(--color-text-muted)]" placeholder="山田 太郎" />
                                 </div>
                                 <div className="space-y-2">
-                                    <label htmlFor="company" className="text-sm font-bold text-[var(--color-text-primary)] block">
+                                    <label htmlFor="company" className="text-base font-extrabold text-[var(--color-text-primary)] block">
                                         貴社名
                                     </label>
-                                    <input type="text" id="company" className="w-full px-4 py-3 md:py-4 text-sm rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all placeholder:text-[var(--color-text-muted)]" placeholder="株式会社サンプル" />
+                                    <input type="text" id="company" className="w-full px-4 py-3 md:py-4 text-base rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all placeholder:text-[var(--color-text-muted)]" placeholder="株式会社サンプル" />
                                 </div>
                             </div>
 
                             {/* Row 2: Email & Phone */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label htmlFor="email" className="text-sm font-bold text-[var(--color-text-primary)] block">
+                                    <label htmlFor="email" className="text-base font-extrabold text-[var(--color-text-primary)] block">
                                         メールアドレス <span className="text-[var(--color-primary)] ml-1">*</span>
                                     </label>
-                                    <input type="email" id="email" className="w-full px-4 py-3 md:py-4 text-sm rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all placeholder:text-[var(--color-text-muted)]" placeholder="example@email.com" />
+                                    <input type="email" id="email" className="w-full px-4 py-3 md:py-4 text-base rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all placeholder:text-[var(--color-text-muted)]" placeholder="example@email.com" />
                                 </div>
                                 <div className="space-y-2">
-                                    <label htmlFor="phone" className="text-sm font-bold text-[var(--color-text-primary)] block">
+                                    <label htmlFor="phone" className="text-base font-extrabold text-[var(--color-text-primary)] block">
                                         電話番号 <span className="text-[var(--color-primary)] ml-1">*</span>
                                     </label>
-                                    <input type="tel" id="phone" className="w-full px-4 py-3 md:py-4 text-sm rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all placeholder:text-[var(--color-text-muted)]" placeholder="090-1234-5678" />
+                                    <input type="tel" id="phone" className="w-full px-4 py-3 md:py-4 text-base rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all placeholder:text-[var(--color-text-muted)]" placeholder="090-1234-5678" />
                                 </div>
                             </div>
 
                             {/* Category */}
                             <div className="space-y-2">
-                                <label htmlFor="category" className="text-sm font-bold text-[var(--color-text-primary)] block">
+                                <label htmlFor="category" className="text-base font-extrabold text-[var(--color-text-primary)] block">
                                     お問い合わせ種別 <span className="text-[var(--color-primary)] ml-1">*</span>
                                 </label>
                                 <div className="relative">
-                                    <select id="category" className="w-full px-4 py-3 md:py-4 text-sm rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all appearance-none text-[var(--color-text-primary)]">
+                                    <select id="category" className="w-full px-4 py-3 md:py-4 text-base rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all appearance-none text-[var(--color-text-primary)]">
                                         <option>人材に関するご相談</option>
                                         <option>採用について</option>
                                         <option>お見積もり依頼</option>
                                         <option>その他</option>
                                     </select>
-                                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[var(--color-primary)] text-xs">
+                                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[var(--color-primary)] text-sm">
                                         ▼
                                     </div>
                                 </div>
@@ -107,10 +107,10 @@ export default function ContactPage() {
 
                             {/* Message */}
                             <div className="space-y-2">
-                                <label htmlFor="message" className="text-sm font-bold text-[var(--color-text-primary)] block">
+                                <label htmlFor="message" className="text-base font-extrabold text-[var(--color-text-primary)] block">
                                     お問い合わせ内容 <span className="text-[var(--color-primary)] ml-1">*</span>
                                 </label>
-                                <textarea id="message" rows={6} className="w-full px-4 py-3 md:py-4 text-sm rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all resize-none placeholder:text-[var(--color-text-muted)]" placeholder="お問い合わせ内容をご記入ください"></textarea>
+                                <textarea id="message" rows={6} className="w-full px-4 py-3 md:py-4 text-base rounded-xl bg-[var(--color-secondary)] border border-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)]/20 focus:border-[var(--color-primary)] outline-none transition-all resize-none placeholder:text-[var(--color-text-muted)]" placeholder="お問い合わせ内容をご記入ください"></textarea>
                             </div>
 
                             {/* Privacy */}
@@ -128,8 +128,8 @@ export default function ContactPage() {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                                         </svg>
                                     </div>
-                                    <span className="text-sm text-[var(--color-text-secondary)] group-hover:text-[var(--color-text-primary)] transition-colors">
-                                        <a href="/privacy" className="text-[var(--color-primary)] font-bold hover:underline underline-offset-4" target="_blank">個人情報保護方針</a>に同意する
+                                    <span className="text-base text-[var(--color-text-secondary)] group-hover:text-[var(--color-text-primary)] transition-colors">
+                                        <a href="/privacy" className="text-[var(--color-primary)] font-extrabold hover:underline underline-offset-4" target="_blank">個人情報保護方針</a>に同意する
                                     </span>
                                 </label>
                             </div>
@@ -143,7 +143,7 @@ export default function ContactPage() {
                                     <Button
                                         type="submit"
                                         className={cn(
-                                            "bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white px-12 py-4 rounded-full text-sm font-bold tracking-wider min-w-full md:min-w-[300px] shadow-md hover:shadow-lg transition-all h-auto",
+                                            "bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white px-12 py-4 rounded-full text-base font-extrabold tracking-wider min-w-full md:min-w-[300px] shadow-md hover:shadow-lg transition-all h-auto",
                                             !agreed && "opacity-40 cursor-not-allowed hover:shadow-none"
                                         )}
                                         disabled={!agreed}

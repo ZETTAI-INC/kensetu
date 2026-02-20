@@ -15,14 +15,14 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
             {/* Left: Text */}
             <div className="w-full md:w-1/2">
-              <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-4">
+              <span className="block text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-4">
                 OUR CONCEPT
               </span>
-              <h2 className="text-2xl md:text-4xl font-black leading-tight mb-6 text-[var(--color-text-primary)]">
+              <h2 className="text-3xl md:text-5xl font-black leading-tight mb-6 text-[var(--color-text-primary)]">
                 人生を変える"最初の一歩"を<br />
                 ともに踏み出す。
               </h2>
-              <div className="space-y-5 text-[var(--color-text-secondary)] leading-loose text-sm md:text-base">
+              <div className="space-y-5 text-[var(--color-text-secondary)] leading-loose text-base md:text-lg">
                 <p>
                   株式会社リッチ＆ビルドは、人材の総合コンサルタントです。<br />
                   一人ひとりに向き合い、挑戦できる環境と成長の機会を提供し続け、可能性を最大化します。
@@ -34,7 +34,7 @@ export default function Home() {
               <div className="mt-8">
                 <Link
                   href="/company"
-                  className="inline-flex items-center gap-2 text-sm font-bold tracking-wider text-[var(--color-primary)] hover:opacity-70 transition-opacity group"
+                  className="inline-flex items-center gap-2 text-base font-extrabold tracking-wider text-[var(--color-primary)] hover:opacity-70 transition-opacity group"
                 >
                   VIEW MORE
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -60,13 +60,13 @@ export default function Home() {
       <section className="py-12 md:py-28 bg-[var(--color-secondary)]">
         <div className="max-w-7xl mx-auto px-5 md:px-12 w-full">
           <div className="text-center mb-12 md:mb-20">
-            <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">
+            <span className="block text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3">
               BUSINESS
             </span>
-            <h2 className="text-3xl md:text-5xl font-black text-[var(--color-text-primary)]">
+            <h2 className="text-4xl md:text-6xl font-black text-[var(--color-text-primary)]">
               事業内容
             </h2>
-            <p className="mt-5 text-[var(--color-text-secondary)] max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+            <p className="mt-5 text-[var(--color-text-secondary)] max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
               総合人材コンサルティングで、<br />
               企業の成長をトータルサポートします。
             </p>
@@ -105,17 +105,17 @@ export default function Home() {
                 </div>
                 <div className="w-full md:w-1/2">
                   <div className="flex flex-col h-full justify-center">
-                    <span className="text-xs font-bold tracking-[0.2em] mb-3 uppercase text-[var(--color-primary)]">
+                    <span className="text-sm font-extrabold tracking-[0.2em] mb-3 uppercase text-[var(--color-primary)]">
                       {item.subtitle}
                     </span>
-                    <h3 className="text-2xl md:text-3xl font-black text-[var(--color-text-primary)] mb-4 leading-tight">
+                    <h3 className="text-3xl md:text-4xl font-black text-[var(--color-text-primary)] mb-4 leading-tight">
                       {item.title}
                     </h3>
-                    <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed whitespace-pre-line">
+                    <p className="text-[var(--color-text-secondary)] text-base leading-relaxed whitespace-pre-line">
                       {item.desc}
                     </p>
                     <div className="mt-6">
-                      <Link href="/service" className="group inline-flex items-center gap-2 text-sm font-bold text-[var(--color-primary)] hover:opacity-70 transition-opacity">
+                      <Link href="/service" className="group inline-flex items-center gap-2 text-base font-extrabold text-[var(--color-primary)] hover:opacity-70 transition-opacity">
                         VIEW MORE
                         <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                       </Link>
@@ -129,7 +129,7 @@ export default function Home() {
           <div className="mt-14 md:mt-20 text-center">
             <Link
               href="/service"
-              className="inline-flex items-center gap-3 bg-[var(--color-primary)] text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-[var(--color-primary-hover)] transition-all shadow-md hover:shadow-lg"
+              className="inline-flex items-center gap-3 bg-[var(--color-primary)] text-white px-8 py-4 rounded-full font-extrabold text-base hover:bg-[var(--color-primary-hover)] transition-all shadow-md hover:shadow-lg"
             >
               事業内容を詳しく見る
               <ArrowRight className="w-4 h-4" />
@@ -154,14 +154,14 @@ export default function Home() {
 
             {/* Right: Content */}
             <div className="w-full lg:w-1/2 flex flex-col justify-center">
-              <span className="inline-block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-2 md:mb-3">
+              <span className="inline-block text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-2 md:mb-3">
                 CAREER GROWTH
               </span>
-              <h2 className="text-xl md:text-4xl font-black leading-tight mb-4 md:mb-6 text-[var(--color-text-primary)]">
+              <h2 className="text-2xl md:text-5xl font-black leading-tight mb-4 md:mb-6 text-[var(--color-text-primary)]">
                 顧客成長と自己成長を、<br />
                 同時実現していく。
               </h2>
-              <div className="space-y-3 text-xs md:text-sm text-[var(--color-text-secondary)] leading-relaxed mb-5 md:mb-6">
+              <div className="space-y-3 text-sm md:text-base text-[var(--color-text-secondary)] leading-relaxed mb-5 md:mb-6">
                 <p>
                   事業成長のプロフェッショナル集団として、
                   徹底した教育制度とキャリアサポートを用意しています。
@@ -177,7 +177,7 @@ export default function Home() {
                 {['可能性を重視する', '一歩目は一緒に', '失敗は成長の通過点', '向き合い続ける', '人生に責任を持つ'].map((value, i) => (
                   <span
                     key={i}
-                    className="inline-block bg-[var(--color-primary-light)] text-[var(--color-primary)] px-3 md:px-4 py-1.5 md:py-2 rounded-full font-bold text-[10px] md:text-xs"
+                    className="inline-block bg-[var(--color-primary-light)] text-[var(--color-primary)] px-3 md:px-4 py-1.5 md:py-2 rounded-full font-extrabold text-xs md:text-sm"
                   >
                     {value}
                   </span>
@@ -186,7 +186,7 @@ export default function Home() {
 
               <Link
                 href="/recruit"
-                className="group inline-flex items-center gap-2 font-bold text-[var(--color-primary)] text-xs md:text-sm"
+                className="group inline-flex items-center gap-2 font-extrabold text-[var(--color-primary)] text-sm md:text-base"
               >
                 採用情報を見る
                 <ArrowRight className="w-3.5 h-3.5 md:w-4 md:h-4 transition-transform group-hover:translate-x-1" />
@@ -201,14 +201,14 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-5 md:px-12 w-full">
           <div className="flex justify-between items-end mb-8">
             <div>
-              <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-2">NEWS</span>
-              <h2 className="text-2xl md:text-3xl font-black text-[var(--color-text-primary)]">
+              <span className="block text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-2">NEWS</span>
+              <h2 className="text-3xl md:text-4xl font-black text-[var(--color-text-primary)]">
                 お知らせ
               </h2>
             </div>
             <Link
               href="/news"
-              className="text-sm font-bold text-[var(--color-primary)] hover:opacity-70 flex items-center gap-1"
+              className="text-base font-extrabold text-[var(--color-primary)] hover:opacity-70 flex items-center gap-1"
             >
               VIEW ALL
               <ArrowRight className="w-3.5 h-3.5" />
@@ -223,18 +223,18 @@ export default function Home() {
         <div className="absolute inset-0 opacity-5 bg-[url('/images/contact-bg.png')] bg-cover bg-center"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-5 md:px-6 text-center">
-          <span className="block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">CONTACT</span>
-          <h2 className="text-2xl md:text-4xl font-black text-white mb-4">
+          <span className="block text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3">CONTACT</span>
+          <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
             お気軽にお問い合わせください
           </h2>
-          <p className="text-white/60 text-sm mb-8 leading-relaxed">
+          <p className="text-white/60 text-base mb-8 leading-relaxed">
             人材に関するご相談、採用に関するご質問など、<br />
             お気軽にお問い合わせください。
           </p>
 
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white text-sm font-bold tracking-wider px-8 py-4 rounded-full hover:bg-[var(--color-primary-hover)] transition-all shadow-md hover:shadow-lg"
+            className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white text-base font-extrabold tracking-wider px-8 py-4 rounded-full hover:bg-[var(--color-primary-hover)] transition-all shadow-md hover:shadow-lg"
           >
             お問い合わせ
             <ArrowRight className="w-4 h-4" />

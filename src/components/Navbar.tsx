@@ -75,7 +75,7 @@ export const Navbar = () => {
                                 key={item.name}
                                 href={item.href}
                                 className={cn(
-                                    "text-sm font-bold tracking-wider transition-all duration-300 relative group/nav",
+                                    "text-base font-extrabold tracking-wider transition-all duration-300 relative group/nav",
                                     isScrolled
                                         ? "text-[var(--color-text-primary)] hover:text-[var(--color-primary)]"
                                         : "text-white/90 hover:text-white drop-shadow-sm"
@@ -132,7 +132,7 @@ export const Navbar = () => {
                                 >
                                     <Link
                                         href={item.href}
-                                        className="text-base font-bold text-[var(--color-text-primary)] py-4 block hover:text-[var(--color-primary)] transition-colors border-b border-[var(--color-border)]"
+                                        className="text-lg font-extrabold text-[var(--color-text-primary)] py-4 block hover:text-[var(--color-primary)] transition-colors border-b border-[var(--color-border)]"
                                         onClick={() => setIsMobileMenuOpen(false)}
                                     >
                                         {item.name}
@@ -147,7 +147,7 @@ export const Navbar = () => {
                             className="mt-6 pb-8"
                         >
                             <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                                <span className="inline-block w-full text-center bg-[var(--color-primary)] text-white font-bold py-3.5 rounded-full hover:bg-[var(--color-primary-hover)] transition-all shadow-md text-sm">
+                                <span className="inline-block w-full text-center bg-[var(--color-primary)] text-white font-extrabold py-3.5 rounded-full hover:bg-[var(--color-primary-hover)] transition-all shadow-md text-base">
                                     お問い合わせ
                                 </span>
                             </Link>

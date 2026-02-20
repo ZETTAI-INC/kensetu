@@ -26,8 +26,9 @@
   --color-dark: #2C3E6B;
   /* Dark navy for dark sections */
 
-  --font-sans: var(--font-noto-sans-jp), "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  --font-display: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Angular, squared fonts */
+  --font-sans: var(--font-zen-kaku), "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-zen-kaku), -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 @layer base {
@@ -42,9 +43,9 @@
     font-feature-settings: "palt";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1.8;
-    font-weight: 500;
-    /* Increased from default 400 */
+    line-height: 1.75;
+    font-weight: 700;
+    font-size: 16px;
   }
 
   h1,
@@ -54,15 +55,14 @@
   h5,
   h6 {
     font-family: var(--font-display);
-    font-weight: 800;
-    /* Increased from 700 */
-    line-height: 1.2;
+    font-weight: 900;
+    line-height: 1.15;
     letter-spacing: -0.02em;
     color: var(--color-text-primary);
   }
 
   p {
-    line-height: 1.8;
+    line-height: 1.75;
     color: var(--color-text-secondary);
     margin-bottom: 1em;
   }

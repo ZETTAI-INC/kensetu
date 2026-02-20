@@ -13,7 +13,7 @@ export default function PrivacyPage() {
             <div className="container mx-auto px-5 md:px-6 py-16 md:py-24">
                 <div className="max-w-3xl mx-auto bg-white p-8 md:p-14 rounded-2xl shadow-sm border border-[var(--color-border)]">
                     <div className="prose max-w-none">
-                        <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed">
+                        <p className="text-[var(--color-text-secondary)] text-base leading-relaxed">
                             当社は、お客様の個人情報を適切に保護することを重要な責務と考え、以下の方針に基づき個人情報の保護に努めます。
                         </p>
 
@@ -25,13 +25,13 @@ export default function PrivacyPage() {
                             { num: '05', title: 'お問い合わせ', text: '個人情報の取り扱いに関するお問い合わせは、当社までご連絡ください。' },
                         ].map((section) => (
                             <div key={section.num} className="mt-8">
-                                <h3 className="flex items-center gap-3 text-[var(--color-text-primary)] border-b border-[var(--color-border)] pb-2 text-base font-bold">
-                                    <span className="text-[var(--color-primary)] font-bold">{section.num}</span>
+                                <h3 className="flex items-center gap-3 text-[var(--color-text-primary)] border-b border-[var(--color-border)] pb-2 text-lg font-extrabold">
+                                    <span className="text-[var(--color-primary)] font-extrabold">{section.num}</span>
                                     {section.title}
                                 </h3>
-                                <p className="mt-3 text-sm text-[var(--color-text-secondary)] leading-relaxed">{section.text}</p>
+                                <p className="mt-3 text-base text-[var(--color-text-secondary)] leading-relaxed">{section.text}</p>
                                 {section.num === '02' && (
-                                    <ul className="list-disc pl-5 space-y-1.5 mt-3 text-sm text-[var(--color-text-secondary)]">
+                                    <ul className="list-disc pl-5 space-y-1.5 mt-3 text-base text-[var(--color-text-secondary)]">
                                         <li>お客様へのサービス提供</li>
                                         <li>お問い合わせへの対応</li>
                                         <li>サービス改善のための分析</li>
@@ -41,18 +41,18 @@ export default function PrivacyPage() {
                         ))}
 
                         <div className="bg-[var(--color-secondary)] p-6 rounded-xl mt-8">
-                            <p className="font-bold text-[var(--color-text-primary)] text-sm mb-3">株式会社リッチ＆ビルド</p>
-                            <div className="space-y-2 text-sm text-[var(--color-text-secondary)]">
+                            <p className="font-extrabold text-[var(--color-text-primary)] text-base mb-3">株式会社リッチ＆ビルド</p>
+                            <div className="space-y-2 text-base text-[var(--color-text-secondary)]">
                                 <div className="flex items-center gap-2">
                                     <Mail className="w-4 h-4 text-[var(--color-primary)]" />
-                                    <span className="font-medium">メール：</span>
+                                    <span className="font-bold">メール：</span>
                                     <a href="mailto:takeshi.arai625@gmail.com" className="hover:text-[var(--color-primary)] hover:underline transition-colors">
                                         takeshi.arai625@gmail.com
                                     </a>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <Phone className="w-4 h-4 text-[var(--color-primary)]" />
-                                    <span className="font-medium">電話：</span>
+                                    <span className="font-bold">電話：</span>
                                     <a href="tel:090-7797-6699" className="hover:text-[var(--color-primary)] hover:underline transition-colors">
                                         090-7797-6699
                                     </a>
@@ -63,7 +63,7 @@ export default function PrivacyPage() {
                     </div>
 
                     <div className="mt-12 pt-6 border-t border-[var(--color-border)] text-right">
-                        <p className="text-xs text-[var(--color-text-muted)]">
+                        <p className="text-sm text-[var(--color-text-muted)]">
                             制定日：{new Date().getFullYear()}年1月1日<br />
                             株式会社リッチ＆ビルド<br />
                             代表取締役 荒井 武志

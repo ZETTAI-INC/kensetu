@@ -19,15 +19,15 @@ export default function RecruitPage() {
                 <div className="absolute inset-0 flex items-end pb-12 md:items-center md:pb-0">
                     <div className="w-full max-w-7xl mx-auto px-5 md:px-12">
                         <div className="max-w-2xl">
-                            <span className="inline-block text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3 md:mb-4">
+                            <span className="inline-block text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3 md:mb-4">
                                 CAREERS
                             </span>
-                            <h1 className="text-3xl md:text-6xl font-black text-white leading-tight mb-4 md:mb-6">
+                            <h1 className="text-4xl md:text-7xl font-black text-white leading-tight mb-4 md:mb-6">
                                 事業成長の<br />
                                 プロフェッショナル<br />
                                 集団として
                             </h1>
-                            <p className="text-white/60 text-xs md:text-base font-medium leading-relaxed">
+                            <p className="text-white/60 text-sm md:text-lg font-bold leading-relaxed">
                                 顧客成長と自己成長を、同時実現していく。<br />
                                 私たちは、そんな意欲あふれる仲間を求めています。
                             </p>
@@ -40,8 +40,8 @@ export default function RecruitPage() {
             <section className="py-12 md:py-24 bg-white">
                 <div className="max-w-6xl mx-auto px-5 md:px-12">
                     <div className="mb-12 md:mb-16">
-                        <span className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs">ENVIRONMENT</span>
-                        <h2 className="text-3xl md:text-5xl font-black text-[var(--color-text-primary)] mt-3">
+                        <span className="text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm">ENVIRONMENT</span>
+                        <h2 className="text-4xl md:text-6xl font-black text-[var(--color-text-primary)] mt-3">
                             成長を支える環境
                         </h2>
                     </div>
@@ -71,11 +71,11 @@ export default function RecruitPage() {
                             },
                         ].map((item) => (
                             <div key={item.num} className="bg-[var(--color-secondary)] rounded-2xl p-6 md:p-8 hover:shadow-md transition-all">
-                                <span className="text-3xl font-black text-[var(--color-primary)]/20">{item.num}</span>
-                                <h3 className="text-xl font-black text-[var(--color-text-primary)] mt-2 mb-3">
+                                <span className="text-4xl font-black text-[var(--color-primary)]/20">{item.num}</span>
+                                <h3 className="text-2xl font-black text-[var(--color-text-primary)] mt-2 mb-3">
                                     {item.title}
                                 </h3>
-                                <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+                                <p className="text-base text-[var(--color-text-secondary)] leading-relaxed">
                                     {item.text}
                                 </p>
                             </div>
@@ -87,10 +87,10 @@ export default function RecruitPage() {
             {/* Statement Section */}
             <section className="py-12 md:py-24 bg-[var(--color-dark)]">
                 <div className="max-w-4xl mx-auto px-5 md:px-12 text-center">
-                    <h2 className="text-2xl md:text-5xl font-black text-white leading-tight mb-3 md:mb-4">
+                    <h2 className="text-3xl md:text-6xl font-black text-white leading-tight mb-3 md:mb-4">
                         Be Professional
                     </h2>
-                    <p className="text-base md:text-lg text-white/60 leading-relaxed">
+                    <p className="text-lg md:text-xl text-white/60 leading-relaxed">
                         プロフェッショナルとして、誇りを持って働く。
                     </p>
                 </div>
@@ -99,17 +99,17 @@ export default function RecruitPage() {
             {/* Entry CTA */}
             <section className="py-12 md:py-24 bg-white">
                 <div className="max-w-4xl mx-auto px-5 md:px-12 text-center">
-                    <span className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3 md:mb-4 block">ENTRY</span>
-                    <h2 className="text-2xl md:text-4xl font-black text-[var(--color-text-primary)] mb-5 md:mb-6 leading-tight">
+                    <span className="text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3 md:mb-4 block">ENTRY</span>
+                    <h2 className="text-3xl md:text-5xl font-black text-[var(--color-text-primary)] mb-5 md:mb-6 leading-tight">
                         まずは、お話ししませんか？
                     </h2>
-                    <p className="text-sm md:text-base text-[var(--color-text-secondary)] mb-8 leading-relaxed">
+                    <p className="text-base md:text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
                         あなたのキャリアについて、これからの未来について。<br />
                         私たちと一緒に考えましょう。
                     </p>
                     <Link
                         href="/contact"
-                        className="inline-flex items-center gap-3 bg-[var(--color-primary)] text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-[var(--color-primary-hover)] transition-all shadow-md hover:shadow-lg"
+                        className="inline-flex items-center gap-3 bg-[var(--color-primary)] text-white px-8 py-4 rounded-full font-extrabold text-base hover:bg-[var(--color-primary-hover)] transition-all shadow-md hover:shadow-lg"
                     >
                         エントリーする
                         <ArrowRight className="w-4 h-4" />

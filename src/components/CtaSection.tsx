@@ -15,8 +15,8 @@ export const CtaSection = ({ title, subtitle, buttonText, href, backgroundImage,
         return (
             <section id="contact" className="bg-primary py-20 text-center">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 font-sans">{title}</h2>
-                    <p className="text-white/90 mb-8 font-medium">{subtitle}</p>
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 font-sans">{title}</h2>
+                    <p className="text-white/90 mb-8 font-bold">{subtitle}</p>
                     <Link href={href}>
                         <Button variant="white" size="lg" className="min-w-[200px]">
                             {buttonText}
@@ -36,10 +36,10 @@ export const CtaSection = ({ title, subtitle, buttonText, href, backgroundImage,
             </div>
 
             <div className="container relative z-10 px-4 text-center">
-                <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight font-sans">{title}</h2>
-                <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto font-medium">{subtitle}</p>
+                <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight font-sans">{title}</h2>
+                <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto font-bold">{subtitle}</p>
                 <Link href={href}>
-                    <Button variant="primary" size="lg" className="h-14 px-10 text-lg">
+                    <Button variant="primary" size="lg" className="h-14 px-10 text-xl">
                         {buttonText}
                     </Button>
                 </Link>

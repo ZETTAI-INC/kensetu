@@ -14,10 +14,10 @@ export default function ServicePage() {
             {/* Intro */}
             <section className="py-10 md:py-20 bg-white">
                 <div className="container mx-auto px-5 md:px-6 max-w-4xl text-center">
-                    <h2 className="text-2xl md:text-4xl font-black mb-6 leading-tight text-[var(--color-text-primary)] tracking-tight">
+                    <h2 className="text-3xl md:text-5xl font-black mb-6 leading-tight text-[var(--color-text-primary)] tracking-tight">
                         人材の<br className="md:hidden" />総合コンサルタント
                     </h2>
-                    <p className="text-[var(--color-text-secondary)] leading-relaxed text-sm md:text-base">
+                    <p className="text-[var(--color-text-secondary)] leading-relaxed text-base md:text-lg">
                         企業の成長は「人」で決まります。<br />
                         総合人材コンサルティングを通じて、<br className="hidden md:block" />
                         トータルで企業の課題解決と成長を支援します。
@@ -44,19 +44,19 @@ export default function ServicePage() {
                                     <div className="w-12 h-12 rounded-full bg-[var(--color-primary-light)] flex items-center justify-center text-[var(--color-primary)]">
                                         <Briefcase className="w-6 h-6" />
                                     </div>
-                                    <span className="text-[var(--color-text-muted)] font-bold tracking-[0.15em] text-xs">SERVICE 01</span>
+                                    <span className="text-[var(--color-text-muted)] font-extrabold tracking-[0.15em] text-sm">SERVICE 01</span>
                                 </div>
-                                <h3 className="text-2xl md:text-3xl font-black mb-4 text-[var(--color-text-primary)]">総合人材コンサルティング</h3>
-                                <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4 text-sm">
+                                <h3 className="text-3xl md:text-4xl font-black mb-4 text-[var(--color-text-primary)]">総合人材コンサルティング</h3>
+                                <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4 text-base">
                                     採用戦略の立案から、入社後の人材育成、評価制度の設計、
                                     そして組織開発まで。
                                     「人」に関わるあらゆる課題に対し、専門的な知見で解決策を提示します。
                                 </p>
                                 <ul className="space-y-2">
                                     {['採用戦略の策定', '人材育成プログラム', '評価制度設計', '組織開発支援'].map((item, i) => (
-                                        <li key={i} className="flex items-center gap-3 text-[var(--color-text-primary)] text-sm">
+                                        <li key={i} className="flex items-center gap-3 text-[var(--color-text-primary)] text-base">
                                             <CheckCircle2 className="w-4 h-4 text-[var(--color-primary)]" />
-                                            <span className="font-medium">{item}</span>
+                                            <span className="font-bold">{item}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -85,19 +85,19 @@ export default function ServicePage() {
                                     <div className="w-12 h-12 rounded-full bg-[var(--color-primary-light)] flex items-center justify-center text-[var(--color-primary)]">
                                         <GraduationCap className="w-6 h-6" />
                                     </div>
-                                    <span className="text-[var(--color-text-muted)] font-bold tracking-[0.15em] text-xs">SERVICE 02</span>
+                                    <span className="text-[var(--color-text-muted)] font-extrabold tracking-[0.15em] text-sm">SERVICE 02</span>
                                 </div>
-                                <h3 className="text-2xl md:text-3xl font-black mb-4 text-[var(--color-text-primary)]">人材育成</h3>
-                                <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4 text-sm">
+                                <h3 className="text-3xl md:text-4xl font-black mb-4 text-[var(--color-text-primary)]">人材育成</h3>
+                                <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4 text-base">
                                     独自の教育プログラムで即戦力を育成します。
                                     ビジネスマナーから専門的なスキルまで、
                                     段階的な研修体制で人材の成長を支援します。
                                 </p>
                                 <ul className="space-y-2">
                                     {['段階的な研修プログラム', '実践的なスキル習得', '資格取得支援', 'キャリアパス設計'].map((item, i) => (
-                                        <li key={i} className="flex items-center gap-3 text-[var(--color-text-primary)] text-sm">
+                                        <li key={i} className="flex items-center gap-3 text-[var(--color-text-primary)] text-base">
                                             <CheckCircle2 className="w-4 h-4 text-[var(--color-primary)]" />
-                                            <span className="font-medium">{item}</span>
+                                            <span className="font-bold">{item}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -126,19 +126,19 @@ export default function ServicePage() {
                                     <div className="w-12 h-12 rounded-full bg-[var(--color-primary-light)] flex items-center justify-center text-[var(--color-primary)]">
                                         <Users className="w-6 h-6" />
                                     </div>
-                                    <span className="text-[var(--color-text-muted)] font-bold tracking-[0.15em] text-xs">SERVICE 03</span>
+                                    <span className="text-[var(--color-text-muted)] font-extrabold tracking-[0.15em] text-sm">SERVICE 03</span>
                                 </div>
-                                <h3 className="text-2xl md:text-3xl font-black mb-4 text-[var(--color-text-primary)]">キャリアサポート</h3>
-                                <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4 text-sm">
+                                <h3 className="text-3xl md:text-4xl font-black mb-4 text-[var(--color-text-primary)]">キャリアサポート</h3>
+                                <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4 text-base">
                                     一人ひとりの「やりたいこと」と企業の「求める人材像」を
                                     高い精度で結びつけ、双方にとって最適なキャリアを実現します。
                                     定期的なフォローアップで長期的な成長を支えます。
                                 </p>
                                 <ul className="space-y-2">
                                     {['丁寧なヒアリング', '最適なキャリアマッチング', '定着率の向上', '長期的なフォローアップ'].map((item, i) => (
-                                        <li key={i} className="flex items-center gap-3 text-[var(--color-text-primary)] text-sm">
+                                        <li key={i} className="flex items-center gap-3 text-[var(--color-text-primary)] text-base">
                                             <CheckCircle2 className="w-4 h-4 text-[var(--color-primary)]" />
-                                            <span className="font-medium">{item}</span>
+                                            <span className="font-bold">{item}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -151,16 +151,16 @@ export default function ServicePage() {
             {/* CTA */}
             <section className="py-16 md:py-24 bg-[var(--color-dark)]">
                 <div className="container mx-auto px-6 text-center">
-                    <h2 className="text-2xl md:text-4xl font-black text-white mb-5">
+                    <h2 className="text-3xl md:text-5xl font-black text-white mb-5">
                         人材に関する課題、<br className="md:hidden" />ご相談ください
                     </h2>
-                    <p className="text-white/60 mb-8 max-w-2xl mx-auto text-sm">
+                    <p className="text-white/60 mb-8 max-w-2xl mx-auto text-base">
                         貴社の「人」に関するお悩みを、私たちが解決します。<br />
                         まずはお気軽にお問い合わせください。
                     </p>
                     <Link
                         href="/contact"
-                        className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white px-8 py-4 rounded-full font-bold text-sm hover:bg-[var(--color-primary-hover)] transition-all shadow-md hover:shadow-lg"
+                        className="inline-flex items-center gap-2 bg-[var(--color-primary)] text-white px-8 py-4 rounded-full font-extrabold text-base hover:bg-[var(--color-primary-hover)] transition-all shadow-md hover:shadow-lg"
                     >
                         お問い合わせ
                         <ArrowRight className="w-4 h-4" />

@@ -16,8 +16,8 @@ export default function CompanyPage() {
                 <div className="container mx-auto px-5 md:px-6">
                     <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-16">
                         <div className="w-full md:w-1/2">
-                            <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">MISSION</p>
-                            <h2 className="text-2xl md:text-4xl font-black mb-4 leading-tight text-[var(--color-text-primary)] tracking-tight">
+                            <p className="text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3">MISSION</p>
+                            <h2 className="text-3xl md:text-5xl font-black mb-4 leading-tight text-[var(--color-text-primary)] tracking-tight">
                                 人生を変える"最初の一歩"を<br />
                                 ともに踏み出し、<br />
                                 人生が変わったと<br className="md:hidden" />
@@ -38,8 +38,8 @@ export default function CompanyPage() {
                     {/* Vision */}
                     <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 mb-16">
                         <div className="w-full md:w-1/2">
-                            <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">VISION</p>
-                            <h2 className="text-2xl md:text-4xl font-black mb-4 leading-tight text-[var(--color-text-primary)] tracking-tight">
+                            <p className="text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3">VISION</p>
+                            <h2 className="text-3xl md:text-5xl font-black mb-4 leading-tight text-[var(--color-text-primary)] tracking-tight">
                                 一人ひとりに向き合い、<br />
                                 挑戦できる環境と<br className="md:hidden" />
                                 成長の機会を<br />
@@ -61,8 +61,8 @@ export default function CompanyPage() {
                     {/* Values (Action Guidelines) */}
                     <div className="mb-0">
                         <div className="text-center mb-8 md:mb-12">
-                            <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">VALUES</p>
-                            <h2 className="text-2xl md:text-4xl font-black text-[var(--color-text-primary)]">行動指針</h2>
+                            <p className="text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3">VALUES</p>
+                            <h2 className="text-3xl md:text-5xl font-black text-[var(--color-text-primary)]">行動指針</h2>
                         </div>
 
                         <HorizontalScroll className="md:grid-cols-5">
@@ -79,18 +79,18 @@ export default function CompanyPage() {
                                     </div>
                                     <div className="relative z-10 flex flex-col h-full">
                                         <div className="flex items-center gap-3 mb-4">
-                                            <span className="text-[var(--color-primary)] font-bold tracking-[0.15em] text-xs">VALUE {item.num}</span>
+                                            <span className="text-[var(--color-primary)] font-extrabold tracking-[0.15em] text-sm">VALUE {item.num}</span>
                                             <div className="h-px flex-1 bg-[var(--color-border)]" />
                                         </div>
-                                        <h3 className="text-xl font-black text-[var(--color-text-primary)] mb-3">{item.title}</h3>
-                                        <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed">{item.text}</p>
+                                        <h3 className="text-2xl font-black text-[var(--color-text-primary)] mb-3">{item.title}</h3>
+                                        <p className="text-[var(--color-text-secondary)] text-base leading-relaxed">{item.text}</p>
                                     </div>
                                 </div>
                             ))}
                         </HorizontalScroll>
 
                         {/* Swipe Hint for Mobile */}
-                        <div className="flex justify-center mt-4 md:hidden text-[var(--color-primary)] text-xs font-bold items-center gap-2 animate-pulse">
+                        <div className="flex justify-center mt-4 md:hidden text-[var(--color-primary)] text-sm font-extrabold items-center gap-2 animate-pulse">
                             <ChevronRight className="w-3.5 h-3.5" />
                             <span>SWIPE</span>
                         </div>
@@ -103,12 +103,12 @@ export default function CompanyPage() {
                 <div className="container mx-auto px-5 md:px-6">
                     <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-[var(--color-border)]">
                         <div className="text-center mb-8">
-                            <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">TOP MESSAGE</p>
-                            <h2 className="text-2xl md:text-3xl font-black leading-tight text-[var(--color-text-primary)]">
+                            <p className="text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3">TOP MESSAGE</p>
+                            <h2 className="text-3xl md:text-4xl font-black leading-tight text-[var(--color-text-primary)]">
                                 共に描き、共に創る未来。
                             </h2>
                         </div>
-                        <div className="space-y-4 text-[var(--color-text-secondary)] leading-relaxed text-sm">
+                        <div className="space-y-4 text-[var(--color-text-secondary)] leading-relaxed text-base">
                             <p>
                                 人の可能性は無限大です。<br />
                                 私たちは、スキルや経歴だけを見るマッチングは行いません。
@@ -126,7 +126,7 @@ export default function CompanyPage() {
                                 あなたの描く未来を、私たちと一緒に実現させましょう。
                             </p>
                             <div className="text-right mt-8">
-                                <p className="font-bold text-[var(--color-text-primary)]">代表取締役 荒井 武志</p>
+                                <p className="font-extrabold text-[var(--color-text-primary)]">代表取締役 荒井 武志</p>
                             </div>
                         </div>
                     </div>
@@ -137,8 +137,8 @@ export default function CompanyPage() {
             <section className="py-12 md:py-24 bg-white">
                 <div className="container mx-auto px-5 md:px-6">
                     <div className="text-center mb-10 md:mb-14">
-                        <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">OVERVIEW</p>
-                        <h2 className="text-3xl md:text-4xl font-black text-[var(--color-text-primary)]">会社概要</h2>
+                        <p className="text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3">OVERVIEW</p>
+                        <h2 className="text-4xl md:text-5xl font-black text-[var(--color-text-primary)]">会社概要</h2>
                     </div>
 
                     <div className="max-w-3xl mx-auto">
@@ -152,8 +152,8 @@ export default function CompanyPage() {
                                         { label: '事業内容', value: '総合人材コンサルティング事業' },
                                     ].map((row, index) => (
                                         <tr key={index} className="hover:bg-[var(--color-secondary)]/50 transition-colors flex flex-col md:table-row">
-                                            <th className="px-6 md:px-8 py-4 md:py-5 text-left text-sm font-bold text-[var(--color-text-primary)] w-full md:w-1/3 bg-[var(--color-secondary)]/50 block md:table-cell">{row.label}</th>
-                                            <td className="px-6 md:px-8 py-4 md:py-5 text-sm text-[var(--color-text-secondary)] block md:table-cell">
+                                            <th className="px-6 md:px-8 py-4 md:py-5 text-left text-base font-extrabold text-[var(--color-text-primary)] w-full md:w-1/3 bg-[var(--color-secondary)]/50 block md:table-cell">{row.label}</th>
+                                            <td className="px-6 md:px-8 py-4 md:py-5 text-base text-[var(--color-text-secondary)] block md:table-cell">
                                                 {row.value}
                                             </td>
                                         </tr>

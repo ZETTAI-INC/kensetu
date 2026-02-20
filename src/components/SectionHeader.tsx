@@ -12,13 +12,13 @@ export const SectionHeader = ({ titleEn, titleJa, className, align = 'left', lig
     return (
         <div className={cn('mb-12', align === 'center' ? 'text-center' : 'text-left', className)}>
             <p className={cn(
-                "text-sm font-bold tracking-[0.2em] mb-2",
+                "text-base font-extrabold tracking-[0.2em] mb-2",
                 light ? "text-[var(--color-accent)]" : "text-[var(--color-primary)]"
             )}>
                 {titleEn.toUpperCase()}
             </p>
             <h2 className={cn(
-                "text-3xl md:text-4xl font-bold tracking-tight",
+                "text-4xl md:text-5xl font-extrabold tracking-tight",
                 light ? "text-white" : "text-[var(--color-text-primary)]"
             )}>
                 {titleJa}

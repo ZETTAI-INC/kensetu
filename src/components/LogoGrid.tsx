@@ -17,7 +17,7 @@ export const LogoGrid = ({ logos }: LogoGridProps) => {
                             className="max-w-[80%] max-h-16 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
                         />
                     ) : (
-                        <span className="text-xs text-[var(--color-text-muted)] font-bold tracking-widest">
+                        <span className="text-sm text-[var(--color-text-muted)] font-extrabold tracking-widest">
                             SAMPLE LOGO
                         </span>
                     )}

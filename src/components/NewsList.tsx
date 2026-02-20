@@ -35,12 +35,12 @@ export const NewsList = ({ items }: NewsListProps) => {
                 <Link key={item.id} href={`/news/${item.id}`} className="group block">
                     <div className="flex flex-col md:flex-row md:items-center gap-3 py-5 md:py-6 hover:bg-[var(--color-secondary)] transition-colors px-4 -mx-4 rounded-lg">
                         <div className="flex items-center gap-3 shrink-0">
-                            <span className="text-[var(--color-text-muted)] font-medium text-xs tracking-wider">{item.date}</span>
-                            <span className="px-2.5 py-0.5 bg-[var(--color-primary-light)] text-[var(--color-primary)] text-xs font-bold tracking-wider rounded-full">
+                            <span className="text-[var(--color-text-muted)] font-bold text-sm tracking-wider">{item.date}</span>
+                            <span className="px-2.5 py-0.5 bg-[var(--color-primary-light)] text-[var(--color-primary)] text-sm font-extrabold tracking-wider rounded-full">
                                 {item.category}
                             </span>
                         </div>
-                        <h3 className="text-sm font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-primary)] transition-colors line-clamp-1">
+                        <h3 className="text-base font-extrabold text-[var(--color-text-primary)] group-hover:text-[var(--color-primary)] transition-colors line-clamp-1">
                             {item.title}
                         </h3>
                     </div>

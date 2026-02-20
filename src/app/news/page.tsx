@@ -40,7 +40,7 @@ export default function NewsPage() {
                                     key={cat}
                                     onClick={() => setActiveCategory(cat)}
                                     className={cn(
-                                        "px-5 py-2.5 rounded-full text-sm font-bold tracking-wider transition-all duration-300 border whitespace-nowrap snap-start",
+                                        "px-5 py-2.5 rounded-full text-base font-extrabold tracking-wider transition-all duration-300 border whitespace-nowrap snap-start",
                                         activeCategory === cat
                                             ? "bg-[var(--color-primary)] text-white border-[var(--color-primary)]"
                                             : "bg-white text-[var(--color-text-secondary)] border-[var(--color-border)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]"
@@ -66,7 +66,7 @@ export default function NewsPage() {
                     {/* Pagination */}
                     {filteredNews.length > 0 && (
                         <div className="mt-16 flex justify-center gap-2">
-                            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-[var(--color-primary)] text-white text-sm font-bold">1</button>
+                            <button className="w-10 h-10 flex items-center justify-center rounded-full bg-[var(--color-primary)] text-white text-base font-extrabold">1</button>
                         </div>
                     )}
                 </div>

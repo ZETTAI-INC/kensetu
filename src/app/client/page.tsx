@@ -13,11 +13,11 @@ export default function ClientPage() {
             {/* Intro */}
             <section className="py-16 md:py-24 bg-white">
                 <div className="container mx-auto px-5 md:px-6 max-w-4xl text-center">
-                    <h2 className="text-3xl md:text-5xl font-black mb-10 leading-tight text-[var(--color-text-primary)] tracking-tight">
+                    <h2 className="text-4xl md:text-6xl font-black mb-10 leading-tight text-[var(--color-text-primary)] tracking-tight">
                         人材の質が、<br />
                         現場の質を変える。
                     </h2>
-                    <p className="text-[var(--color-text-secondary)] leading-loose text-base md:text-lg text-left md:text-center">
+                    <p className="text-[var(--color-text-secondary)] leading-loose text-lg md:text-xl text-left md:text-center">
                         建設現場における「人」の課題は、年々深刻化しています。<br />
                         リッチ＆ビルドは、単なる頭数合わせではありません。<br />
                         独自の教育システムで育成された、高い意欲と基礎スキルを持つ人材をご提供。<br />
@@ -30,8 +30,8 @@ export default function ClientPage() {
             <section className="py-16 md:py-24 bg-[var(--color-secondary)]">
                 <div className="container mx-auto px-5 md:px-6">
                     <div className="text-center mb-12">
-                        <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">VALUE</p>
-                        <h2 className="text-3xl md:text-4xl font-black text-[var(--color-text-primary)]">提供価値</h2>
+                        <p className="text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3">VALUE</p>
+                        <h2 className="text-4xl md:text-5xl font-black text-[var(--color-text-primary)]">提供価値</h2>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -53,9 +53,9 @@ export default function ClientPage() {
                             }
                         ].map((item, index) => (
                             <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-[var(--color-border)] hover:shadow-md transition-all duration-300">
-                                <div className="text-[var(--color-primary)] font-black text-4xl mb-5">{item.num}</div>
-                                <h3 className="text-xl font-black mb-3 whitespace-pre-line text-[var(--color-text-primary)]">{item.title}</h3>
-                                <p className="text-[var(--color-text-secondary)] leading-relaxed text-sm">
+                                <div className="text-[var(--color-primary)] font-black text-5xl mb-5">{item.num}</div>
+                                <h3 className="text-2xl font-black mb-3 whitespace-pre-line text-[var(--color-text-primary)]">{item.title}</h3>
+                                <p className="text-[var(--color-text-secondary)] leading-relaxed text-base">
                                     {item.desc}
                                 </p>
                             </div>
@@ -69,8 +69,8 @@ export default function ClientPage() {
                 <div className="container mx-auto px-5 md:px-6">
                     <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
                         <div className="w-full md:w-1/2">
-                            <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">EDUCATION</p>
-                            <h2 className="text-2xl md:text-3xl font-black mb-6 leading-tight text-[var(--color-text-primary)]">
+                            <p className="text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3">EDUCATION</p>
+                            <h2 className="text-3xl md:text-4xl font-black mb-6 leading-tight text-[var(--color-text-primary)]">
                                 独自の教育システムで<br />
                                 即戦力を育成
                             </h2>
@@ -83,14 +83,14 @@ export default function ClientPage() {
                                     '安全衛生教育・フルハーネス講習'
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-3">
-                                        <span className="text-[var(--color-primary)] font-bold mt-0.5 text-sm">●</span>
-                                        <p className="text-[var(--color-text-primary)] text-sm font-medium">{item}</p>
+                                        <span className="text-[var(--color-primary)] font-extrabold mt-0.5 text-base">●</span>
+                                        <p className="text-[var(--color-text-primary)] text-base font-bold">{item}</p>
                                     </div>
                                 ))}
                             </div>
                             <div className="mt-8 p-5 bg-[var(--color-secondary)] rounded-xl border border-[var(--color-border)]">
-                                <h4 className="font-bold text-[var(--color-text-primary)] text-sm mb-2">資格取得もサポート</h4>
-                                <p className="text-[var(--color-text-secondary)] text-xs leading-relaxed">
+                                <h4 className="font-extrabold text-[var(--color-text-primary)] text-base mb-2">資格取得もサポート</h4>
+                                <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed">
                                     施工管理技士などの国家資格取得を全面的にバックアップ。社員のスキルアップが、貴社の現場の品質向上に直結します。
                                 </p>
                             </div>
@@ -111,8 +111,8 @@ export default function ClientPage() {
             {/* Logo Grid */}
             <section className="py-16 md:py-24 bg-[var(--color-secondary)]">
                 <div className="container mx-auto px-5 md:px-6 text-center">
-                    <p className="text-[var(--color-primary)] font-bold tracking-[0.2em] text-xs mb-3">PARTNERS</p>
-                    <h2 className="text-3xl md:text-4xl font-black text-[var(--color-text-primary)] mb-12">主要取引先</h2>
+                    <p className="text-[var(--color-primary)] font-extrabold tracking-[0.2em] text-sm mb-3">PARTNERS</p>
+                    <h2 className="text-4xl md:text-5xl font-black text-[var(--color-text-primary)] mb-12">主要取引先</h2>
                     <LogoGrid
                         logos={[
                             '住友電設株式会社',
@@ -127,7 +127,7 @@ export default function ClientPage() {
                             '戸田建設株式会社'
                         ].map(name => ({ src: '', alt: name }))}
                     />
-                    <p className="mt-10 text-[var(--color-text-muted)] text-xs">※順不同・敬称略</p>
+                    <p className="mt-10 text-[var(--color-text-muted)] text-sm">※順不同・敬称略</p>
                 </div>
             </section>
         </main>

@@ -14,8 +14,8 @@ export const SubpageHero = ({ titleEn, titleJa, backgroundImage }: SubpageHeroPr
                 </div>
             )}
             <div className="relative z-10 max-w-6xl mx-auto px-5 md:px-6">
-                <p className="text-[var(--color-primary)] text-xs md:text-sm font-bold tracking-[0.2em] md:tracking-[0.3em] mb-2 md:mb-3">{titleEn}</p>
-                <h1 className="text-2xl md:text-6xl font-black text-white tracking-tight">
+                <p className="text-[var(--color-primary)] text-sm md:text-base font-extrabold tracking-[0.2em] md:tracking-[0.3em] mb-2 md:mb-3">{titleEn}</p>
+                <h1 className="text-3xl md:text-6xl font-black text-white tracking-tight">
                     {titleJa}
                 </h1>
             </div>
