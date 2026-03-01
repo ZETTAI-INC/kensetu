@@ -21,11 +21,45 @@
 - `/client` - 取引先情報
 - `/privacy` - プライバシーポリシー
 
+## SEO / LLMO 対応
+
+技術的SEOとLLMO（LLM Optimization）基盤を実装済みです。
+
+### 自動生成エンドポイント
+- `/sitemap.xml` — 全ページのXMLサイトマップ
+- `/robots.txt` — クローラー指示（GPTBot, Claude-Web, PerplexityBot等のLLMボット明示許可）
+- `/manifest.webmanifest` — Web App Manifest
+- `/opengraph-image` — OG画像（動的生成 1200x630）
+- `/twitter-image` — Twitter Card画像（動的生成）
+- `/apple-icon` — Apple Touch Icon（動的生成 180x180）
+
+### 各ページ実装済み
+- Open Graph / Twitter Cards メタデータ
+- JSON-LD 構造化データ（Organization, LocalBusiness, WebSite, BreadcrumbList, Service, FAQPage, AboutPage, ContactPage）
+- ページ固有の title / description / keywords / canonical URL
+- セキュリティHTTPヘッダー（X-Content-Type-Options, Referrer-Policy, Permissions-Policy）
+
+### Google Search Console 登録手順
+
+1. [Google Search Console](https://search.google.com/search-console) にアクセス
+2. 「プロパティを追加」→「URLプレフィックス」→ `https://rich-and-build.co.jp` を入力
+3. 確認方法「HTMLタグ」を選択 → `content="●●●●"` の値をコピー
+4. `.env.local` に設定：
+   ```
+   NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=●●●●
+   ```
+5. デプロイ後、Search Console で「確認」をクリック
+6. 左メニュー →「サイトマップ」→ `https://rich-and-build.co.jp/sitemap.xml` を送信
+
 ## セットアップ
 
 ```bash
 # 依存関係のインストール
 npm install
+
+# 環境変数の設定
+cp .env.example .env.local
+# .env.local を編集して必要な値を設定
 
 # 開発サーバー起動
 npm run dev

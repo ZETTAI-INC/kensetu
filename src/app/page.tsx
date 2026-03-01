@@ -3,10 +3,13 @@ import { NewsList } from '@/components/NewsList';
 import { HeroSection } from '@/components/HeroSection';
 import { LottieAnimation } from '@/components/LottieAnimation';
 import { ArrowRight } from 'lucide-react';
+import { JsonLd, generateBreadcrumbList } from '@/lib/jsonld';
 
 export default function Home() {
+  const breadcrumb = generateBreadcrumbList([{ name: 'ホーム', path: '/' }]);
   return (
     <>
+      <JsonLd data={breadcrumb} />
       <HeroSection />
 
       {/* Concept Section */}

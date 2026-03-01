@@ -1,9 +1,24 @@
+import type { Metadata } from 'next';
 import { SubpageHero } from '@/components/SubpageHero';
 import { Mail, Phone } from 'lucide-react';
+import { PAGE_METADATA, SITE_URL } from '@/lib/metadata';
+import { JsonLd, generateBreadcrumbList } from '@/lib/jsonld';
+
+export const metadata: Metadata = {
+    title: PAGE_METADATA.privacy.title,
+    description: PAGE_METADATA.privacy.description,
+    keywords: PAGE_METADATA.privacy.keywords,
+    alternates: { canonical: `${SITE_URL}/privacy` },
+};
 
 export default function PrivacyPage() {
+    const breadcrumb = generateBreadcrumbList([
+        { name: 'ホーム', path: '/' },
+        { name: 'プライバシーポリシー', path: '/privacy' },
+    ]);
     return (
         <main>
+            <JsonLd data={breadcrumb} />
             <SubpageHero
                 titleEn="PRIVACY POLICY"
                 titleJa="個人情報保護方針"

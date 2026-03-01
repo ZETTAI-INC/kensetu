@@ -1,10 +1,32 @@
+import type { Metadata } from 'next';
 import { SubpageHero } from '@/components/SubpageHero';
 import { CheckCircle2, Users, Briefcase, GraduationCap, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { PAGE_METADATA, SITE_URL } from '@/lib/metadata';
+import {
+    JsonLd,
+    generateBreadcrumbList,
+    generateServiceWithOfferCatalog,
+    generateFAQPage,
+} from '@/lib/jsonld';
+
+export const metadata: Metadata = {
+    title: PAGE_METADATA.service.title,
+    description: PAGE_METADATA.service.description,
+    keywords: PAGE_METADATA.service.keywords,
+    alternates: { canonical: `${SITE_URL}/service` },
+};
 
 export default function ServicePage() {
+    const breadcrumb = generateBreadcrumbList([
+        { name: 'ホーム', path: '/' },
+        { name: '事業紹介', path: '/service' },
+    ]);
     return (
         <main className="overflow-x-hidden">
+            <JsonLd data={breadcrumb} />
+            <JsonLd data={generateServiceWithOfferCatalog()} />
+            <JsonLd data={generateFAQPage()} />
             <SubpageHero
                 titleEn="SERVICE"
                 titleJa="事業紹介"

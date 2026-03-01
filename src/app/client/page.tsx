@@ -1,9 +1,24 @@
+import type { Metadata } from 'next';
 import { SubpageHero } from '@/components/SubpageHero';
 import { LogoGrid } from '@/components/LogoGrid';
+import { PAGE_METADATA, SITE_URL } from '@/lib/metadata';
+import { JsonLd, generateBreadcrumbList } from '@/lib/jsonld';
+
+export const metadata: Metadata = {
+    title: PAGE_METADATA.client.title,
+    description: PAGE_METADATA.client.description,
+    keywords: PAGE_METADATA.client.keywords,
+    alternates: { canonical: `${SITE_URL}/client` },
+};
 
 export default function ClientPage() {
+    const breadcrumb = generateBreadcrumbList([
+        { name: 'ホーム', path: '/' },
+        { name: '企業の皆様へ', path: '/client' },
+    ]);
     return (
         <main>
+            <JsonLd data={breadcrumb} />
             <SubpageHero
                 titleEn="CLIENT"
                 titleJa="企業の皆様へ"

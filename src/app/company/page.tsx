@@ -1,10 +1,26 @@
+import type { Metadata } from 'next';
 import { SubpageHero } from '@/components/SubpageHero';
 import { HorizontalScroll } from '@/components/ui/HorizontalScroll';
 import { ChevronRight } from 'lucide-react';
+import { PAGE_METADATA, SITE_URL } from '@/lib/metadata';
+import { JsonLd, generateBreadcrumbList, generateAboutPage } from '@/lib/jsonld';
+
+export const metadata: Metadata = {
+    title: PAGE_METADATA.company.title,
+    description: PAGE_METADATA.company.description,
+    keywords: PAGE_METADATA.company.keywords,
+    alternates: { canonical: `${SITE_URL}/company` },
+};
 
 export default function CompanyPage() {
+    const breadcrumb = generateBreadcrumbList([
+        { name: 'ホーム', path: '/' },
+        { name: '会社情報', path: '/company' },
+    ]);
     return (
         <main className="overflow-x-hidden">
+            <JsonLd data={breadcrumb} />
+            <JsonLd data={generateAboutPage()} />
             <SubpageHero
                 titleEn="COMPANY"
                 titleJa="会社情報"
@@ -149,6 +165,7 @@ export default function CompanyPage() {
                                         { label: '会社名', value: '株式会社リッチ＆ビルド' },
                                         { label: '代表者', value: '代表取締役 荒井 武志' },
                                         { label: '住所', value: '〒150-0021 東京都渋谷区恵比寿西２丁目８－５ 高麗羅ビル2F' },
+                                        { label: '資本金', value: '2,000万円' },
                                         { label: '事業内容', value: '総合人材コンサルティング事業' },
                                     ].map((row, index) => (
                                         <tr key={index} className="hover:bg-[var(--color-secondary)]/50 transition-colors flex flex-col md:table-row">

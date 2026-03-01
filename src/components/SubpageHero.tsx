@@ -9,7 +9,7 @@ export const SubpageHero = ({ titleEn, titleJa, backgroundImage }: SubpageHeroPr
         <div className="relative pt-32 pb-14 md:pt-56 md:pb-28 overflow-hidden bg-[var(--color-dark)]">
             {backgroundImage && (
                 <div className="absolute inset-0 z-0">
-                    <img src={backgroundImage} alt="" className="w-full h-full object-cover opacity-40" />
+                    <img src={backgroundImage} alt={titleJa + 'のイメージ'} className="w-full h-full object-cover opacity-40" />
                     <div className="absolute inset-0 bg-[var(--color-dark)]/50" />
                 </div>
             )}

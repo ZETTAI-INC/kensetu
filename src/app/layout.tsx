@@ -3,6 +3,13 @@ import { Space_Grotesk, Zen_Kaku_Gothic_New } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { SITE_URL, SITE_NAME, PAGE_METADATA } from "@/lib/metadata";
+import {
+  JsonLd,
+  generateOrganization,
+  generateLocalBusiness,
+  generateWebSite,
+} from "@/lib/jsonld";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -19,9 +26,46 @@ const zenKaku = Zen_Kaku_Gothic_New({
 });
 
 export const metadata: Metadata = {
-  title: "リチビル | 株式会社リッチ＆ビルド - 人材コンサルティング",
-  description: "株式会社リッチ＆ビルド（リチビル）は、総合人材コンサルティングを通じて、企業と人材の成長を支援します。あなたのキャリアアップを全力でサポートします。",
-  keywords: "リチビル, 総合人材コンサルティング, 人材育成, キャリアアップ, HRコンサルティング, リッチ＆ビルド",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: PAGE_METADATA.home.title,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: PAGE_METADATA.home.description,
+  keywords: PAGE_METADATA.home.keywords,
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    siteName: SITE_NAME,
+    url: SITE_URL,
+    title: PAGE_METADATA.home.title,
+    description: PAGE_METADATA.home.description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: PAGE_METADATA.home.title,
+    description: PAGE_METADATA.home.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large" as const,
+    "max-snippet": -1,
+  },
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
+  },
+  alternates: {
+    canonical: SITE_URL,
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
+  },
+  other: {
+    'theme-color': '#5CC0EE',
+  },
 };
 
 export default function RootLayout({
@@ -34,6 +78,9 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${zenKaku.variable} antialiased font-sans bg-background text-text-primary`}
       >
+        <JsonLd data={generateOrganization()} />
+        <JsonLd data={generateLocalBusiness()} />
+        <JsonLd data={generateWebSite()} />
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />

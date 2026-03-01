@@ -1,9 +1,24 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { PAGE_METADATA, SITE_URL } from '@/lib/metadata';
+import { JsonLd, generateBreadcrumbList } from '@/lib/jsonld';
+
+export const metadata: Metadata = {
+    title: PAGE_METADATA.recruit.title,
+    description: PAGE_METADATA.recruit.description,
+    keywords: PAGE_METADATA.recruit.keywords,
+    alternates: { canonical: `${SITE_URL}/recruit` },
+};
 
 export default function RecruitPage() {
+    const breadcrumb = generateBreadcrumbList([
+        { name: 'ホーム', path: '/' },
+        { name: '採用情報', path: '/recruit' },
+    ]);
     return (
         <main className="overflow-x-hidden">
+            <JsonLd data={breadcrumb} />
             {/* Hero - Full Screen with Image */}
             <section className="relative h-[60vh] md:h-[80vh] w-full">
                 <div className="absolute inset-0">
